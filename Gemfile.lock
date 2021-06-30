@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hotwired/stimulus-rails.git
-  revision: 9a571205e62b5149c206dc694a1dadfcc787b8b1
+  revision: 3849f15311aa70e4ffe99d2741108903f65198c3
   branch: main
   specs:
     stimulus-rails (0.2.4)
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 32097e3c15a7c3b97b37d4c0c42713b1d6fe1fc5
+  revision: 0565be1d37ca9c18a84a27c1d9db3f418cc0e1af
   branch: 6-1-stable
   specs:
     actioncable (6.1.4)
