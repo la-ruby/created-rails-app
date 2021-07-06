@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hotwired/stimulus-rails.git
-  revision: 3849f15311aa70e4ffe99d2741108903f65198c3
+  revision: f216e982e5e33c160d9bec0e94595489d655646c
   branch: main
   specs:
     stimulus-rails (0.2.4)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 7d053a14e956837f002220e3f82b29bdaac1a4c5
+  revision: a4237daeadf6e1c255e3996aa1982fc3437fb84b
   branch: main
   specs:
     turbo-rails (0.5.12)
@@ -200,7 +200,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
-    rubyzip (2.3.1)
+    rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
