@@ -8,15 +8,15 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 4203f7347de206e749b5954f746b6c2b2b1e8fb4
+  revision: f95e9a507c26d4f4a70f4029c77c787bfc7460a2
   branch: main
   specs:
-    turbo-rails (0.5.12)
+    turbo-rails (0.6.0)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: ec262ea827fe3bc74756820699f567801f80b5b3
+  revision: e520ca1e06f3f641543a71c80d8e937580559e12
   branch: 6-1-stable
   specs:
     actioncable (6.1.4)
