@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: f95e9a507c26d4f4a70f4029c77c787bfc7460a2
+  revision: e413d98acb415dd902bdd6a4ef156ec7779761c6
   branch: main
   specs:
     turbo-rails (0.6.0)
@@ -154,9 +154,11 @@ GEM
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.1.0)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     nio4r (2.5.7)
-    nokogiri (1.11.7-x86_64-linux)
+    nokogiri (1.11.7)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (1.2.3)
     public_suffix (4.0.6)
@@ -245,7 +247,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   byebug
