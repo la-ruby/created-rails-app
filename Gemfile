@@ -56,7 +56,11 @@ end
 group :development, :test do
   gem 'rspec-rails'
 end
+
+gem "vcr", "~> 6.0"
+gem "webmock", "~> 3.13"
 gem 'turbo-rails', :github => 'hotwired/turbo-rails', :branch => 'main'
 gem 'stimulus-rails', :github => 'hotwired/stimulus-rails', :branch => 'main'
 
 gem "tailwindcss-rails", "~> 0.3.3"
+gem 'rexml'
