@@ -58,7 +58,7 @@ group :development, :test do
 end
 
 gem "vcr", "~> 6.0"
-gem "webmock", "~> 3.13"
+gem "webmock", "~> 3.14"
 gem 'turbo-rails', :github => 'hotwired/turbo-rails', :branch => 'main'
 gem 'stimulus-rails', :github => 'hotwired/stimulus-rails', :branch => 'main'
 
