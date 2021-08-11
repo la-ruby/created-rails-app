@@ -1,17 +1,17 @@
 GIT
   remote: https://github.com/hotwired/stimulus-rails.git
-  revision: e391519bcb8aeb9380196800330721cedabb75ae
+  revision: e11ec1c9f83b80414442f9d238c8639fb05e628c
   branch: main
   specs:
-    stimulus-rails (0.2.4)
+    stimulus-rails (0.3.0)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: ba86832f7f13001793ab917185788df9723666e8
+  revision: 1e5ce6683c842f747758992b70c059a339c4dd27
   branch: main
   specs:
-    turbo-rails (0.6.0)
+    turbo-rails (0.7.0)
       rails (>= 6.0.0)
 
 GIT
@@ -160,7 +160,7 @@ GEM
     mini_portile2 (2.6.1)
     minitest (5.14.4)
     nio4r (2.5.8)
-    nokogiri (1.12.2)
+    nokogiri (1.12.3)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     pg (1.2.3)
