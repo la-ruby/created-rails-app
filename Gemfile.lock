@@ -1,17 +1,17 @@
 GIT
   remote: https://github.com/hotwired/stimulus-rails.git
-  revision: bca143bd4217918729fcccebe307a60605da3bac
+  revision: 181d79a0b81e86bb54f116a3b59c0ecce0c49149
   branch: main
   specs:
-    stimulus-rails (0.3.3)
+    stimulus-rails (0.3.7)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 36477e2c52f82271919a0be8c941007d0e8456f5
+  revision: b3513d78f324dcf946d7802a8fba834b62f74eab
   branch: main
   specs:
-    turbo-rails (0.7.2)
+    turbo-rails (0.7.3)
       rails (>= 6.0.0)
 
 GIT
