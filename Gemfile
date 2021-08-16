@@ -63,4 +63,6 @@ gem 'turbo-rails', :github => 'hotwired/turbo-rails', :branch => 'main'
 gem 'stimulus-rails', :github => 'hotwired/stimulus-rails', :branch => 'main'
 
 gem "tailwindcss-rails", "~> 0.3.3"
+
+gem "font_awesome5_rails", "~> 1.5"
 gem 'rexml'
