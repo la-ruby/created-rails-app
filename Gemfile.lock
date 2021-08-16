@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hotwired/stimulus-rails.git
-  revision: 5519b12f2f62be58398c1f90b6f56485ecf21eed
+  revision: bca143bd4217918729fcccebe307a60605da3bac
   branch: main
   specs:
     stimulus-rails (0.3.3)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 0f22fb5ab902c81cd6a80557f8f41b7498616683
+  revision: 36477e2c52f82271919a0be8c941007d0e8456f5
   branch: main
   specs:
     turbo-rails (0.7.2)
