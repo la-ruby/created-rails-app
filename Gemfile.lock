@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 45610d8a3bce12df4a4b48f72454c6f6856b061c
+  revision: f3771c5fd5e517f85eee5f112b968271c5dcee0a
   branch: main
   specs:
     turbo-rails (0.7.4)
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: e7b0eddc70bf516bed56f892a40c57e8ddec559f
+  revision: 0c3e02cb520a1a7a913dd76d631bea03d6dd9764
   branch: 6-1-stable
   specs:
     actioncable (6.1.4.1)
@@ -180,13 +180,12 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.1)
+    rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
     rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.4.0)
     regexp_parser (2.1.1)
     rexml (3.2.5)
     rspec-core (3.10.1)
@@ -270,7 +269,6 @@ DEPENDENCIES
   pundit
   rack-mini-profiler (~> 2.0)
   rails!
-  redis (~> 4.0)
   rexml
   rspec-rails
   sass-rails (>= 6)
