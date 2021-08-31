@@ -1,17 +1,17 @@
 GIT
   remote: https://github.com/hotwired/stimulus-rails.git
-  revision: fc1b20b40278db338850b48646311758970fc418
+  revision: 0d0637c57773abdd394f16bd7ab694d433b75966
   branch: main
   specs:
-    stimulus-rails (0.3.9)
+    stimulus-rails (0.3.10)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 72779441b108686423923da933f141e479b2692c
+  revision: f95dfa1d8ca94c519ead0d412fdc1b464f442ba0
   branch: main
   specs:
-    turbo-rails (0.7.7)
+    turbo-rails (0.7.8)
       rails (>= 6.0.0)
 
 GIT
@@ -171,7 +171,7 @@ GEM
       activesupport (>= 3.0.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-mini-profiler (2.3.2)
+    rack-mini-profiler (2.3.3)
       rack (>= 1.2.0)
     rack-proxy (0.7.0)
       rack
