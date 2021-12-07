@@ -1,10 +1,7 @@
-// app/assets/javascripts/controllers/hello_controller.js
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = [ "name", "output" ]
-
-  greet() {
-    this.outputTarget.textContent = `Hello, ${this.nameTarget.value}!`
+  connect() {
+    this.element.textContent = "Hello World!"
   }
 }

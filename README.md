@@ -1,24 +1,24 @@
-
 # README
 
-A super simple rails applicaton created with [create-rails-app](https://github.com/la-ruby/create-rails-app)<br>
-[demo](https://created-rails-app.herokuapp.com/posts)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Quickstart
+Things you may want to cover:
 
-supose you're building a new application named example-app
+* Ruby version
 
-```
-cd ~
-git clone git@github.com:la-ruby/created-rails-app.git
-mv created-rails-app example-app
-cd example-app
-./bin/rename_app ExampleApp example-app example_app
-git add --all && git commit -m "Customized name"
-./bin/setup # covers most of ^
-bundle exec rake webpacker:clobber
-./bin/rails server # In a seperate tab
-./bin/webpack-dev-server # In a seperate tab
-# open http://localhost:3000/posts , bootstrap kitchen sink should render properly at this point.
-```
+* System dependencies
 
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
