@@ -1,5 +1,7 @@
-PATH
-  remote: /tmp/rails
+GIT
+  remote: https://github.com/rails/rails.git
+  revision: 80fda2aacb523c3656c0b95f0ebdc76b5b808a92
+  branch: 7-0-stable
   specs:
     actioncable (7.0.0.rc1)
       actionpack (= 7.0.0.rc1)
