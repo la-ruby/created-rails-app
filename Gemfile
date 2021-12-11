@@ -67,3 +67,5 @@ group :test do
   gem "selenium-webdriver", ">= 4.0.0"
   gem "webdrivers"
 end
+
+gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
