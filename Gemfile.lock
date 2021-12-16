@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: 9f5b83750eef89710b8f2f1e0969c308023e2f05
+  revision: 025b1c873491908b346e4d394f54481ec18fb02c
   branch: main
   specs:
-    devise (4.8.0)
+    devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 984c3ef2775781d47efa9f541ce570daa2434a80
+  revision: 8f5b35b6107c28125b571b9842e248b13f804e5c
   branch: 7-0-stable
   specs:
     actioncable (7.0.0)
@@ -183,7 +183,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.0.0)
+    stimulus-rails (1.0.2)
       railties (>= 6.0.0)
     thor (1.1.0)
     turbo-rails (1.0.0)
