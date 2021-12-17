@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 8f5b35b6107c28125b571b9842e248b13f804e5c
+  revision: 73580161a1b1a0864f2ebc6fc9fad014404c7bba
   branch: 7-0-stable
   specs:
     actioncable (7.0.0)
@@ -116,7 +116,7 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    debug (1.3.4)
+    debug (1.4.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     erubi (1.10.0)
@@ -130,7 +130,7 @@ GEM
     io-console (0.5.9)
     irb (1.3.7)
       reline (>= 0.2.7)
-    jbuilder (2.11.3)
+    jbuilder (2.11.4)
       activesupport (>= 5.0.0)
     loofah (2.13.0)
       crass (~> 1.0.2)
