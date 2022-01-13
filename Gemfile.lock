@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 69d27aa7e75a4b5dc7ddefed85e8b3bbd8ff13a8
+  revision: ba8d029e0c9965f64c96f44326fe40f0df6293f3
   branch: 7-0-stable
   specs:
     actioncable (7.0.1)
@@ -260,4 +260,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.3.4
+   2.3.5
