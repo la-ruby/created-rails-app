@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 65aafd2b1e2c2fc377f324f13d00912814bae8f7
+  revision: 93fa5343952c841fd3473c06b74497eca8ec1651
   branch: 7-0-stable
   specs:
     actioncable (7.0.1)
@@ -174,7 +174,7 @@ GEM
     nokogiri (1.13.1-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.2.3)
+    pg (1.3.0)
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
