@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
@@ -4869,13 +4869,14 @@ textarea.form-control-lg {
   --bs-alert-bg: transparent;
   --bs-alert-padding: 1rem 1rem;
   --bs-alert-margin-bottom: 1rem;
-  --bs-alert-color: 1rem 1rem;
+  --bs-alert-color: inherit;
   --bs-alert-border-color: transparent;
   --bs-alert-border: 1px solid var(--bs-alert-border-color);
   --bs-alert-border-radius: 0.25rem;
   position: relative;
   padding: var(--bs-alert-padding);
   margin-bottom: var(--bs-alert-margin-bottom);
+  color: var(--bs-alert-color);
   background-color: var(--bs-alert-bg);
   border: var(--bs-alert-border);
   border-radius: var(--bs-alert-border-radius, 0);
@@ -6251,6 +6252,12 @@ textarea.form-control-lg {
     transition: none;
   }
 }
+.offcanvas.showing, .offcanvas.show:not(.hiding) {
+  transform: none;
+}
+.offcanvas.showing, .offcanvas.hiding, .offcanvas.show {
+  visibility: visible;
+}
 
 .offcanvas-backdrop {
   position: fixed;
@@ -6325,10 +6332,6 @@ textarea.form-control-lg {
   max-height: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateY(100%);
-}
-
-.offcanvas.show {
-  transform: none;
 }
 
 .placeholder {
