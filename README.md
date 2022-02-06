@@ -18,12 +18,12 @@ perl -p -i -e 's/created_rails_app/blog/g' config/environments/*.rb
 ./bin/setup
 ```
 
-### 3. Run unit tests
+### 2. Run unit tests
 ```
 ./bin/rails test
 ```
 
-4. Start the server
+3. Start the server
 
 ```
 ./bin/rails s
