@@ -5453,6 +5453,7 @@ textarea.form-control-lg {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  pointer-events: none;
   outline: 0;
 }
 
