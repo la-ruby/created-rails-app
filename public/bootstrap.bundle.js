@@ -1,1 +1,1 @@
-vendor/bootstrap-main/js/bootstrap.bundle.js
+../vendor/bootstrap-main/js/bootstrap.bundle.js
