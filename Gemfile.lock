@@ -102,6 +102,14 @@ GIT
       thor (~> 1.0)
       zeitwerk (~> 2.5)
 
+GIT
+  remote: https://github.com/varvet/pundit
+  revision: 856d74d55d79a87102cbaa2df64d87c94dc7e3bc
+  branch: main
+  specs:
+    pundit (2.1.1)
+      activesupport (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -254,6 +262,7 @@ DEPENDENCIES
   jbuilder
   pg (~> 1.1)
   puma (~> 5.0)
+  pundit (~> 2.1)!
   rails!
   selenium-webdriver
   simplecov

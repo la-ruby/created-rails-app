@@ -69,4 +69,6 @@ group :test do
 end
 
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
+
+gem "pundit", "~> 2.1", :git => "https://github.com/varvet/pundit", :branch => "main"
 gem 'simplecov', require: false, group: :test
