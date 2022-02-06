@@ -1,7 +1,5 @@
 
-### 1. First time setup
-
-After forking created-rails-app, rename it to .e.g blog
+### 1. After forking created-rails-app, rename it to .e.g blog
 
 ```
 perl -p -i -e 's/CreatedRailsApp/Blog/g' config/application.rb
@@ -11,19 +9,19 @@ perl -p -i -e 's/CREATED_RAILS_APP/BLOG/g' config/*.yml
 perl -p -i -e 's/created_rails_app/blog/g' config/environments/*.rb
 ```
 
-### 1.2 Setup gems and database
+### 2. Setup gems and database
 
 
 ```
 ./bin/setup
 ```
 
-### 2. Run unit tests
+### 3. Run unit tests
 ```
 ./bin/rails test
 ```
 
-3. Start the server
+### 4. Start the server
 
 ```
 ./bin/rails s
@@ -49,5 +47,4 @@ $ ./bin/rails --version
 Rails 7.0.1
 ```
 
-
-
+Enjoy! 🎉
