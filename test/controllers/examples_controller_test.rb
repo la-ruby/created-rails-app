@@ -17,7 +17,7 @@ class ExamplesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create example" do
     assert_difference("Example.count") do
-      post examples_url, params: { example: { body: @example.body, title: @example.title } }
+      post examples_url, params: { example: { body: @example.body, seed: @example.seed, title: @example.title } }
     end
 
     assert_redirected_to example_url(Example.last)
@@ -34,7 +34,7 @@ class ExamplesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update example" do
-    patch example_url(@example), params: { example: { body: @example.body, title: @example.title } }
+    patch example_url(@example), params: { example: { body: @example.body, seed: @example.seed, title: @example.title } }
     assert_redirected_to example_url(@example)
   end
 

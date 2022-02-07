@@ -15,6 +15,7 @@ class ExamplesTest < ApplicationSystemTestCase
     click_on "New example"
 
     fill_in "Body", with: @example.body
+    check "Seed" if @example.seed
     fill_in "Title", with: @example.title
     click_on "Create Example"
 
@@ -27,6 +28,7 @@ class ExamplesTest < ApplicationSystemTestCase
     click_on "Edit this example", match: :first
 
     fill_in "Body", with: @example.body
+    check "Seed" if @example.seed
     fill_in "Title", with: @example.title
     click_on "Update Example"
 

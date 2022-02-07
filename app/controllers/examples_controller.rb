@@ -65,6 +65,6 @@ class ExamplesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def example_params
-      params.require(:example).permit(:title, :body)
+      params.require(:example).permit(:title, :body, :seed)
     end
 end
