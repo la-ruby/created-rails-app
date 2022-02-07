@@ -1,3 +1,4 @@
+# OUR STUFF
 # Load and launch SimpleCov at the very top of your test/test_helper.rb
 # (or spec_helper.rb, rails_helper, cucumber env.rb, or whatever your
 # preferred test framework uses)
@@ -13,7 +14,9 @@ if ENV['COVERAGE']
     add_filter 'app/controllers/application_controller.rb'
   end
 end
-ENV["RAILS_ENV"] ||= "test"
+
+
+# OUR STUFF ENDSENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
