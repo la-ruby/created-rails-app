@@ -14,8 +14,6 @@ perl -p -i -e 's/created_rails_app/blog/g' config/environments/*.rb
 
 ```
 ./bin/setup
-./bin/rails db:reset
-
 ```
 
 ### 3. Run unit tests

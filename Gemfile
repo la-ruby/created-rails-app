@@ -72,5 +72,7 @@ gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch 
 
 gem "pundit", "~> 2.1", :git => "https://github.com/varvet/pundit", :branch => "main"
 
+gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
+
 gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
 gem 'simplecov', require: false, group: :test

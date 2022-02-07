@@ -113,6 +113,15 @@ GIT
       zeitwerk (~> 2.5)
 
 GIT
+  remote: https://github.com/thoughtbot/factory_bot_rails
+  revision: b149856be340f919a49bab8d4389050dce422cbc
+  branch: main
+  specs:
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+
+GIT
   remote: https://github.com/varvet/pundit
   revision: 856d74d55d79a87102cbaa2df64d87c94dc7e3bc
   branch: main
@@ -148,6 +157,8 @@ GEM
     digest (3.1.0)
     docile (1.4.0)
     erubi (1.10.0)
+    factory_bot (6.2.0)
+      activesupport (>= 5.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -271,6 +282,7 @@ DEPENDENCIES
   capybara
   debug
   devise (~> 4.8)!
+  factory_bot_rails (~> 6.2)!
   importmap-rails
   jbuilder
   pg (~> 1.1)
