@@ -9,6 +9,14 @@ GIT
       hashdiff (>= 0.4.0, < 2.0.0)
 
 GIT
+  remote: https://github.com/faker-ruby/faker
+  revision: cb69fe43290c90e023ef241edfdad39180cc0c31
+  branch: master
+  specs:
+    faker (2.19.0)
+      i18n (>= 1.8.11, < 2)
+
+GIT
   remote: https://github.com/heartcombo/devise
   revision: 025b1c873491908b346e4d394f54481ec18fb02c
   branch: main
@@ -22,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 67a65fab787cffa01cabedb53ad11961443441c8
+  revision: 346d7334274b42e51cb997432a55789315142e5f
   branch: 7-0-stable
   specs:
     actioncable (7.0.1)
@@ -283,6 +291,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8)!
   factory_bot_rails (~> 6.2)!
+  faker (~> 2.19)!
   importmap-rails
   jbuilder
   pg (~> 1.1)
