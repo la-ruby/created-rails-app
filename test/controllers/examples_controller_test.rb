@@ -2,7 +2,7 @@ require "test_helper"
 
 class ExamplesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @example = examples(:one)
+    @example = FactoryBot.create(:example)
   end
 
   test "should get index" do
