@@ -70,7 +70,7 @@ end
 
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
-gem "pundit", "~> 2.1", :git => "https://github.com/varvet/pundit", :branch => "main"
+gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "main"
 
 gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
 
