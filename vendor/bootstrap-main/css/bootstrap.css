@@ -3895,6 +3895,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -3929,7 +3930,7 @@ textarea.form-control-lg {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
-  font-size: var(--bs-navbar-toggler-font-size);
+  font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
@@ -4953,7 +4954,7 @@ textarea.form-control-lg {
   list-style-type: none;
   counter-reset: section;
 }
-.list-group-numbered > li::before {
+.list-group-numbered > .list-group-item::before {
   content: counters(section, ".") ". ";
   counter-increment: section;
 }
@@ -6320,59 +6321,59 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #0d6efd;
+  color: #0d6efd !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #0a58ca;
+  color: #0a58ca !important;
 }
 
 .link-secondary {
-  color: #6c757d;
+  color: #6c757d !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64;
+  color: #565e64 !important;
 }
 
 .link-success {
-  color: #198754;
+  color: #198754 !important;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43;
+  color: #146c43 !important;
 }
 
 .link-info {
-  color: #0dcaf0;
+  color: #0dcaf0 !important;
 }
 .link-info:hover, .link-info:focus {
-  color: #3dd5f3;
+  color: #3dd5f3 !important;
 }
 
 .link-warning {
-  color: #ffc107;
+  color: #ffc107 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #ffcd39;
+  color: #ffcd39 !important;
 }
 
 .link-danger {
-  color: #dc3545;
+  color: #dc3545 !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: #b02a37;
+  color: #b02a37 !important;
 }
 
 .link-light {
-  color: #f8f9fa;
+  color: #f8f9fa !important;
 }
 .link-light:hover, .link-light:focus {
-  color: #f9fafb;
+  color: #f9fafb !important;
 }
 
 .link-dark {
-  color: #212529;
+  color: #212529 !important;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21;
+  color: #1a1e21 !important;
 }
 
 .ratio {
