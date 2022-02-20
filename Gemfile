@@ -78,3 +78,5 @@ gem "faker", "~> 2.19", :git => "https://github.com/faker-ruby/faker", :branch =
 gem 'simplecov', require: false, group: :test
 
 gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
+
+gem "vcr", "~> 6.0", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"

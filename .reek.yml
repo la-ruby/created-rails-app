@@ -12,7 +12,6 @@ detectors:
   InstanceVariableAssumption:
     exclude:
     - ExamplesController
-    - Tcr::Controller
   IrresponsibleModule:
     exclude:
     - ApplicationCable::Channel
@@ -22,10 +21,6 @@ detectors:
     - ApplicationHelper
     - ExamplesHelper
     - ApplicationJob
-    - Tcr::Component
-    - Tcr::Controller
-    - Tcr::Helpers
-    - Tcr::Reaction
     - ApplicationMailer
     - ApplicationRecord
     - Example

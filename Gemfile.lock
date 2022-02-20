@@ -146,6 +146,13 @@ GIT
     pundit (2.2.0)
       activesupport (>= 3.0.0)
 
+GIT
+  remote: https://github.com/vcr/vcr
+  revision: 7ac8292c289ca98dcb4254b59e1ee29e2205d8b3
+  branch: master
+  specs:
+    vcr (6.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -310,6 +317,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails!
   tzinfo-data
+  vcr (~> 6.0)!
   web-console
   webdrivers
   webmock (~> 3.14)!
