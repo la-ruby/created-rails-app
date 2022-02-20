@@ -77,6 +77,8 @@ gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "ht
 gem "faker", "~> 2.19", :git => "https://github.com/faker-ruby/faker", :branch => "master"
 gem 'simplecov', require: false, group: :test
 
+gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"
+
 gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
 
 gem "vcr", "~> 6.0", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"

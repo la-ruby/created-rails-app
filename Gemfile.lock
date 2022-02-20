@@ -153,6 +153,14 @@ GIT
   specs:
     vcr (6.0.0)
 
+GIT
+  remote: https://github.com/y-yagi/minitest-test_profile
+  revision: 30744bf387e51d7f947bcdb9341c686d020c2814
+  branch: master
+  specs:
+    minitest-test_profile (0.2.2)
+      minitest
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -307,6 +315,7 @@ DEPENDENCIES
   faker (~> 2.19)!
   importmap-rails
   jbuilder
+  minitest-test_profile (~> 0.2.2)!
   pg (~> 1.1)
   puma (~> 5.0)
   pundit (~> 2.2)!
