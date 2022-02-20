@@ -74,6 +74,8 @@ gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "
 
 gem "nice_partials", "~> 0.1.6", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
 
+gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branch => "master"
+
 gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
 
 gem "faker", "~> 2.19", :git => "https://github.com/faker-ruby/faker", :branch => "master"
@@ -84,3 +86,5 @@ gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://githu
 gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
 
 gem "vcr", "~> 6.0", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
+
+gem "clockwork", "~> 3.0", :git => "https://github.com/Rykian/clockwork", :branch => "master"

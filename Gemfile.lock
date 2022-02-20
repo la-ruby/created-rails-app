@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/Rykian/clockwork
+  revision: d64de659d46fdc7a44cb18ff6f91758791806a1e
+  branch: master
+  specs:
+    clockwork (3.0.0)
+      activesupport
+      tzinfo
+
+GIT
   remote: https://github.com/bblimke/webmock
   revision: 33d8810c2828fc17010e15cc3f21ad2c726a966f
   branch: master
@@ -44,6 +53,24 @@ GIT
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
+
+GIT
+  remote: https://github.com/kaminari/kaminari
+  revision: d8a1df8aa40aef3881a348c5296e3426078586d4
+  branch: master
+  specs:
+    kaminari (1.2.2)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.2)
+      kaminari-activerecord (= 1.2.2)
+      kaminari-core (= 1.2.2)
+    kaminari-actionview (1.2.2)
+      actionview
+      kaminari-core (= 1.2.2)
+    kaminari-activerecord (1.2.2)
+      activerecord
+      kaminari-core (= 1.2.2)
+    kaminari-core (1.2.2)
 
 GIT
   remote: https://github.com/rails/rails.git
@@ -317,12 +344,14 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  clockwork (~> 3.0)!
   debug
   devise (~> 4.8)!
   factory_bot_rails (~> 6.2)!
   faker (~> 2.19)!
   importmap-rails
   jbuilder
+  kaminari (~> 1.2)!
   minitest-test_profile (~> 0.2.2)!
   nice_partials (~> 0.1.6)!
   pg (~> 1.1)
