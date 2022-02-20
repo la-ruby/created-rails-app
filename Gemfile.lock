@@ -9,6 +9,14 @@ GIT
       hashdiff (>= 0.4.0, < 2.0.0)
 
 GIT
+  remote: https://github.com/bullet-train-co/nice_partials
+  revision: 3293ee0f9c1d2107bcf51d9633d182e88739d9a8
+  branch: main
+  specs:
+    nice_partials (0.1.6)
+      actionview (>= 4.2.6)
+
+GIT
   remote: https://github.com/faker-ruby/faker
   revision: cb606b81c9c8048a3b9b044a4619252d16b576ab
   branch: master
@@ -316,6 +324,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   minitest-test_profile (~> 0.2.2)!
+  nice_partials (~> 0.1.6)!
   pg (~> 1.1)
   puma (~> 5.0)
   pundit (~> 2.2)!
