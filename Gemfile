@@ -75,6 +75,6 @@ gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "
 gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
 
 gem "faker", "~> 2.19", :git => "https://github.com/faker-ruby/faker", :branch => "master"
+gem 'simplecov', require: false, group: :test
 
 gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
-gem 'simplecov', require: false, group: :test
