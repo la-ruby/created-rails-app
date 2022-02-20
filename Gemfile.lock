@@ -29,6 +29,15 @@ GIT
       warden (~> 1.2.3)
 
 GIT
+  remote: https://github.com/hotwired/turbo-rails.git
+  revision: 2a2a5ec12e4233cf33e5d3f0a6855834f4e5e4ec
+  branch: main
+  specs:
+    turbo-rails (1.0.1)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: dbdb546c0cf1de4e0745ea00234558425dc37457
   branch: 7-0-stable
@@ -259,9 +268,6 @@ GEM
     strscan (3.0.1)
     thor (1.2.1)
     timeout (0.2.0)
-    turbo-rails (1.0.1)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
@@ -302,7 +308,7 @@ DEPENDENCIES
   simplecov
   sprockets-rails
   stimulus-rails
-  turbo-rails
+  turbo-rails!
   tzinfo-data
   web-console
   webdrivers
