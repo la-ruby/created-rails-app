@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 3293ee0f9c1d2107bcf51d9633d182e88739d9a8
+  revision: a39e2e958e97b99893d867ca1ddd5c5a46c8ae1e
   branch: main
   specs:
     nice_partials (0.1.6)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 647cf865a4ef8f067defffbfed74e001f4d00039
+  revision: d386d9e90b99e7e7b5ef2a30987c170f2692bc42
   branch: 7-0-stable
   specs:
     actioncable (7.0.2.2)
@@ -250,7 +250,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.7.1)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     net-imap (0.2.3)
       digest
@@ -268,10 +268,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.1)
-      mini_portile2 (~> 2.7.0)
+    nokogiri (1.13.2)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.1-x86_64-linux)
+    nokogiri (1.13.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.3.2)
