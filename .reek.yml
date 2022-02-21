@@ -25,6 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
+    - Clockwork
     - CreatedRailsApp::Application
     - DeviseCreateUsers
     - CreateExamples
