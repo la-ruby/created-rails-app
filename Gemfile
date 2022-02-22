@@ -91,3 +91,5 @@ gem "vcr", "~> 6.0", :group => :test, :git => "https://github.com/vcr/vcr", :bra
 gem "clockwork", "~> 3.0", :git => "https://github.com/Rykian/clockwork", :branch => "master"
 
 gem "sendgrid-ruby", ">= 6.6"
+
+gem "rollbar", ">= 3.3"
