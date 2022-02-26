@@ -5712,7 +5712,8 @@
 
       const showEvent = EventHandler.trigger(this._element, this.constructor.eventName(EVENT_SHOW$2));
       const shadowRoot = findShadowRoot(this._element);
-      const isInTheDom = shadowRoot === null ? this._element.ownerDocument.documentElement.contains(this._element) : shadowRoot.contains(this._element);
+
+      const isInTheDom = (shadowRoot || this._element.ownerDocument.documentElement).contains(this._element);
 
       if (showEvent.defaultPrevented || !isInTheDom) {
         return;

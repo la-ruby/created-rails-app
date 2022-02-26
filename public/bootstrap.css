@@ -3409,7 +3409,7 @@ textarea.form-control-lg {
   --bs-dropdown-border-color: rgba(0, 0, 0, 0.15);
   --bs-dropdown-border-radius: 0.25rem;
   --bs-dropdown-border-width: 1px;
-  --bs-dropdown-inner-border: calc(0.25rem - 1px);
+  --bs-dropdown-inner-border-radius: calc(0.25rem - 1px);
   --bs-dropdown-divider-bg: rgba(0, 0, 0, 0.15);
   --bs-dropdown-divider-margin-y: 0.5rem;
   --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -3622,7 +3622,7 @@ textarea.form-control-lg {
 
 .dropdown-divider {
   height: 0;
-  margin: 0.5rem 0;
+  margin: var(--bs-dropdown-divider-margin-y) 0;
   overflow: hidden;
   border-top: 1px solid var(--bs-dropdown-divider-bg);
 }
@@ -5326,6 +5326,8 @@ textarea.form-control-lg {
 }
 
 .toast-container {
+  position: absolute;
+  z-index: 1090;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;

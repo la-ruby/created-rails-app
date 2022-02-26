@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: 025b1c873491908b346e4d394f54481ec18fb02c
+  revision: 451ff6d49c71e543962d2b29d77f2e744b2d47e1
   branch: main
   specs:
     devise (4.8.1)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 1f63d2707aa6fca5b9fd21446faca6eede41e10e
+  revision: f41a26e60e2f80e464a61d1ab5c1940688aabd65
   branch: 7-0-stable
   specs:
     actioncable (7.0.2.2)
@@ -202,7 +202,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.558.0)
+    aws-partitions (1.559.0)
     aws-sdk-core (3.127.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
