@@ -6902,23 +6902,23 @@ textarea.form-control-lg {
 }
 
 .border-1 {
-  --bs-border: 1px;
+  --bs-border-width: 1px;
 }
 
 .border-2 {
-  --bs-border: 2px;
+  --bs-border-width: 2px;
 }
 
 .border-3 {
-  --bs-border: 3px;
+  --bs-border-width: 3px;
 }
 
 .border-4 {
-  --bs-border: 4px;
+  --bs-border-width: 4px;
 }
 
 .border-5 {
-  --bs-border: 5px;
+  --bs-border-width: 5px;
 }
 
 .w-25 {
