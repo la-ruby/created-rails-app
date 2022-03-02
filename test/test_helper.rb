@@ -8,7 +8,6 @@ Dir[File.expand_path('support/**/*.rb', __dir__)].sort.each { |rb| require(rb) }
 
 class ActiveSupport::TestCase
   include FactoryBot::Syntax::Methods
-
   include Devise::Test::IntegrationHelpers
 
   # Run tests in parallel with specified workers
