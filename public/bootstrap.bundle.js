@@ -1476,7 +1476,7 @@
     }
 
     _getItemIndex(element) {
-      this._items = element && element.parentNode ? SelectorEngine.find(SELECTOR_ITEM, element.parentNode) : [];
+      this._items = SelectorEngine.find(SELECTOR_ITEM, this._element);
       return this._items.indexOf(element);
     }
 
@@ -1635,62 +1635,34 @@
     } // Static
 
 
-    static carouselInterface(element, config) {
-      const data = Carousel.getOrCreateInstance(element, config);
-      let {
-        _config
-      } = data;
-
-      if (typeof config === 'object') {
-        _config = { ..._config,
-          ...config
-        };
-      }
-
-      const action = typeof config === 'string' ? config : _config.slide;
-
-      if (typeof config === 'number') {
-        data.to(config);
-      } else if (typeof action === 'string') {
-        if (typeof data[action] === 'undefined') {
-          throw new TypeError(`No method named "${action}"`);
-        }
-
-        data[action]();
-      } else if (_config.interval && _config.ride) {
-        data.pause();
-        data.cycle();
-      }
-    }
-
     static jQueryInterface(config) {
       return this.each(function () {
-        Carousel.carouselInterface(this, config);
+        const data = Carousel.getOrCreateInstance(this, config);
+        let {
+          _config
+        } = data;
+
+        if (typeof config === 'object') {
+          _config = { ..._config,
+            ...config
+          };
+        }
+
+        const action = typeof config === 'string' ? config : _config.slide;
+
+        if (typeof config === 'number') {
+          data.to(config);
+        } else if (typeof action === 'string') {
+          if (typeof data[action] === 'undefined') {
+            throw new TypeError(`No method named "${action}"`);
+          }
+
+          data[action]();
+        } else if (_config.interval && _config.ride) {
+          data.pause();
+          data.cycle();
+        }
       });
-    }
-
-    static dataApiClickHandler(event) {
-      const target = getElementFromSelector(this);
-
-      if (!target || !target.classList.contains(CLASS_NAME_CAROUSEL)) {
-        return;
-      }
-
-      const config = { ...Manipulator.getDataAttributes(this)
-      };
-      const slideIndex = this.getAttribute('data-bs-slide-to');
-
-      if (slideIndex) {
-        config.interval = false;
-      }
-
-      Carousel.carouselInterface(target, config);
-
-      if (slideIndex) {
-        Carousel.getInstance(target).to(slideIndex);
-      }
-
-      event.preventDefault();
     }
 
   }
@@ -1699,7 +1671,29 @@
    */
 
 
-  EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, Carousel.dataApiClickHandler);
+  EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, function (event) {
+    const target = getElementFromSelector(this);
+
+    if (!target || !target.classList.contains(CLASS_NAME_CAROUSEL)) {
+      return;
+    }
+
+    event.preventDefault();
+    const carousel = Carousel.getOrCreateInstance(target);
+    const slideIndex = this.getAttribute('data-bs-slide-to');
+
+    if (slideIndex) {
+      carousel.to(slideIndex);
+      return;
+    }
+
+    if (Manipulator.getDataAttribute(this, 'slide') === 'next') {
+      carousel.next();
+      return;
+    }
+
+    carousel.prev();
+  });
   EventHandler.on(window, EVENT_LOAD_DATA_API$2, () => {
     const carousels = SelectorEngine.find(SELECTOR_DATA_RIDE);
 
@@ -3865,8 +3859,6 @@
   const CLASS_NAME_DROPUP = 'dropup';
   const CLASS_NAME_DROPEND = 'dropend';
   const CLASS_NAME_DROPSTART = 'dropstart';
-  const CLASS_NAME_DROPUP_CENTER = 'dropup-center';
-  const CLASS_NAME_DROPDOWN_CENTER = 'dropdown-center';
   const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]:not(.disabled):not(:disabled)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE$3}.${CLASS_NAME_SHOW$6}`;
   const SELECTOR_MENU = '.dropdown-menu';
@@ -3879,8 +3871,6 @@
   const PLACEMENT_BOTTOMEND = isRTL() ? 'bottom-start' : 'bottom-end';
   const PLACEMENT_RIGHT = isRTL() ? 'left-start' : 'right-start';
   const PLACEMENT_LEFT = isRTL() ? 'right-start' : 'left-start';
-  const PLACEMENT_TOPCENTER = 'top';
-  const PLACEMENT_BOTTOMCENTER = 'bottom';
   const Default$9 = {
     offset: [0, 2],
     boundary: 'clippingParents',
@@ -4068,14 +4058,6 @@
 
       if (parentDropdown.classList.contains(CLASS_NAME_DROPSTART)) {
         return PLACEMENT_LEFT;
-      }
-
-      if (parentDropdown.classList.contains(CLASS_NAME_DROPUP_CENTER)) {
-        return PLACEMENT_TOPCENTER;
-      }
-
-      if (parentDropdown.classList.contains(CLASS_NAME_DROPDOWN_CENTER)) {
-        return PLACEMENT_BOTTOMCENTER;
       } // We need to trim the value because custom properties can also include spaces
 
 
@@ -4209,40 +4191,27 @@
     }
 
     static dataApiKeydownHandler(event) {
-      // If not input/textarea:
-      //  - And not a key in UP | DOWN | ESCAPE => not a dropdown command
-      // If input/textarea && If key is other than ESCAPE
-      //    - If key is not UP or DOWN => not a dropdown command
-      //    - If trigger inside the menu => not a dropdown command
-      const {
-        target,
-        key,
-        delegateTarget
-      } = event;
-      const isInput = /input|textarea/i.test(target.tagName);
-      const isEscapeEvent = key === ESCAPE_KEY$2;
-      const isUpOrDownEvent = [ARROW_UP_KEY, ARROW_DOWN_KEY].includes(key);
+      // If not an UP | DOWN | ESCAPE key => not a dropdown command
+      // If input/textarea && if key is other than ESCAPE => not a dropdown command
+      const isInput = /input|textarea/i.test(event.target.tagName);
+      const isEscapeEvent = event.key === ESCAPE_KEY$2;
+      const isUpOrDownEvent = [ARROW_UP_KEY, ARROW_DOWN_KEY].includes(event.key);
 
-      if (!isInput && !(isUpOrDownEvent || isEscapeEvent)) {
+      if (!isUpOrDownEvent && !isEscapeEvent) {
         return;
       }
 
       if (isInput && !isEscapeEvent) {
-        // eslint-disable-next-line unicorn/no-lonely-if
-        if (!isUpOrDownEvent || target.closest(SELECTOR_MENU)) {
-          return;
-        }
-      }
-
-      const isActive = delegateTarget.classList.contains(CLASS_NAME_SHOW$6);
-
-      if (!isActive && isEscapeEvent) {
         return;
       }
 
       event.preventDefault();
-      event.stopPropagation();
-      const getToggleButton = SelectorEngine.findOne(SELECTOR_DATA_TOGGLE$3, delegateTarget.parentNode);
+
+      if (!isEscapeEvent) {
+        event.stopPropagation();
+      }
+
+      const getToggleButton = SelectorEngine.findOne(SELECTOR_DATA_TOGGLE$3, event.delegateTarget.parentNode);
       const instance = Dropdown.getOrCreateInstance(getToggleButton);
 
       if (isEscapeEvent) {
@@ -4251,11 +4220,9 @@
         return;
       }
 
-      if (isUpOrDownEvent) {
-        instance.show();
+      instance.show();
 
-        instance._selectMenuItem(event);
-      }
+      instance._selectMenuItem(event);
     }
 
   }
@@ -4668,7 +4635,7 @@
   const DATA_API_KEY$3 = '.data-api';
   const ESCAPE_KEY$1 = 'Escape';
   const EVENT_HIDE$4 = `hide${EVENT_KEY$4}`;
-  const EVENT_HIDE_PREVENTED = `hidePrevented${EVENT_KEY$4}`;
+  const EVENT_HIDE_PREVENTED$1 = `hidePrevented${EVENT_KEY$4}`;
   const EVENT_HIDDEN$4 = `hidden${EVENT_KEY$4}`;
   const EVENT_SHOW$4 = `show${EVENT_KEY$4}`;
   const EVENT_SHOWN$4 = `shown${EVENT_KEY$4}`;
@@ -4706,6 +4673,8 @@
       this._isShown = false;
       this._isTransitioning = false;
       this._scrollBar = new ScrollBarHelper();
+
+      this._addEventListeners();
     } // Getters
 
 
@@ -4748,10 +4717,6 @@
 
       this._adjustDialog();
 
-      this._toggleEscapeEventListener(true);
-
-      this._toggleResizeEventListener(true);
-
       this._backdrop.show(() => this._showElement(relatedTarget));
     }
 
@@ -4768,10 +4733,6 @@
 
       this._isShown = false;
       this._isTransitioning = true;
-
-      this._toggleEscapeEventListener(false);
-
-      this._toggleResizeEventListener(false);
 
       this._focustrap.deactivate();
 
@@ -4862,12 +4823,7 @@
       this._queueCallback(transitionComplete, this._dialog, this._isAnimated());
     }
 
-    _toggleEscapeEventListener(enable) {
-      if (!enable) {
-        EventHandler.off(this._element, EVENT_KEYDOWN_DISMISS$1);
-        return;
-      }
-
+    _addEventListeners() {
       EventHandler.on(this._element, EVENT_KEYDOWN_DISMISS$1, event => {
         if (event.key !== ESCAPE_KEY$1) {
           return;
@@ -4881,15 +4837,11 @@
 
         this._triggerBackdropTransition();
       });
-    }
-
-    _toggleResizeEventListener(enable) {
-      if (enable) {
-        EventHandler.on(window, EVENT_RESIZE, () => this._adjustDialog());
-        return;
-      }
-
-      EventHandler.off(window, EVENT_RESIZE);
+      EventHandler.on(window, EVENT_RESIZE, () => {
+        if (this._isShown && !this._isTransitioning) {
+          this._adjustDialog();
+        }
+      });
     }
 
     _hideModal() {
@@ -4919,7 +4871,7 @@
     }
 
     _triggerBackdropTransition() {
-      const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE_PREVENTED);
+      const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE_PREVENTED$1);
 
       if (hideEvent.defaultPrevented) {
         return;
@@ -5059,6 +5011,7 @@
   const EVENT_SHOW$3 = `show${EVENT_KEY$3}`;
   const EVENT_SHOWN$3 = `shown${EVENT_KEY$3}`;
   const EVENT_HIDE$3 = `hide${EVENT_KEY$3}`;
+  const EVENT_HIDE_PREVENTED = `hidePrevented${EVENT_KEY$3}`;
   const EVENT_HIDDEN$3 = `hidden${EVENT_KEY$3}`;
   const EVENT_CLICK_DATA_API$1 = `click${EVENT_KEY$3}${DATA_API_KEY$2}`;
   const EVENT_KEYDOWN_DISMISS = `keydown.dismiss${EVENT_KEY$3}`;
@@ -5069,7 +5022,7 @@
     scroll: false
   };
   const DefaultType$5 = {
-    backdrop: 'boolean',
+    backdrop: '(boolean|string)',
     keyboard: 'boolean',
     scroll: 'boolean'
   };
@@ -5197,12 +5150,23 @@
 
 
     _initializeBackDrop() {
+      const clickCallback = () => {
+        if (this._config.backdrop === 'static') {
+          EventHandler.trigger(this._element, EVENT_HIDE_PREVENTED);
+          return;
+        }
+
+        this.hide();
+      }; // 'static' option will be translated to true, and booleans will keep their value
+
+
+      const isVisible = Boolean(this._config.backdrop);
       return new Backdrop({
         className: CLASS_NAME_BACKDROP,
-        isVisible: this._config.backdrop,
+        isVisible,
         isAnimated: true,
         rootElement: this._element.parentNode,
-        clickCallback: () => this.hide()
+        clickCallback: isVisible ? clickCallback : null
       });
     }
 
@@ -5214,9 +5178,16 @@
 
     _addEventListeners() {
       EventHandler.on(this._element, EVENT_KEYDOWN_DISMISS, event => {
-        if (this._config.keyboard && event.key === ESCAPE_KEY) {
-          this.hide();
+        if (event.key !== ESCAPE_KEY) {
+          return;
         }
+
+        if (!this._config.keyboard) {
+          EventHandler.trigger(this._element, EVENT_HIDE_PREVENTED);
+          return;
+        }
+
+        this.hide();
       });
     } // Static
 
