@@ -27,10 +27,10 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 8cb62c6ad1076c932220e1063e5d4e90840ed6b9
+  revision: 3d2e585218365a468cb995da29881f05b778b93c
   branch: master
   specs:
-    faker (2.19.0)
+    faker (2.20.0)
       i18n (>= 1.8.11, < 2)
 
 GIT
@@ -56,7 +56,7 @@ GIT
 
 GIT
   remote: https://github.com/kaminari/kaminari
-  revision: c7a7bb181b351aedd6eeb8d464c3b6577f59fffb
+  revision: 2f0e0728f511e2807cc7ea5b7c81ee71c7c378e8
   branch: master
   specs:
     kaminari (1.2.2)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 4656c1a8f2e8665ecb3feeac1973d6d5439e26bb
+  revision: bb951da827ff7e1bd62f700f2564c19a72a57b97
   branch: 7-0-stable
   specs:
     actioncable (7.0.2.2)
@@ -370,7 +370,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8)!
   factory_bot_rails (~> 6.2)!
-  faker (~> 2.19)!
+  faker (~> 2.20)!
   importmap-rails
   jbuilder
   kaminari (~> 1.2)!
