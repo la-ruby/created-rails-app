@@ -61,6 +61,7 @@
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-radius: 0.25rem;
+  --bs-border-opacity: 1;
 }
 
 *,
