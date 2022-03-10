@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: ae565e5980c07c72d78a4c742ce2b876370a4ea0
+  revision: dd494f199f70db1641d9cbfeeafeb9e79fdaea9b
   branch: 7-0-stable
   specs:
     actioncable (7.0.2.3)
@@ -202,7 +202,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.564.0)
+    aws-partitions (1.565.0)
     aws-sdk-core (3.129.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -313,13 +313,13 @@ GEM
       railties (>= 5.0)
     rexml (3.2.5)
     rollbar (3.3.0)
-    ruby_http_client (3.5.4)
+    ruby_http_client (3.5.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    sendgrid-ruby (6.6.1)
+    sendgrid-ruby (6.6.2)
       ruby_http_client (~> 3.4)
     simplecov (0.21.2)
       docile (~> 1.1)
@@ -397,4 +397,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.3.8
+   2.3.9
