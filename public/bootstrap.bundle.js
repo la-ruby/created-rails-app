@@ -1272,7 +1272,6 @@
   const SELECTOR_ITEM = '.carousel-item';
   const SELECTOR_ACTIVE_ITEM = SELECTOR_ACTIVE$1 + SELECTOR_ITEM;
   const SELECTOR_ITEM_IMG = '.carousel-item img';
-  const SELECTOR_NEXT_PREV = '.carousel-item-next, .carousel-item-prev';
   const SELECTOR_INDICATORS = '.carousel-indicators';
   const SELECTOR_DATA_SLIDE = '[data-bs-slide], [data-bs-slide-to]';
   const SELECTOR_DATA_RIDE = '[data-bs-ride="carousel"]';
@@ -1305,7 +1304,7 @@
       super(element, config);
       this._interval = null;
       this._activeElement = null;
-      this._isPaused = false;
+      this._stayPaused = false;
       this._isSliding = false;
       this.touchTimeout = null;
       this._swipeHelper = null;
@@ -1347,10 +1346,10 @@
 
     pause(event) {
       if (!event) {
-        this._isPaused = true;
+        this._stayPaused = true;
       }
 
-      if (SelectorEngine.findOne(SELECTOR_NEXT_PREV, this._element)) {
+      if (this._isSliding) {
         triggerTransitionEnd(this._element);
         this.cycle(true);
       }
@@ -1360,12 +1359,12 @@
 
     cycle(event) {
       if (!event) {
-        this._isPaused = false;
+        this._stayPaused = false;
       }
 
       this._clearInterval();
 
-      if (this._config.interval && !this._isPaused) {
+      if (this._config.interval && !this._stayPaused) {
         this._updateInterval();
 
         this._interval = setInterval(() => this.nextWhenVisible(), this._config.interval);
@@ -1538,6 +1537,7 @@
 
       if (!activeElement || !nextElement) {
         // Some weirdness is happening, so we bail
+        // todo: change tests that use empty divs to avoid this check
         return;
       }
 
@@ -1593,10 +1593,6 @@
     }
 
     _directionToOrder(direction) {
-      if (![DIRECTION_RIGHT, DIRECTION_LEFT].includes(direction)) {
-        return direction;
-      }
-
       if (isRTL()) {
         return direction === DIRECTION_LEFT ? ORDER_PREV : ORDER_NEXT;
       }
@@ -1605,10 +1601,6 @@
     }
 
     _orderToDirection(order) {
-      if (![ORDER_NEXT, ORDER_PREV].includes(order)) {
-        return order;
-      }
-
       if (isRTL()) {
         return order === ORDER_PREV ? DIRECTION_LEFT : DIRECTION_RIGHT;
       }
@@ -1620,15 +1612,6 @@
     static jQueryInterface(config) {
       return this.each(function () {
         const data = Carousel.getOrCreateInstance(this, config);
-        let {
-          _config
-        } = data;
-
-        if (typeof config === 'object') {
-          _config = { ..._config,
-            ...config
-          };
-        }
 
         if (typeof config === 'number') {
           data.to(config);
@@ -1644,7 +1627,7 @@
           return;
         }
 
-        if (_config.interval && _config.ride) {
+        if (data._config.interval && data._config.ride) {
           data.pause();
           data.cycle();
         }

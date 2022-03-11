@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 9f1c0ba43fad5739e183c3758dac243b819ef945
+  revision: e4a90c3052aec36c568ed0a0cc13d5c5be14af3c
   branch: master
   specs:
     faker (2.20.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: dd494f199f70db1641d9cbfeeafeb9e79fdaea9b
+  revision: 64ad40e888ed844fd6076efbf2ac194936aafc7d
   branch: 7-0-stable
   specs:
     actioncable (7.0.2.3)
@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/varvet/pundit
-  revision: d569083cdabdf10e935dcb79f982516bcf6e46e0
+  revision: 74536478d6c08334628a509aa272f92fe8334257
   branch: main
   specs:
     pundit (2.2.0)
@@ -202,8 +202,8 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.565.0)
-    aws-sdk-core (3.129.0)
+    aws-partitions (1.566.0)
+    aws-sdk-core (3.129.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -291,7 +291,7 @@ GEM
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.3.3)
+    pg (1.3.4)
     public_suffix (4.0.6)
     puma (5.6.2)
       nio4r (~> 2.0)
