@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: e3b67a0542c2287a69e75431db9b586543dea46a
+  revision: a9f4982504315ea2a30e79d4042ef6f2ec2d36b7
   branch: 7-0-stable
   specs:
     actioncable (7.0.2.3)
@@ -183,10 +183,10 @@ GIT
 
 GIT
   remote: https://github.com/vcr/vcr
-  revision: 7ac8292c289ca98dcb4254b59e1ee29e2205d8b3
+  revision: 042fae33555eac5296b7de786c59db7b2bf10183
   branch: master
   specs:
-    vcr (6.0.0)
+    vcr (6.1.0)
 
 GIT
   remote: https://github.com/y-yagi/minitest-test_profile
@@ -388,7 +388,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails!
   tzinfo-data
-  vcr (~> 6.0)!
+  vcr (~> 6.1)!
   web-console
   webdrivers
   webmock (~> 3.14)!
