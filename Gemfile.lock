@@ -47,7 +47,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 2a2a5ec12e4233cf33e5d3f0a6855834f4e5e4ec
+  revision: 66ca1d7758ab271f3747a79a3a9be8a159357782
   branch: main
   specs:
     turbo-rails (1.0.1)
@@ -234,7 +234,7 @@ GEM
     crack (0.4.5)
       rexml
     crass (1.0.6)
-    debug (1.4.0)
+    debug (1.5.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     digest (3.1.0)
@@ -293,7 +293,7 @@ GEM
     orm_adapter (0.5.0)
     pg (1.3.4)
     public_suffix (4.0.6)
-    puma (5.6.2)
+    puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
