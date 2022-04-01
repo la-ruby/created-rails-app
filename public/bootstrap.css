@@ -60,7 +60,6 @@
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: rgba(0, 0, 0, 0.15);
-  --bs-border-radius: 0.375rem;
   --bs-border-opacity: 1;
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
@@ -4753,8 +4752,8 @@ textarea.form-control-lg {
 }
 .breadcrumb-item + .breadcrumb-item::before {
   float: left;
-  padding-right: 0.5rem;
-  color: #6c757d;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: var(--bs-breadcrumb-divider-color);
   content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
