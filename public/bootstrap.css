@@ -372,8 +372,8 @@ select:disabled {
   opacity: 1;
 }
 
-[list]::-webkit-calendar-picker-indicator {
-  display: none;
+[list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
+  display: none !important;
 }
 
 button,
@@ -3988,22 +3988,16 @@ textarea.form-control-lg {
 }
 
 .navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-}
-.navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-  color: var(--bs-navbar-color);
-}
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
-  color: var(--bs-navbar-hover-color);
-}
-.navbar-nav .nav-link.disabled {
-  color: var(--bs-navbar-disabled-color);
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
@@ -5931,6 +5925,7 @@ textarea.form-control-lg {
   --bs-popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
+  --bs-popover-header-font-size: 1rem;
   --bs-popover-header-color: var(--bs-heading-color);
   --bs-popover-header-bg: #f0f0f0;
   --bs-popover-body-padding-x: 1rem;
@@ -6062,7 +6057,7 @@ textarea.form-control-lg {
 .popover-header {
   padding: var(--bs-popover-header-padding-y) var(--bs-popover-header-padding-x);
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: var(--bs-popover-header-font-size);
   color: var(--bs-popover-header-color);
   background-color: var(--bs-popover-header-bg);
   border-bottom: var(--bs-popover-border-width) solid var(--bs-popover-border-color);

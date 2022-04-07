@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 91950218dd39119e420ca431fc9fae09b53986c7
+  revision: a7cbf1b5e8caa0d537faef57c00958767b2be59f
   branch: master
   specs:
     faker (2.20.0)
@@ -202,7 +202,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.573.0)
+    aws-partitions (1.574.0)
     aws-sdk-core (3.130.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
