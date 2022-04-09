@@ -1990,7 +1990,7 @@ progress {
 }
 
 .table-group-divider {
-  border-top: 2px solid currentColor;
+  border-top: 2px solid currentcolor;
 }
 
 .caption-top {
@@ -6344,7 +6344,7 @@ textarea.form-control-lg {
   --bs-spinner-vertical-align: -0.125em;
   --bs-spinner-animation-speed: 0.75s;
   --bs-spinner-animation-name: spinner-grow;
-  background-color: currentColor;
+  background-color: currentcolor;
   opacity: 0;
 }
 
@@ -6464,7 +6464,7 @@ textarea.form-control-lg {
   min-height: 1em;
   vertical-align: middle;
   cursor: wait;
-  background-color: currentColor;
+  background-color: currentcolor;
   opacity: 0.5;
 }
 .placeholder.btn::before {
@@ -6770,7 +6770,7 @@ textarea.form-control-lg {
   align-self: stretch;
   width: 1px;
   min-height: 1em;
-  background-color: currentColor;
+  background-color: currentcolor;
   opacity: 0.25;
 }
 
