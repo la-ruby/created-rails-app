@@ -700,21 +700,6 @@
 
     getDataAttribute(element, key) {
       return normalizeData(element.getAttribute(`data-bs-${normalizeDataKey(key)}`));
-    },
-
-    offset(element) {
-      const rect = element.getBoundingClientRect();
-      return {
-        top: rect.top + window.pageYOffset,
-        left: rect.left + window.pageXOffset
-      };
-    },
-
-    position(element) {
-      return {
-        top: element.offsetTop,
-        left: element.offsetLeft
-      };
     }
 
   };
@@ -4191,27 +4176,24 @@
       }
 
       event.preventDefault();
-
-      if (!isEscapeEvent) {
-        event.stopPropagation();
-      }
-
       const getToggleButton = SelectorEngine.findOne(SELECTOR_DATA_TOGGLE$3, event.delegateTarget.parentNode);
       const instance = Dropdown.getOrCreateInstance(getToggleButton);
 
-      if (isEscapeEvent) {
-        if (getToggleButton.classList.contains(CLASS_NAME_SHOW$6)) {
-          instance.hide();
-          getToggleButton.focus();
-          event.stopPropagation();
-        }
+      if (isUpOrDownEvent) {
+        event.stopPropagation();
+        instance.show();
+
+        instance._selectMenuItem(event);
 
         return;
       }
 
-      instance.show();
-
-      instance._selectMenuItem(event);
+      if (instance._isShown()) {
+        // else is escape and we check if it is shown
+        event.stopPropagation();
+        instance.hide();
+        getToggleButton.focus();
+      }
     }
 
   }
@@ -5532,7 +5514,7 @@
   const EVENT_SHOW$2 = 'show';
   const EVENT_SHOWN$2 = 'shown';
   const EVENT_INSERTED = 'inserted';
-  const EVENT_CLICK = 'click';
+  const EVENT_CLICK$1 = 'click';
   const EVENT_FOCUSIN$1 = 'focusin';
   const EVENT_FOCUSOUT$1 = 'focusout';
   const EVENT_MOUSEENTER = 'mouseenter';
@@ -5946,7 +5928,7 @@
 
       for (const trigger of triggers) {
         if (trigger === 'click') {
-          EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK), this._config.selector, event => this.toggle(event));
+          EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK$1), this._config.selector, event => this.toggle(event));
         } else if (trigger !== TRIGGER_MANUAL) {
           const eventIn = trigger === TRIGGER_HOVER ? this.constructor.eventName(EVENT_MOUSEENTER) : this.constructor.eventName(EVENT_FOCUSIN$1);
           const eventOut = trigger === TRIGGER_HOVER ? this.constructor.eventName(EVENT_MOUSELEAVE) : this.constructor.eventName(EVENT_FOCUSOUT$1);
@@ -6227,29 +6209,32 @@
   const EVENT_KEY$2 = `.${DATA_KEY$2}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_ACTIVATE = `activate${EVENT_KEY$2}`;
-  const EVENT_SCROLL = `scroll${EVENT_KEY$2}`;
+  const EVENT_CLICK = `click${EVENT_KEY$2}`;
   const EVENT_LOAD_DATA_API$1 = `load${EVENT_KEY$2}${DATA_API_KEY}`;
   const CLASS_NAME_DROPDOWN_ITEM = 'dropdown-item';
   const CLASS_NAME_ACTIVE$1 = 'active';
   const SELECTOR_DATA_SPY = '[data-bs-spy="scroll"]';
+  const SELECTOR_TARGET_LINKS = '[href]';
   const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
   const SELECTOR_NAV_LINKS = '.nav-link';
   const SELECTOR_NAV_ITEMS = '.nav-item';
   const SELECTOR_LIST_ITEMS = '.list-group-item';
-  const SELECTOR_LINK_ITEMS = `${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}, .${CLASS_NAME_DROPDOWN_ITEM}`;
+  const SELECTOR_LINK_ITEMS = `${SELECTOR_NAV_LINKS}, ${SELECTOR_NAV_ITEMS} > ${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}`;
   const SELECTOR_DROPDOWN = '.dropdown';
   const SELECTOR_DROPDOWN_TOGGLE$1 = '.dropdown-toggle';
-  const METHOD_OFFSET = 'offset';
-  const METHOD_POSITION = 'position';
   const Default$1 = {
-    offset: 10,
-    method: 'auto',
-    target: ''
+    offset: null,
+    // TODO: v6 @deprecated, keep it for backwards compatibility reasons
+    rootMargin: '0px 0px -25%',
+    smoothScroll: false,
+    target: null
   };
   const DefaultType$1 = {
-    offset: 'number',
-    method: 'string',
-    target: '(string|element)'
+    offset: '(number|null)',
+    // TODO v6 @deprecated, keep it for backwards compatibility reasons
+    rootMargin: 'string',
+    smoothScroll: 'boolean',
+    target: 'element'
   };
   /**
    * Class definition
@@ -6257,16 +6242,18 @@
 
   class ScrollSpy extends BaseComponent {
     constructor(element, config) {
-      super(element, config);
-      this._scrollElement = this._element.tagName === 'BODY' ? window : this._element;
-      this._offsets = [];
-      this._targets = [];
-      this._activeTarget = null;
-      this._scrollHeight = 0;
-      EventHandler.on(this._scrollElement, EVENT_SCROLL, () => this._process());
-      this.refresh();
+      super(element, config); // this._element is the observablesContainer and config.target the menu links wrapper
 
-      this._process();
+      this._targetLinks = new Map();
+      this._observableSections = new Map();
+      this._rootElement = getComputedStyle(this._element).overflowY === 'visible' ? null : this._element;
+      this._activeTarget = null;
+      this._observer = null;
+      this._previousScrollData = {
+        visibleEntryTop: 0,
+        parentScrollTop: 0
+      };
+      this.refresh(); // initialize
     } // Getters
 
 
@@ -6284,127 +6271,175 @@
 
 
     refresh() {
-      this._offsets = [];
-      this._targets = [];
-      this._scrollHeight = this._getScrollHeight();
-      const autoMethod = this._scrollElement === this._scrollElement.window ? METHOD_OFFSET : METHOD_POSITION;
-      const offsetMethod = this._config.method === 'auto' ? autoMethod : this._config.method;
-      const offsetBase = offsetMethod === METHOD_POSITION ? this._getScrollTop() : 0;
-      const targets = SelectorEngine.find(SELECTOR_LINK_ITEMS, this._config.target).map(element => {
-        const targetSelector = getSelectorFromElement(element);
-        const target = targetSelector ? SelectorEngine.findOne(targetSelector) : null;
+      this._initializeTargetsAndObservables();
 
-        if (!target) {
-          return null;
-        }
+      this._maybeEnableSmoothScroll();
 
-        const targetBCR = target.getBoundingClientRect();
-        return targetBCR.width || targetBCR.height ? [Manipulator[offsetMethod](target).top + offsetBase, targetSelector] : null;
-      }).filter(Boolean).sort((a, b) => a[0] - b[0]);
+      if (this._observer) {
+        this._observer.disconnect();
+      } else {
+        this._observer = this._getNewObserver();
+      }
 
-      for (const target of targets) {
-        this._offsets.push(target[0]);
-
-        this._targets.push(target[1]);
+      for (const section of this._observableSections.values()) {
+        this._observer.observe(section);
       }
     }
 
     dispose() {
-      EventHandler.off(this._scrollElement, EVENT_KEY$2);
+      this._observer.disconnect();
+
       super.dispose();
     } // Private
 
 
     _configAfterMerge(config) {
-      config.target = getElement(config.target) || document.documentElement;
+      // TODO: on v6 target should be given explicitly & remove the {target: 'ss-target'} case
+      config.target = getElement(config.target) || document.body;
       return config;
     }
 
-    _getScrollTop() {
-      return this._scrollElement === window ? this._scrollElement.pageYOffset : this._scrollElement.scrollTop;
+    _maybeEnableSmoothScroll() {
+      if (!this._config.smoothScroll) {
+        return;
+      } // unregister any previous listeners
+
+
+      EventHandler.off(this._config.target, EVENT_CLICK);
+      EventHandler.on(this._config.target, EVENT_CLICK, SELECTOR_TARGET_LINKS, event => {
+        const observableSection = this._observableSections.get(event.target.hash);
+
+        if (observableSection) {
+          event.preventDefault();
+          const root = this._rootElement || window;
+          const height = observableSection.offsetTop - this._element.offsetTop;
+
+          if (root.scrollTo) {
+            root.scrollTo({
+              top: height
+            });
+            return;
+          } // Chrome 60 doesn't support `scrollTo`
+
+
+          root.scrollTop = height;
+        }
+      });
     }
 
-    _getScrollHeight() {
-      return this._scrollElement.scrollHeight || Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-    }
+    _getNewObserver() {
+      const options = {
+        root: this._rootElement,
+        threshold: [0.1, 0.5, 1],
+        rootMargin: this._getRootMargin()
+      };
+      return new IntersectionObserver(entries => this._observerCallback(entries), options);
+    } // The logic of selection
 
-    _getOffsetHeight() {
-      return this._scrollElement === window ? window.innerHeight : this._scrollElement.getBoundingClientRect().height;
-    }
 
-    _process() {
-      const scrollTop = this._getScrollTop() + this._config.offset;
+    _observerCallback(entries) {
+      const targetElement = entry => this._targetLinks.get(`#${entry.target.id}`);
 
-      const scrollHeight = this._getScrollHeight();
+      const activate = entry => {
+        this._previousScrollData.visibleEntryTop = entry.target.offsetTop;
 
-      const maxScroll = this._config.offset + scrollHeight - this._getOffsetHeight();
+        this._process(targetElement(entry));
+      };
 
-      if (this._scrollHeight !== scrollHeight) {
-        this.refresh();
-      }
+      const parentScrollTop = (this._rootElement || document.documentElement).scrollTop;
+      const userScrollsDown = parentScrollTop >= this._previousScrollData.parentScrollTop;
+      this._previousScrollData.parentScrollTop = parentScrollTop;
 
-      if (scrollTop >= maxScroll) {
-        const target = this._targets[this._targets.length - 1];
+      for (const entry of entries) {
+        if (!entry.isIntersecting) {
+          this._activeTarget = null;
 
-        if (this._activeTarget !== target) {
-          this._activate(target);
+          this._clearActiveClass(targetElement(entry));
+
+          continue;
         }
 
-        return;
-      }
+        const entryIsLowerThanPrevious = entry.target.offsetTop >= this._previousScrollData.visibleEntryTop; // if we are scrolling down, pick the bigger offsetTop
 
-      if (this._activeTarget && scrollTop < this._offsets[0] && this._offsets[0] > 0) {
-        this._activeTarget = null;
+        if (userScrollsDown && entryIsLowerThanPrevious) {
+          activate(entry); // if parent isn't scrolled, let's keep the first visible item, breaking the iteration
 
-        this._clear();
-
-        return;
-      }
-
-      for (const i of this._offsets.keys()) {
-        const isActiveTarget = this._activeTarget !== this._targets[i] && scrollTop >= this._offsets[i] && (typeof this._offsets[i + 1] === 'undefined' || scrollTop < this._offsets[i + 1]);
-
-        if (isActiveTarget) {
-          this._activate(this._targets[i]);
-        }
-      }
-    }
-
-    _activate(target) {
-      this._activeTarget = target;
-
-      this._clear();
-
-      const queries = SELECTOR_LINK_ITEMS.split(',').map(selector => `${selector}[data-bs-target="${target}"],${selector}[href="${target}"]`);
-      const link = SelectorEngine.findOne(queries.join(','), this._config.target);
-      link.classList.add(CLASS_NAME_ACTIVE$1);
-
-      if (link.classList.contains(CLASS_NAME_DROPDOWN_ITEM)) {
-        SelectorEngine.findOne(SELECTOR_DROPDOWN_TOGGLE$1, link.closest(SELECTOR_DROPDOWN)).classList.add(CLASS_NAME_ACTIVE$1);
-      } else {
-        for (const listGroup of SelectorEngine.parents(link, SELECTOR_NAV_LIST_GROUP)) {
-          // Set triggered links parents as active
-          // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
-          for (const item of SelectorEngine.prev(listGroup, `${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}`)) {
-            item.classList.add(CLASS_NAME_ACTIVE$1);
-          } // Handle special case when .nav-link is inside .nav-item
-
-
-          for (const navItem of SelectorEngine.prev(listGroup, SELECTOR_NAV_ITEMS)) {
-            for (const item of SelectorEngine.children(navItem, SELECTOR_NAV_LINKS)) {
-              item.classList.add(CLASS_NAME_ACTIVE$1);
-            }
+          if (!parentScrollTop) {
+            return;
           }
+
+          continue;
+        } // if we are scrolling up, pick the smallest offsetTop
+
+
+        if (!userScrollsDown && !entryIsLowerThanPrevious) {
+          activate(entry);
         }
       }
+    } // TODO: v6 Only for backwards compatibility reasons. Use rootMargin only
 
-      EventHandler.trigger(this._scrollElement, EVENT_ACTIVATE, {
+
+    _getRootMargin() {
+      return this._config.offset ? `${this._config.offset}px 0px -30%` : this._config.rootMargin;
+    }
+
+    _initializeTargetsAndObservables() {
+      this._targetLinks = new Map();
+      this._observableSections = new Map();
+      const targetLinks = SelectorEngine.find(SELECTOR_TARGET_LINKS, this._config.target);
+
+      for (const anchor of targetLinks) {
+        // ensure that the anchor has an id and is not disabled
+        if (!anchor.hash || isDisabled(anchor)) {
+          continue;
+        }
+
+        const observableSection = SelectorEngine.findOne(anchor.hash, this._element); // ensure that the observableSection exists & is visible
+
+        if (isVisible(observableSection)) {
+          this._targetLinks.set(anchor.hash, anchor);
+
+          this._observableSections.set(anchor.hash, observableSection);
+        }
+      }
+    }
+
+    _process(target) {
+      if (this._activeTarget === target) {
+        return;
+      }
+
+      this._clearActiveClass(this._config.target);
+
+      this._activeTarget = target;
+      target.classList.add(CLASS_NAME_ACTIVE$1);
+
+      this._activateParents(target);
+
+      EventHandler.trigger(this._element, EVENT_ACTIVATE, {
         relatedTarget: target
       });
     }
 
-    _clear() {
-      const activeNodes = SelectorEngine.find(SELECTOR_LINK_ITEMS, this._config.target).filter(node => node.classList.contains(CLASS_NAME_ACTIVE$1));
+    _activateParents(target) {
+      // Activate dropdown parents
+      if (target.classList.contains(CLASS_NAME_DROPDOWN_ITEM)) {
+        SelectorEngine.findOne(SELECTOR_DROPDOWN_TOGGLE$1, target.closest(SELECTOR_DROPDOWN)).classList.add(CLASS_NAME_ACTIVE$1);
+        return;
+      }
+
+      for (const listGroup of SelectorEngine.parents(target, SELECTOR_NAV_LIST_GROUP)) {
+        // Set triggered links parents as active
+        // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
+        for (const item of SelectorEngine.prev(listGroup, SELECTOR_LINK_ITEMS)) {
+          item.classList.add(CLASS_NAME_ACTIVE$1);
+        }
+      }
+    }
+
+    _clearActiveClass(parent) {
+      parent.classList.remove(CLASS_NAME_ACTIVE$1);
+      const activeNodes = SelectorEngine.find(`${SELECTOR_TARGET_LINKS}.${CLASS_NAME_ACTIVE$1}`, parent);
 
       for (const node of activeNodes) {
         node.classList.remove(CLASS_NAME_ACTIVE$1);
@@ -6420,7 +6455,7 @@
           return;
         }
 
-        if (typeof data[config] === 'undefined') {
+        if (data[config] === undefined || config.startsWith('_') || config === 'constructor') {
           throw new TypeError(`No method named "${config}"`);
         }
 
@@ -6436,7 +6471,7 @@
 
   EventHandler.on(window, EVENT_LOAD_DATA_API$1, () => {
     for (const spy of SelectorEngine.find(SELECTOR_DATA_SPY)) {
-      new ScrollSpy(spy); // eslint-disable-line no-new
+      ScrollSpy.getOrCreateInstance(spy);
     }
   });
   /**
