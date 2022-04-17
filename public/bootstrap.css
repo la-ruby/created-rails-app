@@ -5061,7 +5061,6 @@ textarea.form-control-lg {
 .list-group {
   --bs-list-group-color: #212529;
   --bs-list-group-bg: #fff;
-  --bs-list-group-hover-bg: #f8f9fa;
   --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
   --bs-list-group-border-width: 1px;
   --bs-list-group-border-radius: 0.375rem;
@@ -5069,6 +5068,7 @@ textarea.form-control-lg {
   --bs-list-group-item-padding-y: 0.5rem;
   --bs-list-group-action-color: #495057;
   --bs-list-group-action-hover-color: #495057;
+  --bs-list-group-action-hover-bg: #f8f9fa;
   --bs-list-group-action-active-color: #212529;
   --bs-list-group-action-active-bg: #e9ecef;
   --bs-list-group-disabled-color: #6c757d;
@@ -5101,7 +5101,7 @@ textarea.form-control-lg {
   z-index: 1;
   color: var(--bs-list-group-action-hover-color);
   text-decoration: none;
-  background-color: var(--bs-list-group-hover-bg);
+  background-color: var(--bs-list-group-action-hover-bg);
 }
 .list-group-item-action:active {
   color: var(--bs-list-group-action-active-color);
