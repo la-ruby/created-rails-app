@@ -4610,7 +4610,7 @@
   const EVENT_HIDDEN$4 = `hidden${EVENT_KEY$4}`;
   const EVENT_SHOW$4 = `show${EVENT_KEY$4}`;
   const EVENT_SHOWN$4 = `shown${EVENT_KEY$4}`;
-  const EVENT_RESIZE = `resize${EVENT_KEY$4}`;
+  const EVENT_RESIZE$1 = `resize${EVENT_KEY$4}`;
   const EVENT_KEYDOWN_DISMISS$1 = `keydown.dismiss${EVENT_KEY$4}`;
   const EVENT_CLICK_DATA_API$2 = `click${EVENT_KEY$4}${DATA_API_KEY$2}`;
   const CLASS_NAME_OPEN = 'modal-open';
@@ -4808,7 +4808,7 @@
 
         this._triggerBackdropTransition();
       });
-      EventHandler.on(window, EVENT_RESIZE, () => {
+      EventHandler.on(window, EVENT_RESIZE$1, () => {
         if (this._isShown && !this._isTransitioning) {
           this._adjustDialog();
         }
@@ -4984,6 +4984,7 @@
   const EVENT_HIDE$3 = `hide${EVENT_KEY$3}`;
   const EVENT_HIDE_PREVENTED = `hidePrevented${EVENT_KEY$3}`;
   const EVENT_HIDDEN$3 = `hidden${EVENT_KEY$3}`;
+  const EVENT_RESIZE = `resize${EVENT_KEY$3}`;
   const EVENT_CLICK_DATA_API$1 = `click${EVENT_KEY$3}${DATA_API_KEY$1}`;
   const EVENT_KEYDOWN_DISMISS = `keydown.dismiss${EVENT_KEY$3}`;
   const SELECTOR_DATA_TOGGLE$1 = '[data-bs-toggle="offcanvas"]';
@@ -5215,6 +5216,13 @@
   EventHandler.on(window, EVENT_LOAD_DATA_API$2, () => {
     for (const selector of SelectorEngine.find(OPEN_SELECTOR)) {
       Offcanvas.getOrCreateInstance(selector).show();
+    }
+  });
+  EventHandler.on(window, EVENT_RESIZE, () => {
+    for (const element of SelectorEngine.find('[aria-modal][class*=show][class*=offcanvas-]')) {
+      if (getComputedStyle(element).position !== 'fixed') {
+        Offcanvas.getOrCreateInstance(element).hide();
+      }
     }
   });
   enableDismissTrigger(Offcanvas);
