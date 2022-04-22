@@ -665,7 +665,15 @@
       return null;
     }
 
-    return value;
+    if (typeof value !== 'string') {
+      return value;
+    }
+
+    try {
+      return JSON.parse(decodeURIComponent(value));
+    } catch (_unused) {
+      return value;
+    }
   }
 
   function normalizeDataKey(key) {
@@ -687,7 +695,7 @@
       }
 
       const attributes = {};
-      const bsKeys = Object.keys(element.dataset).filter(key => key.startsWith('bs'));
+      const bsKeys = Object.keys(element.dataset).filter(key => key.startsWith('bs') && !key.startsWith('bsConfig'));
 
       for (const key of bsKeys) {
         let pureKey = key.replace(/^bs/, '');
@@ -742,7 +750,10 @@
     }
 
     _mergeConfigObj(config, element) {
+      const jsonConfig = isElement$1(element) ? Manipulator.getDataAttribute(element, 'config') : {}; // try to parse
+
       return { ...this.constructor.Default,
+        ...(typeof jsonConfig === 'object' ? jsonConfig : {}),
         ...(isElement$1(element) ? Manipulator.getDataAttributes(element) : {}),
         ...(typeof config === 'object' ? config : {})
       };
@@ -1267,18 +1278,18 @@
   const Default$b = {
     interval: 5000,
     keyboard: true,
-    slide: false,
     pause: 'hover',
-    wrap: true,
-    touch: true
+    ride: false,
+    touch: true,
+    wrap: true
   };
   const DefaultType$b = {
     interval: '(number|boolean)',
     keyboard: 'boolean',
-    slide: '(boolean|string)',
+    ride: '(boolean|string)',
     pause: '(string|boolean)',
-    wrap: 'boolean',
-    touch: 'boolean'
+    touch: 'boolean',
+    wrap: 'boolean'
   };
   /**
    * Class definition
@@ -1289,13 +1300,16 @@
       super(element, config);
       this._interval = null;
       this._activeElement = null;
-      this._stayPaused = false;
       this._isSliding = false;
       this.touchTimeout = null;
       this._swipeHelper = null;
       this._indicatorsElement = SelectorEngine.findOne(SELECTOR_INDICATORS, this._element);
 
       this._addEventListeners();
+
+      if (this._config.ride === CLASS_NAME_CAROUSEL) {
+        this.cycle();
+      }
     } // Getters
 
 
@@ -1329,31 +1343,33 @@
       this._slide(ORDER_PREV);
     }
 
-    pause(event) {
-      if (!event) {
-        this._stayPaused = true;
-      }
-
+    pause() {
       if (this._isSliding) {
         triggerTransitionEnd(this._element);
-        this.cycle(true);
       }
 
       this._clearInterval();
     }
 
-    cycle(event) {
-      if (!event) {
-        this._stayPaused = false;
-      }
-
+    cycle() {
       this._clearInterval();
 
-      if (this._config.interval && !this._stayPaused) {
-        this._updateInterval();
+      this._updateInterval();
 
-        this._interval = setInterval(() => this.nextWhenVisible(), this._config.interval);
+      this._interval = setInterval(() => this.nextWhenVisible(), this._config.interval);
+    }
+
+    _maybeEnableCycle() {
+      if (!this._config.ride) {
+        return;
       }
+
+      if (this._isSliding) {
+        EventHandler.one(this._element, EVENT_SLID, () => this.cycle());
+        return;
+      }
+
+      this.cycle();
     }
 
     to(index) {
@@ -1371,8 +1387,6 @@
       const activeIndex = this._getItemIndex(this._getActive());
 
       if (activeIndex === index) {
-        this.pause();
-        this.cycle();
         return;
       }
 
@@ -1401,8 +1415,8 @@
       }
 
       if (this._config.pause === 'hover') {
-        EventHandler.on(this._element, EVENT_MOUSEENTER$1, event => this.pause(event));
-        EventHandler.on(this._element, EVENT_MOUSELEAVE$1, event => this.cycle(event));
+        EventHandler.on(this._element, EVENT_MOUSEENTER$1, () => this.pause());
+        EventHandler.on(this._element, EVENT_MOUSELEAVE$1, () => this._maybeEnableCycle());
       }
 
       if (this._config.touch && Swipe.isSupported()) {
@@ -1433,7 +1447,7 @@
           clearTimeout(this.touchTimeout);
         }
 
-        this.touchTimeout = setTimeout(event => this.cycle(event), TOUCHEVENT_COMPAT_WAIT + this._config.interval);
+        this.touchTimeout = setTimeout(() => this._maybeEnableCycle(), TOUCHEVENT_COMPAT_WAIT + this._config.interval);
       };
 
       const swipeConfig = {
@@ -1526,12 +1540,9 @@
         return;
       }
 
-      this._isSliding = true;
       const isCycling = Boolean(this._interval);
-
-      if (isCycling) {
-        this.pause();
-      }
+      this.pause();
+      this._isSliding = true;
 
       this._setActiveIndicatorElement(nextElementIndex);
 
@@ -1609,12 +1620,6 @@
           }
 
           data[config]();
-          return;
-        }
-
-        if (data._config.interval && data._config.ride) {
-          data.pause();
-          data.cycle();
         }
       });
     }
@@ -1638,15 +1643,23 @@
 
     if (slideIndex) {
       carousel.to(slideIndex);
+
+      carousel._maybeEnableCycle();
+
       return;
     }
 
     if (Manipulator.getDataAttribute(this, 'slide') === 'next') {
       carousel.next();
+
+      carousel._maybeEnableCycle();
+
       return;
     }
 
     carousel.prev();
+
+    carousel._maybeEnableCycle();
   });
   EventHandler.on(window, EVENT_LOAD_DATA_API$3, () => {
     const carousels = SelectorEngine.find(SELECTOR_DATA_RIDE);
