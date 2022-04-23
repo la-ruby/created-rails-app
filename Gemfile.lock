@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: 700284fc6741ed9c18654dc7538301bad923da2c
+  revision: f8d1ea90bc328012f178b8a6616a89b73f2546a4
   branch: main
   specs:
     devise (4.8.1)
@@ -56,7 +56,7 @@ GIT
 
 GIT
   remote: https://github.com/kaminari/kaminari
-  revision: 2f0e0728f511e2807cc7ea5b7c81ee71c7c378e8
+  revision: ae24575fb18db249d37f0c50472395fc3d3eb042
   branch: master
   specs:
     kaminari (1.2.2)
@@ -203,7 +203,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     aws-eventstream (1.2.0)
     aws-partitions (1.579.0)
-    aws-sdk-core (3.130.1)
+    aws-sdk-core (3.130.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
