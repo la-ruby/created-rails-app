@@ -26,7 +26,7 @@ detectors:
     - Example
     - User
     - Clockwork
-    - Boat::Application
+    - Snowflake::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
