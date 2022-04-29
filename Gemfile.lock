@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: a00b4c6388c69fdafb7e12cbacdb6d8a9927fba5
+  revision: b78a47e64d79863dfb2a987c84157a8b0de3a037
   branch: master
   specs:
     faker (2.20.0)
@@ -257,7 +257,7 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     jmespath (1.6.1)
-    loofah (2.16.0)
+    loofah (2.17.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
