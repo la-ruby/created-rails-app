@@ -16,7 +16,6 @@ detectors:
     exclude:
     - ApplicationCable::Channel
     - ApplicationCable::Connection
-    - ApplicationController
     - ExamplesController
     - ApplicationHelper
     - ExamplesHelper
@@ -25,8 +24,10 @@ detectors:
     - ApplicationRecord
     - Example
     - User
+    - ApplicationPolicy
+    - ApplicationPolicy::Scope
     - Clockwork
-    - Fire::Application
+    - Star::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
