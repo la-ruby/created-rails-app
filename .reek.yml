@@ -25,10 +25,8 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - ApplicationPolicy
-    - ApplicationPolicy::Scope
     - Clockwork
-    - Cloud::Application
+    - Sky::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
