@@ -28,7 +28,7 @@ detectors:
     - ApplicationPolicy
     - ApplicationPolicy::Scope
     - Clockwork
-    - Firefly::Application
+    - Cloud::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
