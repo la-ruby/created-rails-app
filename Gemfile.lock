@@ -75,7 +75,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0bbf34c614a8ae443285576b4379619ed7d194bb
+  revision: e7e9b48f7b49d583443a98c04004b45dc81238a9
   branch: 7-0-stable
   specs:
     actioncable (7.0.3)
@@ -259,7 +259,7 @@ GEM
     jmespath (1.6.1)
     jsbundling-rails (1.0.2)
       railties (>= 6.0.0)
-    loofah (2.17.0)
+    loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
