@@ -26,7 +26,7 @@ detectors:
     - Example
     - User
     - Clockwork
-    - Wildflower::Application
+    - Brook::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
