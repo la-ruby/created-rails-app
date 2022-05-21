@@ -2375,19 +2375,24 @@ textarea.form-control-lg {
 
 .form-control-color {
   width: 3rem;
-  height: auto;
+  height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
 .form-control-color::-moz-color-swatch {
-  height: 1.5em;
+  border: 0 !important;
   border-radius: 0.375rem;
 }
 .form-control-color::-webkit-color-swatch {
-  height: 1.5em;
   border-radius: 0.375rem;
+}
+.form-control-color.form-control-sm {
+  height: calc(1.5em + 0.5rem + 2px);
+}
+.form-control-color.form-control-lg {
+  height: calc(1.5em + 1rem + 2px);
 }
 
 .form-select {
@@ -3347,6 +3352,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: none;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
   text-decoration: underline;
 }
 .btn-lg, .btn-group-lg > .btn {
