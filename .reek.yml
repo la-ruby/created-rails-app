@@ -26,7 +26,7 @@ detectors:
     - Example
     - User
     - Clockwork
-    - Credit::Application
+    - Mode::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
