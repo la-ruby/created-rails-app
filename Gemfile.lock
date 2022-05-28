@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/Rykian/clockwork
-  revision: d64de659d46fdc7a44cb18ff6f91758791806a1e
-  branch: master
-  specs:
-    clockwork (3.0.0)
-      activesupport
-      tzinfo
-
-GIT
   remote: https://github.com/bblimke/webmock
   revision: 33d8810c2828fc17010e15cc3f21ad2c726a966f
   branch: master
@@ -54,6 +45,14 @@ GIT
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
+
+GIT
+  remote: https://github.com/jmettraux/rufus-scheduler
+  revision: 3fe5a02b4ceae7901228010a0b58e62a3be0e456
+  branch: master
+  specs:
+    rufus-scheduler (3.8.2)
+      fugit (~> 1.1, >= 1.1.6)
 
 GIT
   remote: https://github.com/kaminari/kaminari
@@ -243,8 +242,13 @@ GEM
     digest (3.1.0)
     docile (1.4.0)
     erubi (1.10.0)
+    et-orbi (1.2.7)
+      tzinfo
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
+    fugit (1.5.3)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -295,6 +299,7 @@ GEM
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
+    raabro (1.4.0)
     racc (1.6.0)
     rack (2.2.3.1)
     rack-test (1.1.0)
@@ -368,7 +373,6 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-s3
   capybara
-  clockwork (~> 3.0)!
   cssbundling-rails
   debug
   devise (~> 4.8)!
@@ -384,6 +388,7 @@ DEPENDENCIES
   pundit (~> 2.2)!
   rails!
   rollbar (>= 3.3)
+  rufus-scheduler (~> 3.8)!
   selenium-webdriver
   sendgrid-ruby (>= 6.6)
   simplecov
