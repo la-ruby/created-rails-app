@@ -97,4 +97,4 @@ gem "rufus-scheduler", "~> 3.8", :git => "https://github.com/jmettraux/rufus-sch
 
 gem "sendgrid-ruby", ">= 6.6"
 
-gem "rollbar", ">= 3.3"
+gem "airbrake", ">= 13.0", :github => "airbrake/airbrake"

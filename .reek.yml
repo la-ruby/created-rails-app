@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Violet::Application
+    - Mountain::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
