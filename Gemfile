@@ -76,6 +76,8 @@ gem "redis", "~> 4.6", :github => "redis/redis-rb"
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
 gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "main"
+
+gem "resque", "~> 2.2", :github => "resque/resque", :branch => "master"
 gem "aws-sdk-s3", require: false
 
 gem "nice_partials", "~> 0.1.6", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
