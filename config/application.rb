@@ -6,7 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Morning
+module Hill
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
@@ -20,3 +20,4 @@ module Morning
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+require Rails.root.join("config/constants")
