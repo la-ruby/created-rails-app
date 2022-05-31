@@ -5,4 +5,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  # resque
+  require 'resque/server'
+  protected_resque = Rack::Auth::Basic.new(Resque::Server.new) do |username, password|
+    username == DEVELOPER_EMAIL && password == (DEVELOPER_PASSWORD)
+  end
+  mount protected_resque, :at => "/resque"
 end
