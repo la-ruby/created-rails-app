@@ -25,13 +25,14 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Art::Application
+    - Field::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
     - ApplicationCable::ConnectionTest
     - ExamplesControllerTest
     - ExampleTest
+    - ExperimentTest
     - UserTest
     - ExamplesTest
     - ActiveSupport::TestCase
@@ -46,6 +47,7 @@ detectors:
     exclude:
     - DeviseCreateUsers#change
     - CreateExamples#change
+    - ExperimentTest
 # https://github.com/troessner/reek#working-with-rails
 directories:
   "app/controllers":
