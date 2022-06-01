@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: e3fc6759e24df25df461893e0d0fd43e1bbe5ae0
+  revision: d15a694b40922f15c81042acaeede9e7df7bbb75
   branch: 7-0-stable
   specs:
     actioncable (7.0.3)
@@ -228,7 +228,7 @@ GEM
     airbrake-ruby (6.1.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.594.0)
+    aws-partitions (1.595.0)
     aws-sdk-core (3.131.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -355,7 +355,7 @@ GEM
     ruby2_keywords (0.0.5)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.2.0)
+    selenium-webdriver (4.2.1)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
