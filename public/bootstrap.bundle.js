@@ -1106,14 +1106,14 @@
   const CLASS_NAME_POINTER_EVENT = 'pointer-event';
   const SWIPE_THRESHOLD = 40;
   const Default$c = {
+    endCallback: null,
     leftCallback: null,
-    rightCallback: null,
-    endCallback: null
+    rightCallback: null
   };
   const DefaultType$c = {
+    endCallback: '(function|null)',
     leftCallback: '(function|null)',
-    rightCallback: '(function|null)',
-    endCallback: '(function|null)'
+    rightCallback: '(function|null)'
   };
   /**
    * Class definition
@@ -1279,8 +1279,8 @@
   const DefaultType$b = {
     interval: '(number|boolean)',
     keyboard: 'boolean',
-    ride: '(boolean|string)',
     pause: '(string|boolean)',
+    ride: '(boolean|string)',
     touch: 'boolean',
     wrap: 'boolean'
   };
@@ -1697,12 +1697,12 @@
   const SELECTOR_ACTIVES = '.collapse.show, .collapse.collapsing';
   const SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="collapse"]';
   const Default$a = {
-    toggle: true,
-    parent: null
+    parent: null,
+    toggle: true
   };
   const DefaultType$a = {
-    toggle: 'boolean',
-    parent: '(null|element)'
+    parent: '(null|element)',
+    toggle: 'boolean'
   };
   /**
    * Class definition
@@ -3840,20 +3840,20 @@
   const PLACEMENT_TOPCENTER = 'top';
   const PLACEMENT_BOTTOMCENTER = 'bottom';
   const Default$9 = {
-    offset: [0, 2],
+    autoClose: true,
     boundary: 'clippingParents',
-    reference: 'toggle',
     display: 'dynamic',
+    offset: [0, 2],
     popperConfig: null,
-    autoClose: true
+    reference: 'toggle'
   };
   const DefaultType$9 = {
-    offset: '(array|string|function)',
+    autoClose: '(boolean|string)',
     boundary: '(string|element)',
-    reference: '(string|element|object)',
     display: 'string',
+    offset: '(array|string|function)',
     popperConfig: '(null|object|function)',
-    autoClose: '(boolean|string)'
+    reference: '(string|element|object)'
   };
   /**
    * Class definition
@@ -4357,19 +4357,19 @@
   const EVENT_MOUSEDOWN = `mousedown.bs.${NAME$9}`;
   const Default$8 = {
     className: 'modal-backdrop',
+    clickCallback: null,
+    isAnimated: false,
     isVisible: true,
     // if false, we use the backdrop helper without adding any element to the dom
-    isAnimated: false,
-    rootElement: 'body',
-    // give the choice to place backdrop under different elements
-    clickCallback: null
+    rootElement: 'body' // give the choice to place backdrop under different elements
+
   };
   const DefaultType$8 = {
     className: 'string',
-    isVisible: 'boolean',
+    clickCallback: '(function|null)',
     isAnimated: 'boolean',
-    rootElement: '(element|string)',
-    clickCallback: '(function|null)'
+    isVisible: 'boolean',
+    rootElement: '(element|string)'
   };
   /**
    * Class definition
@@ -4506,13 +4506,13 @@
   const TAB_NAV_FORWARD = 'forward';
   const TAB_NAV_BACKWARD = 'backward';
   const Default$7 = {
-    trapElement: null,
-    // The element to trap focus inside of
-    autofocus: true
+    autofocus: true,
+    trapElement: null // The element to trap focus inside of
+
   };
   const DefaultType$7 = {
-    trapElement: 'element',
-    autofocus: 'boolean'
+    autofocus: 'boolean',
+    trapElement: 'element'
   };
   /**
    * Class definition
@@ -4630,13 +4630,13 @@
   const SELECTOR_DATA_TOGGLE$2 = '[data-bs-toggle="modal"]';
   const Default$6 = {
     backdrop: true,
-    keyboard: true,
-    focus: true
+    focus: true,
+    keyboard: true
   };
   const DefaultType$6 = {
     backdrop: '(boolean|string)',
-    keyboard: 'boolean',
-    focus: 'boolean'
+    focus: 'boolean',
+    keyboard: 'boolean'
   };
   /**
    * Class definition
@@ -5360,27 +5360,27 @@
 
   const NAME$5 = 'TemplateFactory';
   const Default$4 = {
-    extraClass: '',
-    template: '<div></div>',
+    allowList: DefaultAllowlist,
     content: {},
     // { selector : text ,  selector2 : text2 , }
+    extraClass: '',
     html: false,
     sanitize: true,
     sanitizeFn: null,
-    allowList: DefaultAllowlist
+    template: '<div></div>'
   };
   const DefaultType$4 = {
-    extraClass: '(string|function)',
-    template: 'string',
+    allowList: 'object',
     content: 'object',
+    extraClass: '(string|function)',
     html: 'boolean',
     sanitize: 'boolean',
     sanitizeFn: '(null|function)',
-    allowList: 'object'
+    template: 'string'
   };
   const DefaultContentType = {
-    selector: '(string|element)',
-    entry: '(string|element|function|null)'
+    entry: '(string|element|function|null)',
+    selector: '(string|element)'
   };
   /**
    * Class definition
@@ -5546,42 +5546,42 @@
     LEFT: isRTL() ? 'right' : 'left'
   };
   const Default$3 = {
+    allowList: DefaultAllowlist,
     animation: true,
-    template: '<div class="tooltip" role="tooltip">' + '<div class="tooltip-arrow"></div>' + '<div class="tooltip-inner"></div>' + '</div>',
-    trigger: 'hover focus',
-    title: '',
-    delay: 0,
-    html: false,
-    selector: false,
-    placement: 'top',
-    offset: [0, 0],
-    container: false,
-    fallbackPlacements: ['top', 'right', 'bottom', 'left'],
     boundary: 'clippingParents',
+    container: false,
     customClass: '',
+    delay: 0,
+    fallbackPlacements: ['top', 'right', 'bottom', 'left'],
+    html: false,
+    offset: [0, 0],
+    placement: 'top',
+    popperConfig: null,
     sanitize: true,
     sanitizeFn: null,
-    allowList: DefaultAllowlist,
-    popperConfig: null
+    selector: false,
+    template: '<div class="tooltip" role="tooltip">' + '<div class="tooltip-arrow"></div>' + '<div class="tooltip-inner"></div>' + '</div>',
+    title: '',
+    trigger: 'hover focus'
   };
   const DefaultType$3 = {
+    allowList: 'object',
     animation: 'boolean',
-    template: 'string',
-    title: '(string|element|function)',
-    trigger: 'string',
-    delay: '(number|object)',
-    html: 'boolean',
-    selector: '(string|boolean)',
-    placement: '(string|function)',
-    offset: '(array|string|function)',
-    container: '(string|element|boolean)',
-    fallbackPlacements: 'array',
     boundary: '(string|element)',
+    container: '(string|element|boolean)',
     customClass: '(string|function)',
+    delay: '(number|object)',
+    fallbackPlacements: 'array',
+    html: 'boolean',
+    offset: '(array|string|function)',
+    placement: '(string|function)',
+    popperConfig: '(null|object|function)',
     sanitize: 'boolean',
     sanitizeFn: '(null|function)',
-    allowList: 'object',
-    popperConfig: '(null|object|function)'
+    selector: '(string|boolean)',
+    template: 'string',
+    title: '(string|element|function)',
+    trigger: 'string'
   };
   /**
    * Class definition
@@ -6144,11 +6144,11 @@
   const SELECTOR_TITLE = '.popover-header';
   const SELECTOR_CONTENT = '.popover-body';
   const Default$2 = { ...Tooltip.Default,
-    placement: 'right',
-    offset: [0, 8],
-    trigger: 'click',
     content: '',
-    template: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div>' + '</div>'
+    offset: [0, 8],
+    placement: 'right',
+    template: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div>' + '</div>',
+    trigger: 'click'
   };
   const DefaultType$2 = { ...Tooltip.DefaultType,
     content: '(null|string|element|function)'
