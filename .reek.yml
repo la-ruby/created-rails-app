@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Dew::Application
+    - Sound::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
