@@ -63,7 +63,7 @@ GIT
 
 GIT
   remote: https://github.com/kaminari/kaminari
-  revision: ae24575fb18db249d37f0c50472395fc3d3eb042
+  revision: 53b5a24cea77f95b860ecfa30cb5b606cc93bc38
   branch: master
   specs:
     kaminari (1.2.2)
