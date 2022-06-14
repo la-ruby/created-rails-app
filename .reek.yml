@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Voice::Application
+    - Feather::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
