@@ -2038,7 +2038,7 @@ progress {
   color: #6c757d;
   opacity: 1;
 }
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled {
   background-color: #e9ecef;
   opacity: 1;
 }
@@ -2099,6 +2099,9 @@ progress {
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
+}
+.form-control-plaintext:focus {
+  outline: 0;
 }
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
   padding-right: 0;

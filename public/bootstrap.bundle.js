@@ -502,7 +502,7 @@
 
       if (typeof callable !== 'undefined') {
         // Simplest case: handler is passed, remove that listener ONLY.
-        if (!storeElementEvent) {
+        if (!Object.keys(storeElementEvent).length) {
           return;
         }
 
@@ -1278,6 +1278,7 @@
   };
   const DefaultType$b = {
     interval: '(number|boolean)',
+    // TODO:v6 remove boolean support
     keyboard: 'boolean',
     pause: '(string|boolean)',
     ride: '(boolean|string)',
