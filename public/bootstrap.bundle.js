@@ -4618,7 +4618,7 @@
   const EVENT_SHOW$4 = `show${EVENT_KEY$4}`;
   const EVENT_SHOWN$4 = `shown${EVENT_KEY$4}`;
   const EVENT_RESIZE$1 = `resize${EVENT_KEY$4}`;
-  const EVENT_CLICK_DISMISS = `click.dismiss${EVENT_KEY$4}`;
+  const EVENT_MOUSEDOWN_DISMISS = `mousedown.dismiss${EVENT_KEY$4}`;
   const EVENT_KEYDOWN_DISMISS$1 = `keydown.dismiss${EVENT_KEY$4}`;
   const EVENT_CLICK_DATA_API$2 = `click${EVENT_KEY$4}${DATA_API_KEY$2}`;
   const CLASS_NAME_OPEN = 'modal-open';
@@ -4809,7 +4809,7 @@
           this._adjustDialog();
         }
       });
-      EventHandler.on(this._element, EVENT_CLICK_DISMISS, event => {
+      EventHandler.on(this._element, EVENT_MOUSEDOWN_DISMISS, event => {
         if (event.target !== event.currentTarget) {
           // click is inside modal-dialog
           return;
