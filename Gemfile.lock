@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: b2e75c6dc11876aa6cb7d7db7ccc9487e81d9d63
+  revision: 01072a33eda2c79d3966c37390712c30027fc630
   branch: 7-0-stable
   specs:
     actioncable (7.0.3)
@@ -179,7 +179,7 @@ GIT
 
 GIT
   remote: https://github.com/resque/resque.git
-  revision: 64d669a8f8df869f86c6720908dfe175944173e1
+  revision: ba5a44294ba5f6c4593deb78612f78989445d83e
   branch: master
   specs:
     resque (2.2.1)
