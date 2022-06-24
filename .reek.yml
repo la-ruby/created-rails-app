@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Frog::Application
+    - Bread::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
