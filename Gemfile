@@ -71,7 +71,7 @@ group :test do
   gem "webdrivers"
 end
 
-gem "redis", "~> 4.6", :github => "redis/redis-rb"
+gem "redis", "~> 4.7", :github => "redis/redis-rb"
 
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
