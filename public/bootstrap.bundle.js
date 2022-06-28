@@ -5601,7 +5601,8 @@
       this._isHovered = false;
       this._activeTrigger = {};
       this._popper = null;
-      this._templateFactory = null; // Protected
+      this._templateFactory = null;
+      this._newContent = null; // Protected
 
       this.tip = null;
 
@@ -5691,6 +5692,12 @@
 
       if (showEvent.defaultPrevented || !isInTheDom) {
         return;
+      } // todo v6 remove this OR make it optional
+
+
+      if (this.tip) {
+        this.tip.remove();
+        this.tip = null;
       }
 
       const tip = this._getTipElement();
@@ -5709,7 +5716,7 @@
       if (this._popper) {
         this._popper.update();
       } else {
-        this._createPopper(tip);
+        this._popper = this._createPopper(tip);
       }
 
       tip.classList.add(CLASS_NAME_SHOW$2); // If this is a touch-enabled device we add extra
@@ -5795,7 +5802,7 @@
 
     _getTipElement() {
       if (!this.tip) {
-        this.tip = this._createTipElement(this._getContentForTemplate());
+        this.tip = this._createTipElement(this._newContent || this._getContentForTemplate());
       }
 
       return this.tip;
@@ -5823,19 +5830,14 @@
     }
 
     setContent(content) {
-      let isShown = false;
+      this._newContent = content;
 
-      if (this.tip) {
-        isShown = this._isShown();
+      if (this._isShown()) {
         this.tip.remove();
         this.tip = null;
-      }
 
-      this._disposePopper();
+        this._disposePopper();
 
-      this.tip = this._createTipElement(content);
-
-      if (isShown) {
         this.show();
       }
     }
@@ -5862,7 +5864,7 @@
     }
 
     _getTitle() {
-      return this._config.title;
+      return this._resolvePossibleFunction(this._config.title) || this._config.originalTitle;
     } // Private
 
 
@@ -5881,7 +5883,7 @@
     _createPopper(tip) {
       const placement = typeof this._config.placement === 'function' ? this._config.placement.call(this, tip, this._element) : this._config.placement;
       const attachment = AttachmentMap[placement.toUpperCase()];
-      this._popper = createPopper(this._element, tip, this._getPopperConfig(attachment));
+      return createPopper(this._element, tip, this._getPopperConfig(attachment));
     }
 
     _getOffset() {
@@ -6070,7 +6072,6 @@
       }
 
       config.originalTitle = this._element.getAttribute('title') || '';
-      config.title = this._resolvePossibleFunction(config.title) || config.originalTitle;
 
       if (typeof config.title === 'number') {
         config.title = config.title.toString();
@@ -6604,15 +6605,9 @@
       this._activate(getElementFromSelector(element)); // Search and activate/show the proper section
 
 
-      const isAnimated = element.classList.contains(CLASS_NAME_FADE$1);
-
       const complete = () => {
-        if (isAnimated) {
-          // todo: maybe is redundant
-          element.classList.add(CLASS_NAME_SHOW$1);
-        }
-
         if (element.getAttribute('role') !== 'tab') {
+          element.classList.add(CLASS_NAME_SHOW$1);
           return;
         }
 
@@ -6627,7 +6622,7 @@
         });
       };
 
-      this._queueCallback(complete, element, isAnimated);
+      this._queueCallback(complete, element, element.classList.contains(CLASS_NAME_FADE$1));
     }
 
     _deactivate(element, relatedElem) {
@@ -6641,15 +6636,9 @@
       this._deactivate(getElementFromSelector(element)); // Search and deactivate the shown section too
 
 
-      const isAnimated = element.classList.contains(CLASS_NAME_FADE$1);
-
       const complete = () => {
-        if (isAnimated) {
-          // todo maybe is redundant
-          element.classList.remove(CLASS_NAME_SHOW$1);
-        }
-
         if (element.getAttribute('role') !== 'tab') {
+          element.classList.remove(CLASS_NAME_SHOW$1);
           return;
         }
 
@@ -6663,7 +6652,7 @@
         });
       };
 
-      this._queueCallback(complete, element, isAnimated);
+      this._queueCallback(complete, element, element.classList.contains(CLASS_NAME_FADE$1));
     }
 
     _keydown(event) {
