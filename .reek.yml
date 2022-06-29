@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Wood::Application
+    - Dust::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
