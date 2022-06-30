@@ -4610,7 +4610,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: var(--bs-badge-border-radius, 0);
+  border-radius: var(--bs-badge-border-radius);
 }
 .badge:empty {
   display: none;
@@ -5634,7 +5634,7 @@ textarea.form-control-lg {
   color: var(--bs-tooltip-color);
   text-align: center;
   background-color: var(--bs-tooltip-bg);
-  border-radius: var(--bs-tooltip-border-radius, 0);
+  border-radius: var(--bs-tooltip-border-radius);
 }
 
 .popover {

@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 5049b6181a91c6f4c54fd7c274d8ad33fb681ee0
+  revision: 0012bb7b2502fadfe9b42e1704f7e43eb6431ca2
   branch: main
   specs:
     nice_partials (0.1.6)
@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 47a6a67eed09524989ea36692496c15290b69633
+  revision: beb78617a71d14a5131ec2e10dec54ebcd2d151c
   branch: 7-0-stable
   specs:
     actioncable (7.0.3)
@@ -228,7 +228,7 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.601.0)
+    aws-partitions (1.602.0)
     aws-sdk-core (3.131.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -448,4 +448,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.3.16
+   2.3.17
