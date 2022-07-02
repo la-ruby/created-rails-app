@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 0012bb7b2502fadfe9b42e1704f7e43eb6431ca2
+  revision: 62c0179a003ea28f91f3e668f25cee9cb52a5b48
   branch: main
   specs:
     nice_partials (0.1.6)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: dd0ea550e4bcaf0d2929ea5744275ff1a0a7e2a0
+  revision: 85016fe969c0ea6044def6192c169a9992747742
   branch: master
   specs:
     faker (2.21.0)
@@ -173,9 +173,9 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb.git
-  revision: 2f226e55933ff8ef958969097ed51c637786c4d1
+  revision: d6626e6ef0c49374a888074652c4c9b2237dc8eb
   specs:
-    redis (4.7.0)
+    redis (4.7.1)
 
 GIT
   remote: https://github.com/resque/resque.git
