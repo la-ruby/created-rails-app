@@ -179,7 +179,7 @@ GIT
 
 GIT
   remote: https://github.com/resque/resque.git
-  revision: ba5a44294ba5f6c4593deb78612f78989445d83e
+  revision: ce081001f87beba71217ea0f4eb3c043862930c6
   branch: master
   specs:
     resque (2.2.1)
