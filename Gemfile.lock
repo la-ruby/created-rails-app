@@ -17,10 +17,10 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 62c0179a003ea28f91f3e668f25cee9cb52a5b48
+  revision: 4f4f760646fa9ba23aa2ad2c110e0db6d98bb97f
   branch: main
   specs:
-    nice_partials (0.1.6)
+    nice_partials (0.1.7)
       actionview (>= 4.2.6)
 
 GIT
@@ -299,7 +299,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.1)
+    minitest (5.16.2)
     mono_logger (1.1.1)
     multi_json (1.15.0)
     mustermann (1.1.1)
@@ -424,7 +424,7 @@ DEPENDENCIES
   jsbundling-rails
   kaminari (~> 1.2)!
   minitest-test_profile (~> 0.2.2)!
-  nice_partials (~> 0.1.6)!
+  nice_partials (~> 0.1.7)!
   pg (~> 1.1)
   puma (~> 5.0)
   pundit (~> 2.2)!
