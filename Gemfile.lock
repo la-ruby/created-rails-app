@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 4f4f760646fa9ba23aa2ad2c110e0db6d98bb97f
+  revision: 3f3aafb54b1499fd119c2fb9cd9563d24d0a0cbd
   branch: main
   specs:
     nice_partials (0.1.7)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 85016fe969c0ea6044def6192c169a9992747742
+  revision: 2333f9ee4a4e1d8329e19f9e4b07e927648add7c
   branch: master
   specs:
     faker (2.21.0)
@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: https://github.com/jmettraux/rufus-scheduler
-  revision: 3fe5a02b4ceae7901228010a0b58e62a3be0e456
+  revision: 7397d2e85dc91192025b18498612deb17665a748
   branch: master
   specs:
     rufus-scheduler (3.8.2)
@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: beb78617a71d14a5131ec2e10dec54ebcd2d151c
+  revision: fcb0e1ee1529ea10ec9af8e99086b66f08039c44
   branch: 7-0-stable
   specs:
     actioncable (7.0.3)
