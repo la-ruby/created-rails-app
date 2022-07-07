@@ -6006,7 +6006,7 @@
         return;
       }
 
-      if (!this._element.getAttribute('aria-label') && !this._element.textContent) {
+      if (!this._element.getAttribute('aria-label') && !this._element.textContent.trim()) {
         this._element.setAttribute('aria-label', title);
       }
 
