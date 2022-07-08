@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: https://github.com/jmettraux/rufus-scheduler
-  revision: 7397d2e85dc91192025b18498612deb17665a748
+  revision: e7dc394914ac51dcac9a59737ee9492d26f56aa2
   branch: master
   specs:
     rufus-scheduler (3.8.2)
