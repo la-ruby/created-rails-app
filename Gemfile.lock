@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 37e5674192931dd9198f083b80094c883bf539a8
+  revision: 4cd5709e2fc8899c24fc1b205d6f5bbdddfc29e1
   branch: 7-0-stable
   specs:
     actioncable (7.0.3)
@@ -278,7 +278,7 @@ GEM
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
-    i18n (1.10.0)
+    i18n (1.11.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
     irb (1.4.1)
