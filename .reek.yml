@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Recipe::Application
+    - Mouse::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase

@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 2333f9ee4a4e1d8329e19f9e4b07e927648add7c
+  revision: e36fb2bc4a75d8eb1116a6514c356c2bcf951538
   branch: master
   specs:
     faker (2.21.0)
@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: https://github.com/jmettraux/rufus-scheduler
-  revision: e7dc394914ac51dcac9a59737ee9492d26f56aa2
+  revision: 5632f9743df1941a56ee13fb1fdbd64b149ba39f
   branch: master
   specs:
     rufus-scheduler (3.8.2)
@@ -228,7 +228,7 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.603.0)
+    aws-partitions (1.604.0)
     aws-sdk-core (3.131.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -262,9 +262,9 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.1.1)
       railties (>= 6.0.0)
-    debug (1.5.0)
+    debug (1.6.0)
       irb (>= 1.3.6)
-      reline (>= 0.2.7)
+      reline (>= 0.3.1)
     digest (3.1.0)
     docile (1.4.0)
     erubi (1.10.0)

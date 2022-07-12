@@ -5843,9 +5843,6 @@
       this._newContent = content;
 
       if (this._isShown()) {
-        this.tip.remove();
-        this.tip = null;
-
         this._disposePopper();
 
         this.show();
