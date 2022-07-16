@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 3355f2fae0a2bd3653ccccc62d9395b677c4ee1f
+  revision: 43bf84a9b1d2cc78da6810b82f92be2c32c9dbfd
   branch: main
   specs:
     turbo-rails (1.1.1)
@@ -228,7 +228,7 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.606.0)
+    aws-partitions (1.607.0)
     aws-sdk-core (3.131.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -332,7 +332,7 @@ GEM
     raabro (1.4.0)
     racc (1.6.0)
     rack (2.2.4)
-    rack-protection (2.2.0)
+    rack-protection (2.2.1)
       rack
     rack-test (2.0.2)
       rack (>= 1.3)
@@ -368,10 +368,10 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sinatra (2.2.0)
+    sinatra (2.2.1)
       mustermann (~> 1.0)
       rack (~> 2.2)
-      rack-protection (= 2.2.0)
+      rack-protection (= 2.2.1)
       tilt (~> 2.0)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)

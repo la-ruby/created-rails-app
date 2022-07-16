@@ -25,7 +25,7 @@ detectors:
     - ApplicationRecord
     - Example
     - User
-    - Glade::Application
+    - Paper::Application
     - DeviseCreateUsers
     - CreateExamples
     - ApplicationSystemTestCase
