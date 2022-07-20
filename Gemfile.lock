@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 43bf84a9b1d2cc78da6810b82f92be2c32c9dbfd
+  revision: 50402466cd85f27a8515b3865797d12ac741c26d
   branch: main
   specs:
     turbo-rails (1.1.1)
@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 4987ca0f553c763a2ad00b0554999f847edf7c4e
+  revision: aed8afaff3552682a15b88071e0dfab1751cdb31
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -241,7 +241,7 @@ GEM
       aws-sdk-core (~> 3, >= 3.127.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.4)
-    aws-sigv4 (1.5.0)
+    aws-sigv4 (1.5.1)
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.18)
     bindex (0.8.1)
@@ -386,7 +386,7 @@ GEM
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.3.0)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
