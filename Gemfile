@@ -76,7 +76,7 @@ gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch 
 
 gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "main"
 
-gem "resque", "~> 2.2", :github => "resque/resque", :branch => "master"
+gem "sidekiq", "~> 6.5", :github => "mperham/sidekiq", :branch => "main"
 gem "aws-sdk-s3", require: false
 
 gem "nice_partials", "~> 0.1.7", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
@@ -94,7 +94,7 @@ gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/w
 
 gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
 
-gem "rufus-scheduler", "~> 3.8", :git => "https://github.com/jmettraux/rufus-scheduler", :branch => "master"
+gem "sidekiq-cron", "~> 1.6", :git => "https://github.com/ondrejbartas/sidekiq-cron", :branch => "master"
 
 gem "sendgrid-ruby", ">= 6.6"
 
