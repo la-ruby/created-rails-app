@@ -83,10 +83,10 @@ GIT
 
 GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: a2284f2267ed252fab7db3746846d2b00fde4b53
+  revision: 2720631e53b7dc648d510282a05f78bc00a37bf0
   branch: master
   specs:
-    sidekiq-cron (1.6.0)
+    sidekiq-cron (1.7.0)
       fugit (~> 1)
       sidekiq (>= 4.2.1)
 
@@ -316,10 +316,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.7)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.7-x86_64-linux)
+    nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.4.1)
@@ -369,7 +369,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
-    strscan (3.0.3)
+    strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
     tzinfo (2.0.5)
@@ -419,7 +419,7 @@ DEPENDENCIES
   selenium-webdriver
   sendgrid-ruby (>= 6.6)
   sidekiq (~> 6.5)!
-  sidekiq-cron (~> 1.6)!
+  sidekiq-cron (~> 1.7)!
   simplecov
   sprockets-rails
   stimulus-rails
