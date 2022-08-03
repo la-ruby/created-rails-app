@@ -21,6 +21,16 @@ GIT
       railties (>= 6.0.0)
 
 GIT
+  remote: https://github.com/mperham/sidekiq
+  revision: 25754d125b0cb39475bffcd070cd51307e5e0563
+  branch: main
+  specs:
+    sidekiq (6.5.2)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.5.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 644178776f2261c12e64cc510bb43c4eac833de9
   branch: 7-0-stable
@@ -146,6 +156,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
+    connection_pool (2.2.5)
     crass (1.0.6)
     cssbundling-rails (1.1.1)
       railties (>= 6.0.0)
@@ -275,6 +286,7 @@ DEPENDENCIES
   rails!
   redis (~> 4.7)!
   selenium-webdriver
+  sidekiq (~> 6.5)!
   sprockets-rails
   stimulus-rails
   turbo-rails!
