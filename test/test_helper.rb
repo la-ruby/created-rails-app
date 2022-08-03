@@ -1,6 +1,10 @@
+require_relative 'support/00_simplecov'
+
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
+
+Dir[File.expand_path('support/**/*.rb', __dir__)].sort.each { |rb| require(rb) }
 
 class ActiveSupport::TestCase
   include FactoryBot::Syntax::Methods
