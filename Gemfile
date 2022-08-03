@@ -71,3 +71,5 @@ group :test do
 end
 
 gem "redis", "~> 4.7", :git => "https://github.com/redis/redis-rb", :branch => "master"
+
+gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
