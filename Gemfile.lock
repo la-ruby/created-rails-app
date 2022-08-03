@@ -75,6 +75,15 @@ GIT
       redis (>= 4.5.0)
 
 GIT
+  remote: https://github.com/ondrejbartas/sidekiq-cron
+  revision: 2720631e53b7dc648d510282a05f78bc00a37bf0
+  branch: master
+  specs:
+    sidekiq-cron (1.7.0)
+      fugit (~> 1)
+      sidekiq (>= 4.2.1)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 644178776f2261c12e64cc510bb43c4eac833de9
   branch: 7-0-stable
@@ -252,8 +261,13 @@ GEM
     digest (3.1.0)
     docile (1.4.0)
     erubi (1.11.0)
+    et-orbi (1.2.7)
+      tzinfo
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
+    fugit (1.5.3)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -304,6 +318,7 @@ GEM
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
+    raabro (1.4.0)
     racc (1.6.0)
     rack (2.2.4)
     rack-test (2.0.2)
@@ -390,6 +405,7 @@ DEPENDENCIES
   redis (~> 4.7)!
   selenium-webdriver
   sidekiq (~> 6.5)!
+  sidekiq-cron (~> 1.7)!
   simplecov
   sprockets-rails
   stimulus-rails
