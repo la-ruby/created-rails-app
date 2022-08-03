@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/hotwired/turbo-rails.git
+  revision: f9872c35fdcdbd216141dc02a654d914bd25482c
+  branch: main
+  specs:
+    turbo-rails (1.1.1)
+      actionpack (>= 6.0.0)
+      activejob (>= 6.0.0)
+      railties (>= 6.0.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 644178776f2261c12e64cc510bb43c4eac833de9
   branch: 7-0-stable
@@ -202,10 +212,6 @@ GEM
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
-    turbo-rails (1.1.1)
-      actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
-      railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     web-console (4.2.0)
@@ -242,7 +248,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
-  turbo-rails
+  turbo-rails!
   tzinfo-data
   web-console
   webdrivers
