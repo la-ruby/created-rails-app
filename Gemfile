@@ -97,3 +97,5 @@ gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :bra
 gem "sidekiq-cron", "~> 1.7", :git => "https://github.com/ondrejbartas/sidekiq-cron", :branch => "master"
 
 gem "sendgrid-ruby", ">= 6.6"
+
+gem "airbrake", "~> 13.0", :git => "https://github.com/airbrake/airbrake", :branch => "master"
