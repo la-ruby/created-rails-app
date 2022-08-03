@@ -82,3 +82,7 @@ gem "aws-sdk-s3", require: false
 gem "nice_partials", "~> 0.1.7", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
 
 gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branch => "master"
+
+gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
+
+gem "faker", "~> 2.22", :git => "https://github.com/faker-ruby/faker", :branch => "master"
