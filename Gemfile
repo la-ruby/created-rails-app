@@ -69,3 +69,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "redis", "~> 4.7", :git => "https://github.com/redis/redis-rb", :branch => "master"
