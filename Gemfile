@@ -70,13 +70,13 @@ group :test do
   gem "webdrivers"
 end
 
-gem "redis", "~> 4.7", :github => "redis/redis-rb"
+gem "redis", "~> 4.7", :git => "https://github.com/redis/redis-rb", :branch => "master"
 
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
 gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "main"
 
-gem "sidekiq", "~> 6.5", :github => "mperham/sidekiq", :branch => "main"
+gem "sidekiq", "~> 6.5", :git => "https://github.com/mperham/sidekiq", :branch => "main"
 gem "aws-sdk-s3", require: false
 
 gem "nice_partials", "~> 0.1.7", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
@@ -85,12 +85,12 @@ gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branc
 
 gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
 
-gem "faker", "~> 2.21", :git => "https://github.com/faker-ruby/faker", :branch => "master"
+gem "faker", "~> 2.22", :git => "https://github.com/faker-ruby/faker", :branch => "master"
 gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"
 
-gem "webmock", "~> 3.14", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
+gem "webmock", "~> 3.16", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
 
 gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
 
@@ -98,4 +98,4 @@ gem "sidekiq-cron", "~> 1.7", :git => "https://github.com/ondrejbartas/sidekiq-c
 
 gem "sendgrid-ruby", ">= 6.6"
 
-gem "airbrake", ">= 13.0", :github => "airbrake/airbrake"
+gem "airbrake", "~> 13.0", :git => "https://github.com/airbrake/airbrake", :branch => "master"

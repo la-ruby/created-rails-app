@@ -1,23 +1,24 @@
 GIT
-  remote: https://github.com/airbrake/airbrake.git
+  remote: https://github.com/airbrake/airbrake
   revision: 47e8d66751c019e20fb2ebdd28ebd62d70c695c4
+  branch: master
   specs:
     airbrake (13.0.2)
       airbrake-ruby (~> 6.0)
 
 GIT
   remote: https://github.com/bblimke/webmock
-  revision: 33d8810c2828fc17010e15cc3f21ad2c726a966f
+  revision: 0e583c0655e0f8bfea3fd335f69b080611346438
   branch: master
   specs:
-    webmock (3.14.0)
+    webmock (3.16.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 3f3aafb54b1499fd119c2fb9cd9563d24d0a0cbd
+  revision: 697f89a9fea6150d81bf668c260a2d11d606110a
   branch: main
   specs:
     nice_partials (0.1.7)
@@ -25,10 +26,10 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: b98d32dcca8aa482525320d8463dff741af0d84d
+  revision: efc6a90d845a25a34ddbcc9280ed951ecd346163
   branch: master
   specs:
-    faker (2.21.0)
+    faker (2.22.0)
       i18n (>= 1.8.11, < 2)
 
 GIT
@@ -45,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 50402466cd85f27a8515b3865797d12ac741c26d
+  revision: f9872c35fdcdbd216141dc02a654d914bd25482c
   branch: main
   specs:
     turbo-rails (1.1.1)
@@ -72,8 +73,8 @@ GIT
     kaminari-core (1.2.2)
 
 GIT
-  remote: https://github.com/mperham/sidekiq.git
-  revision: dcd6d32c35c6a3943a7d244d6fca8110c18a87c7
+  remote: https://github.com/mperham/sidekiq
+  revision: 25754d125b0cb39475bffcd070cd51307e5e0563
   branch: main
   specs:
     sidekiq (6.5.2)
@@ -92,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 2a45b43decd5cdf5883eda6126f73106a5d26691
+  revision: 644178776f2261c12e64cc510bb43c4eac833de9
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -183,14 +184,15 @@ GIT
       zeitwerk (~> 2.5)
 
 GIT
-  remote: https://github.com/redis/redis-rb.git
+  remote: https://github.com/redis/redis-rb
   revision: d6626e6ef0c49374a888074652c4c9b2237dc8eb
+  branch: master
   specs:
     redis (4.7.1)
 
 GIT
   remote: https://github.com/thoughtbot/factory_bot_rails
-  revision: b149856be340f919a49bab8d4389050dce422cbc
+  revision: 57e88e79bf9d965eb4147cc111c2feff18b52c12
   branch: main
   specs:
     factory_bot_rails (6.2.0)
@@ -228,8 +230,8 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.610.0)
-    aws-sdk-core (3.131.3)
+    aws-partitions (1.614.0)
+    aws-sdk-core (3.131.5)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -268,7 +270,7 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     docile (1.4.0)
-    erubi (1.10.0)
+    erubi (1.11.0)
     et-orbi (1.2.7)
       tzinfo
     factory_bot (6.2.1)
@@ -322,7 +324,7 @@ GEM
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.4.1)
+    pg (1.4.2)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -398,14 +400,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  airbrake (>= 13.0)!
+  airbrake (~> 13.0)!
   aws-sdk-s3
   capybara
   cssbundling-rails
   debug
   devise (~> 4.8)!
   factory_bot_rails (~> 6.2)!
-  faker (~> 2.21)!
+  faker (~> 2.22)!
   jbuilder
   jsbundling-rails
   kaminari (~> 1.2)!
@@ -428,10 +430,10 @@ DEPENDENCIES
   vcr (~> 6.1)!
   web-console
   webdrivers
-  webmock (~> 3.14)!
+  webmock (~> 3.16)!
 
 RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.3.18
+   2.2.32
