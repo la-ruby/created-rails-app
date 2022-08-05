@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/airbrake/airbrake
-  revision: 47e8d66751c019e20fb2ebdd28ebd62d70c695c4
+  revision: fafea1d854afa277edf9e4ce43676a9035fa847d
   branch: master
   specs:
     airbrake (13.0.2)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: efc6a90d845a25a34ddbcc9280ed951ecd346163
+  revision: 45f77721df31780c3bb8a01bc4b03d50380f8e55
   branch: master
   specs:
     faker (2.22.0)
@@ -74,10 +74,10 @@ GIT
 
 GIT
   remote: https://github.com/mperham/sidekiq
-  revision: 25754d125b0cb39475bffcd070cd51307e5e0563
+  revision: c61f21f6fb2d2439a24888307b98cd5ad303ba82
   branch: main
   specs:
-    sidekiq (6.5.2)
+    sidekiq (6.5.3)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.5.0)
@@ -230,7 +230,7 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.614.0)
+    aws-partitions (1.615.0)
     aws-sdk-core (3.131.6)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
