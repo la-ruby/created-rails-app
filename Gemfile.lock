@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/bblimke/webmock
-  revision: 0e583c0655e0f8bfea3fd335f69b080611346438
+  revision: f6e06f1658891a6f56d936a78d98a94c2c92e562
   branch: master
   specs:
-    webmock (3.16.0)
+    webmock (3.17.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 45f77721df31780c3bb8a01bc4b03d50380f8e55
+  revision: 73df1cf8b0614db0364bb4e374f004562236a597
   branch: master
   specs:
     faker (2.22.0)
@@ -74,10 +74,10 @@ GIT
 
 GIT
   remote: https://github.com/mperham/sidekiq
-  revision: c61f21f6fb2d2439a24888307b98cd5ad303ba82
+  revision: 7003aeb6336d3fdaed27f7444998a5891aef8f1b
   branch: main
   specs:
-    sidekiq (6.5.3)
+    sidekiq (6.5.4)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.5.0)
@@ -93,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: d60d0587c3c10c891b717299ed052ded5658c20d
+  revision: fb09b1b89011df95f6f93a68886fef586f44cd29
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -430,7 +430,7 @@ DEPENDENCIES
   vcr (~> 6.1)!
   web-console
   webdrivers
-  webmock (~> 3.16)!
+  webmock (~> 3.17)!
 
 RUBY VERSION
    ruby 3.0.3p157

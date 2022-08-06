@@ -90,7 +90,7 @@ gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"
 
-gem "webmock", "~> 3.16", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
+gem "webmock", "~> 3.17", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
 
 gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
 
