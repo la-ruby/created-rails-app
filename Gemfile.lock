@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 73df1cf8b0614db0364bb4e374f004562236a597
+  revision: 15a8bc35f489b2d5e06439c664363c779b125d6c
   branch: master
   specs:
     faker (2.22.0)
@@ -84,7 +84,7 @@ GIT
 
 GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: 2720631e53b7dc648d510282a05f78bc00a37bf0
+  revision: 313bf3463dff254b44c787b79504db53dbb4fe88
   branch: master
   specs:
     sidekiq-cron (1.7.0)
@@ -230,8 +230,8 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.615.0)
-    aws-sdk-core (3.131.6)
+    aws-partitions (1.616.0)
+    aws-sdk-core (3.132.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
