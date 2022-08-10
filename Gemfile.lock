@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/bblimke/webmock
-  revision: f6e06f1658891a6f56d936a78d98a94c2c92e562
+  revision: b82c983c569f8e3676192f1f59ed388ac0bb153f
   branch: master
   specs:
-    webmock (3.17.0)
+    webmock (3.17.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 15a8bc35f489b2d5e06439c664363c779b125d6c
+  revision: 65e5bb959e14e57d4cdc002dcdb515ee99dcb497
   branch: master
   specs:
     faker (2.22.0)
@@ -93,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 53b04ca8a98224b3f44b40d6d7189e0db72373f0
+  revision: 3ab77b0d5d0ba27b0fa597ba7935935b2654316e
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -185,7 +185,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: d6626e6ef0c49374a888074652c4c9b2237dc8eb
+  revision: 1c7cd38a8a7adb1b2d8405d243c704c103d9c3ed
   branch: master
   specs:
     redis (4.7.1)
@@ -324,7 +324,7 @@ GEM
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.4.2)
+    pg (1.4.3)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -349,7 +349,7 @@ GEM
     rexml (3.2.5)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.3.0)
+    selenium-webdriver (4.4.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
