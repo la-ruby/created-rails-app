@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/bblimke/webmock
-  revision: b82c983c569f8e3676192f1f59ed388ac0bb153f
+  revision: d1de5301973d328946c64f89bfff7e9e475b1e76
   branch: master
   specs:
     webmock (3.17.1)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 65e5bb959e14e57d4cdc002dcdb515ee99dcb497
+  revision: 5eb00cfb65b7fb823f0f99c6996b61dafd18e2d9
   branch: master
   specs:
     faker (2.22.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/mperham/sidekiq
-  revision: 7003aeb6336d3fdaed27f7444998a5891aef8f1b
+  revision: 9d5a6d7fa7edba006db86fc520fbcd353005cf9c
   branch: main
   specs:
     sidekiq (6.5.4)
@@ -93,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 3ab77b0d5d0ba27b0fa597ba7935935b2654316e
+  revision: cd673773bc65f6e78fbc5929ff29d41ef921395b
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -185,7 +185,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 1c7cd38a8a7adb1b2d8405d243c704c103d9c3ed
+  revision: aa594a40eb3f7478865823568b4eb1659bb6265d
   branch: master
   specs:
     redis (4.7.1)
@@ -201,7 +201,7 @@ GIT
 
 GIT
   remote: https://github.com/varvet/pundit
-  revision: d7c2e6e3bc1f5526f220a729090249635a7453d8
+  revision: 56af8f3ce25bf1eea47ec877f840b3de6fb32cdc
   branch: main
   specs:
     pundit (2.2.0)
@@ -265,7 +265,7 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.1.1)
       railties (>= 6.0.0)
-    debug (1.6.1)
+    debug (1.6.2)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
     digest (3.1.0)
