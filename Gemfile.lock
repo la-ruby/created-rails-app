@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: f9872c35fdcdbd216141dc02a654d914bd25482c
+  revision: 78feb51e9c2ebc5487afe186c5c31ef2a2f9fdc0
   branch: main
   specs:
     turbo-rails (1.1.1)
@@ -74,10 +74,10 @@ GIT
 
 GIT
   remote: https://github.com/mperham/sidekiq
-  revision: 6b627f652dd945edff0a9f247bd73edbfd7a7948
+  revision: a2708ea849aabdb7f62129a07ba752225c621e89
   branch: main
   specs:
-    sidekiq (6.5.4)
+    sidekiq (6.5.5)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.5.0)
@@ -185,7 +185,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: aa594a40eb3f7478865823568b4eb1659bb6265d
+  revision: 6b5dfe4eacd952002fccb3864c8f2799a429ce63
   branch: master
   specs:
     redis (4.7.1)
@@ -230,7 +230,7 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.617.0)
+    aws-partitions (1.618.0)
     aws-sdk-core (3.132.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
