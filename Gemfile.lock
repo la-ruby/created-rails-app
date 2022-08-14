@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 5eb00cfb65b7fb823f0f99c6996b61dafd18e2d9
+  revision: 6aecb58a34283f58f40cfb05e2245c55e0439190
   branch: master
   specs:
     faker (2.22.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/mperham/sidekiq
-  revision: a2708ea849aabdb7f62129a07ba752225c621e89
+  revision: ff7e41924df8c1b64c87a87abda0720382aa667c
   branch: main
   specs:
     sidekiq (6.5.5)
