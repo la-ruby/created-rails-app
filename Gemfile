@@ -79,7 +79,7 @@ gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "
 gem "sidekiq", "~> 6.5", :git => "https://github.com/mperham/sidekiq", :branch => "main"
 gem "aws-sdk-s3", require: false
 
-gem "nice_partials", "~> 0.1.7", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
+gem "nice_partials", "~> 0.1.9", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
 
 gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branch => "master"
 
