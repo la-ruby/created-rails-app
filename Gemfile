@@ -70,7 +70,7 @@ group :test do
   gem "webdrivers"
 end
 
-gem "redis", "~> 4.7", :git => "https://github.com/redis/redis-rb", :branch => "master"
+gem "redis", "~> 5.0.alpha1", :git => "https://github.com/redis/redis-rb", :branch => "master"
 
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
@@ -90,7 +90,7 @@ gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"
 
-gem "webmock", "~> 3.17", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
+gem "webmock", "~> 3.18", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
 
 gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
 
