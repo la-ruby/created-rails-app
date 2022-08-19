@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/bblimke/webmock
-  revision: 8d6530f6be3046f87c2b1d8cdbaa4409057aad32
+  revision: 833291d4ce2d5927a738f929db26b594bf4fa7f5
   branch: master
   specs:
-    webmock (3.18.0)
+    webmock (3.18.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 6aecb58a34283f58f40cfb05e2245c55e0439190
+  revision: 2f3e2a125c2a71ce084b4bf1682104aa05ea048c
   branch: master
   specs:
     faker (2.22.0)
@@ -185,11 +185,11 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 48b2789194d8f3dba233e17c7e68918fa023c9b6
+  revision: 4f8ff4e479bff10838d28d563163825e4827fee1
   branch: master
   specs:
-    redis (5.0.0.alpha1)
-      redis-client (~> 0.6)
+    redis (5.0.0.beta3)
+      redis-client (~> 0.7)
 
 GIT
   remote: https://github.com/thoughtbot/factory_bot_rails
@@ -341,7 +341,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.6.2)
+    redis-client (0.7.0)
       connection_pool
     regexp_parser (2.5.0)
     reline (0.3.1)
@@ -420,7 +420,7 @@ DEPENDENCIES
   puma (~> 5.0)
   pundit (~> 2.2)!
   rails!
-  redis (~> 5.0.alpha1)!
+  redis (~> 5.0.beta3)!
   selenium-webdriver
   sendgrid-ruby (>= 6.6)
   sidekiq (~> 6.5)!
