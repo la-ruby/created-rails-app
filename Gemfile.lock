@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 2f3e2a125c2a71ce084b4bf1682104aa05ea048c
+  revision: 35a48ec6344b8a2581ed3b02d08b3c9f74f3ef27
   branch: master
   specs:
     faker (2.22.0)
@@ -93,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: cd673773bc65f6e78fbc5929ff29d41ef921395b
+  revision: f1bae2b9253f227cd5cb03ef73d39ad7ac3e9909
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -185,10 +185,10 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 4f8ff4e479bff10838d28d563163825e4827fee1
+  revision: 4bc949e1169982290f414bdbb5ec67ace778feea
   branch: master
   specs:
-    redis (5.0.0.beta3)
+    redis (5.0.0.beta4)
       redis-client (~> 0.7)
 
 GIT
@@ -226,12 +226,12 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.619.0)
+    aws-partitions (1.620.0)
     aws-sdk-core (3.132.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -326,7 +326,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.4.3)
-    public_suffix (4.0.7)
+    public_suffix (5.0.0)
     puma (5.6.4)
       nio4r (~> 2.0)
     raabro (1.4.0)
@@ -341,7 +341,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.7.0)
+    redis-client (0.7.1)
       connection_pool
     regexp_parser (2.5.0)
     reline (0.3.1)
@@ -420,7 +420,7 @@ DEPENDENCIES
   puma (~> 5.0)
   pundit (~> 2.2)!
   rails!
-  redis (~> 5.0.beta3)!
+  redis (~> 5.0.beta4)!
   selenium-webdriver
   sendgrid-ruby (>= 6.6)
   sidekiq (~> 6.5)!
