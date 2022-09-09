@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 5d87c1a9b50136a1ff855f2678d6d03c186707f7
+  revision: 0aed3aaef81d1b957e9b506388bc777c7ca3aa55
   branch: main
   specs:
     nice_partials (0.1.9)
@@ -26,10 +26,10 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: aaf6cbe9841877113da1ead8b5538fc072e4efb6
+  revision: efedb39cb752ef575f1f6af0fe944064d3bb379b
   branch: master
   specs:
-    faker (2.22.0)
+    faker (2.23.0)
       i18n (>= 1.8.11, < 2)
 
 GIT
@@ -73,18 +73,8 @@ GIT
     kaminari-core (1.2.2)
 
 GIT
-  remote: https://github.com/mperham/sidekiq
-  revision: b666a6d67f341bb6253d3f181efd5bd7454c628a
-  branch: main
-  specs:
-    sidekiq (6.5.6)
-      connection_pool (>= 2.2.2)
-      rack (~> 2.0)
-      redis (>= 4.5.0, < 5)
-
-GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: 313bf3463dff254b44c787b79504db53dbb4fe88
+  revision: 1f9cc7ddf386de0d35d41afd5995d9a99e18d4e7
   branch: master
   specs:
     sidekiq-cron (1.7.0)
@@ -93,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 4a1f22474bde75f74093547223937f4b6516b077
+  revision: ff277583e22ddfbcfbd2131789a7cb7c2f868d68
   branch: 7-0-stable
   specs:
     actioncable (7.0.3.1)
@@ -185,11 +175,11 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 6ddf145be57134aef7b0916fc1140cc9f9317c78
+  revision: a3070af9323355442a23e750afc105d5d01fa2ac
   branch: master
   specs:
-    redis (5.0.0.beta4)
-      redis-client (~> 0.7)
+    redis (5.0.4)
+      redis-client (>= 0.7.4)
 
 GIT
   remote: https://github.com/thoughtbot/factory_bot_rails
@@ -228,11 +218,11 @@ GEM
   specs:
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
-    airbrake-ruby (6.1.1)
+    airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.622.0)
-    aws-sdk-core (3.136.0)
+    aws-partitions (1.627.0)
+    aws-sdk-core (3.143.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -341,7 +331,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.7.1)
+    redis-client (0.8.0)
       connection_pool
     regexp_parser (2.5.0)
     reline (0.3.1)
@@ -359,6 +349,10 @@ GEM
       websocket (~> 1.0)
     sendgrid-ruby (6.6.2)
       ruby_http_client (~> 3.4)
+    sidekiq (6.5.5)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.5.0)
     simplecov (0.21.2)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -410,7 +404,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8)!
   factory_bot_rails (~> 6.2)!
-  faker (~> 2.22)!
+  faker (~> 2.23)!
   jbuilder
   jsbundling-rails
   kaminari (~> 1.2)!
@@ -420,10 +414,10 @@ DEPENDENCIES
   puma (~> 5.0)
   pundit (~> 2.2)!
   rails!
-  redis (~> 5.0.beta4)!
+  redis (~> 5.0)!
   selenium-webdriver
   sendgrid-ruby (>= 6.6)
-  sidekiq (~> 6.5)!
+  sidekiq (~> 6.5)
   sidekiq-cron (~> 1.7)!
   simplecov
   sprockets-rails
