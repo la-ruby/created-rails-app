@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: 0aed3aaef81d1b957e9b506388bc777c7ca3aa55
+  revision: de4416069a513dfe4f4b8eef4ccdd9875e5621c2
   branch: main
   specs:
     nice_partials (0.1.9)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 9f2f903c21ee68400142eeaabf4556aa6b90296f
+  revision: 6aaf4dc8aa3821cbc507f74b5885674aa29052c7
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -114,7 +114,7 @@ GIT
     actionpack (7.0.4)
       actionview (= 7.0.4)
       activesupport (= 7.0.4)
-      rack (~> 2.0, >= 2.2.0)
+      rack (~> 2.0, >= 2.2.4)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: a3070af9323355442a23e750afc105d5d01fa2ac
+  revision: 07cccee67d3b8ddc3c63222a52e0e58f695cdaa2
   branch: master
   specs:
     redis (5.0.4)
@@ -222,7 +222,7 @@ GEM
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
     aws-partitions (1.628.0)
-    aws-sdk-core (3.144.0)
+    aws-sdk-core (3.145.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
