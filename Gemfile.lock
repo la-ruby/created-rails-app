@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/bullet-train-co/nice_partials
-  revision: de4416069a513dfe4f4b8eef4ccdd9875e5621c2
+  revision: c49fd0f9ca8414228299e612d98f22a4b39c8e76
   branch: main
   specs:
     nice_partials (0.1.9)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: efedb39cb752ef575f1f6af0fe944064d3bb379b
+  revision: 7507876893aaeb4917ca47e7ef58273bdaa6288d
   branch: master
   specs:
     faker (2.23.0)
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 78feb51e9c2ebc5487afe186c5c31ef2a2f9fdc0
+  revision: 50fb92fe2d773cfce503613da0e4f67cb02f7c0d
   branch: main
   specs:
     turbo-rails (1.1.1)
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.628.0)
-    aws-sdk-core (3.145.0)
+    aws-partitions (1.629.0)
+    aws-sdk-core (3.146.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
