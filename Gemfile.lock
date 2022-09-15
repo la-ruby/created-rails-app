@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 50fb92fe2d773cfce503613da0e4f67cb02f7c0d
+  revision: fb519d5009819def38754ce3e67638d3d9bb6ef8
   branch: main
   specs:
     turbo-rails (1.1.1)
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.629.0)
-    aws-sdk-core (3.146.0)
+    aws-partitions (1.630.0)
+    aws-sdk-core (3.147.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -283,7 +283,7 @@ GEM
     jmespath (1.6.1)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    loofah (2.18.0)
+    loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
