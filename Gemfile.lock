@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/airbrake/airbrake
-  revision: fafea1d854afa277edf9e4ce43676a9035fa847d
+  revision: 3f3dd6814861dc7e97cbd82c5be77e3fd295ebdf
   branch: master
   specs:
     airbrake (13.0.2)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 6aaf4dc8aa3821cbc507f74b5885674aa29052c7
+  revision: 93b2461afb1f6bbe7c511b025c026567ebbc4b97
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.630.0)
-    aws-sdk-core (3.147.0)
+    aws-partitions (1.631.0)
+    aws-sdk-core (3.148.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -250,7 +250,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
-    connection_pool (2.2.5)
+    connection_pool (2.3.0)
     crack (0.4.5)
       rexml
     crass (1.0.6)
@@ -266,7 +266,7 @@ GEM
       tzinfo
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
-    fugit (1.6.0)
+    fugit (1.7.0)
       et-orbi (~> 1, >= 1.2.7)
       raabro (~> 1.4)
     globalid (1.0.0)
