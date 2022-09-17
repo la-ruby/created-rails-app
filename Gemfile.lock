@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: 1f9cc7ddf386de0d35d41afd5995d9a99e18d4e7
+  revision: 7acecdea4ef8b17b27ae635fc8698704aa1a0773
   branch: master
   specs:
     sidekiq-cron (1.7.0)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 93b2461afb1f6bbe7c511b025c026567ebbc4b97
+  revision: 81295f94c29645b2467b927ac0742ce485d19285
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -222,7 +222,7 @@ GEM
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
     aws-partitions (1.631.0)
-    aws-sdk-core (3.148.0)
+    aws-sdk-core (3.149.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -331,7 +331,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.8.0)
+    redis-client (0.8.1)
       connection_pool
     regexp_parser (2.5.0)
     reline (0.3.1)
