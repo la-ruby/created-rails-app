@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/airbrake/airbrake
-  revision: 3f3dd6814861dc7e97cbd82c5be77e3fd295ebdf
+  revision: 6ca4b6023d56dba214b55f649743b41fa4934edf
   branch: master
   specs:
-    airbrake (13.0.2)
+    airbrake (13.0.3)
       airbrake-ruby (~> 6.0)
 
 GIT
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: a4b077f0902df0d553c9dd192867f5379492cd5b
+  revision: 4f4c1a330963de84ea188f97de12e6895217eac3
   branch: master
   specs:
     faker (2.23.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: 67db8a1dc7be29cc1e944bd91fdb132b4550535d
+  revision: b6c856b934af8845d950d094fc9c68ffd3396cf2
   branch: master
   specs:
     sidekiq-cron (1.7.0)
@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 912c0087a2984978ea1380c633ce18debedf0577
+  revision: fdf61e578ae8438e466961cfda91aa9727f914b5
   branch: master
   specs:
     redis (5.0.4)
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.632.0)
-    aws-sdk-core (3.150.0)
+    aws-partitions (1.633.0)
+    aws-sdk-core (3.151.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)

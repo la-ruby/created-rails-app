@@ -6632,7 +6632,6 @@
           return;
         }
 
-        element.focus();
         element.removeAttribute('tabindex');
         element.setAttribute('aria-selected', true);
 

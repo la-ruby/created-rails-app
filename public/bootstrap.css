@@ -2841,10 +2841,15 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-:not(.btn-check) + .btn:hover, .btn:first-child:hover {
+.btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+}
+.btn-check + .btn:hover {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border-color: var(--bs-btn-border-color);
 }
 .btn:focus-visible {
   color: var(--bs-btn-hover-color);
@@ -5238,6 +5243,7 @@ textarea.form-control-lg {
 }
 
 .toast-container {
+  --bs-toast-zindex: 1090;
   position: absolute;
   z-index: var(--bs-toast-zindex);
   width: -webkit-max-content;
