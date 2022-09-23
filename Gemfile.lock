@@ -46,10 +46,10 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 0225c09bbd25f744a5f2b98dda5b143ad544eb5a
+  revision: 454efaa27fc64789fca1ea584a0873c82855ba2c
   branch: main
   specs:
-    turbo-rails (1.1.1)
+    turbo-rails (1.3.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 815b4c75cca407ea7e69cb5e2850ff6e477d178e
+  revision: 5ffa8f46dac1eca65d35847004dcfbff2f9e15e4
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -175,11 +175,11 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: fdf61e578ae8438e466961cfda91aa9727f914b5
+  revision: f3d886f9380e203ffa44e85f769f8caef2cb5f02
   branch: master
   specs:
-    redis (5.0.4)
-      redis-client (>= 0.7.4)
+    redis (5.0.5)
+      redis-client (>= 0.9.0)
 
 GIT
   remote: https://github.com/thoughtbot/factory_bot_rails
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.634.0)
-    aws-sdk-core (3.152.0)
+    aws-partitions (1.635.0)
+    aws-sdk-core (3.153.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -331,7 +331,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.8.1)
+    redis-client (0.9.0)
       connection_pool
     regexp_parser (2.5.0)
     reline (0.3.1)
