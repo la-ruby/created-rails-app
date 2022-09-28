@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: f3d886f9380e203ffa44e85f769f8caef2cb5f02
+  revision: d4b24e1e4fac7b9e3fee01947bf400f52ea500cf
   branch: master
   specs:
     redis (5.0.5)
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.637.0)
-    aws-sdk-core (3.155.0)
+    aws-partitions (1.638.0)
+    aws-sdk-core (3.156.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
