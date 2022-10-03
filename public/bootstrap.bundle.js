@@ -6686,6 +6686,9 @@
       const nextActiveElement = getNextActiveElement(this._getChildren().filter(element => !isDisabled(element)), event.target, isNext, true);
 
       if (nextActiveElement) {
+        nextActiveElement.focus({
+          preventScroll: true
+        });
         Tab.getOrCreateInstance(nextActiveElement).show();
       }
     }
@@ -6986,13 +6989,17 @@
       switch (event.type) {
         case 'mouseover':
         case 'mouseout':
-          this._hasMouseInteraction = isInteracting;
-          break;
+          {
+            this._hasMouseInteraction = isInteracting;
+            break;
+          }
 
         case 'focusin':
         case 'focusout':
-          this._hasKeyboardInteraction = isInteracting;
-          break;
+          {
+            this._hasKeyboardInteraction = isInteracting;
+            break;
+          }
       }
 
       if (isInteracting) {
