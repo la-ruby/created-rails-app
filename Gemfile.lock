@@ -74,10 +74,10 @@ GIT
 
 GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: 01f46f9f10c234c6cc2e1af09ed3cb6ddf71650d
+  revision: b7bde1ab078eaf6d851124d82f45ef0d66952de5
   branch: master
   specs:
-    sidekiq-cron (1.7.0)
+    sidekiq-cron (1.8.0)
       fugit (~> 1)
       sidekiq (>= 4.2.1)
 
@@ -221,7 +221,7 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.640.0)
+    aws-partitions (1.641.0)
     aws-sdk-core (3.158.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -410,7 +410,7 @@ DEPENDENCIES
   selenium-webdriver
   sendgrid-ruby (>= 6.6)
   sidekiq (~> 6.5)
-  sidekiq-cron (~> 1.7)!
+  sidekiq-cron (~> 1.8)!
   simplecov
   sprockets-rails
   stimulus-rails

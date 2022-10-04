@@ -94,7 +94,7 @@ gem "webmock", "~> 3.18", :group => :test, :git => "https://github.com/bblimke/w
 
 gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
 
-gem "sidekiq-cron", "~> 1.7", :git => "https://github.com/ondrejbartas/sidekiq-cron", :branch => "master"
+gem "sidekiq-cron", "~> 1.8", :git => "https://github.com/ondrejbartas/sidekiq-cron", :branch => "master"
 
 gem "sendgrid-ruby", ">= 6.6"
 
