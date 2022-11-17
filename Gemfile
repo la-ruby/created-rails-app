@@ -76,7 +76,7 @@ gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch 
 
 gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "main"
 
-gem "sidekiq", "~> 6.5"
+gem "sidekiq", "~> 7.0"
 gem "aws-sdk-s3", require: false
 
 gem "nice_partials", "~> 0.1.9", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
@@ -85,7 +85,7 @@ gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branc
 
 gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
 
-gem "faker", "~> 2.23", :git => "https://github.com/faker-ruby/faker", :branch => "master"
+gem "faker", "~> 3.0", :git => "https://github.com/faker-ruby/faker", :branch => "main"
 gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"
