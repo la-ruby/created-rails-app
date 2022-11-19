@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: d8b50a4cca2850c85d170b18744964f3a283304b
+  revision: 30d540c6261723d22964b58144575890fbb09c36
   branch: main
   specs:
     faker (3.0.0)
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 5f4da6b0e31ccfebc405a139529734fd85afa1ab
+  revision: 2a80b2c617c93479fec4893457f81bad5f629226
   branch: main
   specs:
     turbo-rails (1.3.2)
@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 245edf613b623958feadec04c4d68dc4e8d79619
+  revision: a8e00cbdac5e2eefc1872c0718d0290975b6e93b
   branch: master
   specs:
     redis (5.0.5)
@@ -221,8 +221,8 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.663.0)
-    aws-sdk-core (3.168.0)
+    aws-partitions (1.664.0)
+    aws-sdk-core (3.168.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
@@ -324,7 +324,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.11.1)
+    redis-client (0.11.2)
       connection_pool
     regexp_parser (2.6.1)
     reline (0.3.1)
