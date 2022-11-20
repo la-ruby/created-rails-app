@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 30d540c6261723d22964b58144575890fbb09c36
+  revision: 0ebdde5f876e942bc31a80c728a16774c8596ec5
   branch: main
   specs:
     faker (3.0.0)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 4134d3d6407569b0713913fcb83e95fb050ee943
+  revision: 5c4c04cf00e30fc1c1252174041c9b9dc9757ebd
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
