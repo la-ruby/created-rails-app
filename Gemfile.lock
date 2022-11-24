@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: a1a01842f84d113e785f21ba2b33557f2eb60b25
+  revision: 098f86edba54d91aefdcfc2d49da9f1f7a2a53a8
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: a8e00cbdac5e2eefc1872c0718d0290975b6e93b
+  revision: 3c42db61ff6909792e5b15e28be34c18347852a1
   branch: master
   specs:
     redis (5.0.5)
