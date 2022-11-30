@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 738935a01c2cdc7d5c141f80e8257bb562335ab1
+  revision: a76e075027d37e7d9d520963d56c3c4e5147045a
   branch: main
   specs:
     faker (3.0.0)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 4c85575979c057680e9bc6a40800d98d93051b20
+  revision: a4dbb153fd390ac31bb9808809e7ac4d3a2c5116
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -221,13 +221,13 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.666.0)
-    aws-sdk-core (3.168.1)
+    aws-partitions (1.668.0)
+    aws-sdk-core (3.168.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.59.0)
+    aws-sdk-kms (1.60.0)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.117.1)
