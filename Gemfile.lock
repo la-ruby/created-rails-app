@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: b5b80ab4d0993a554564faf4f5d4c6ed304fad23
+  revision: 7c0f3b4cf2fcf92bf86984e492b9cf60a72542b0
   branch: main
   specs:
     faker (3.0.0)
@@ -175,7 +175,7 @@ GIT
 
 GIT
   remote: https://github.com/redis/redis-rb
-  revision: 3c42db61ff6909792e5b15e28be34c18347852a1
+  revision: 5a9fb00366c94cb5603b13e903afee58a3e3ee7a
   branch: master
   specs:
     redis (5.0.5)
