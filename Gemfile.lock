@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: 61a5e952c7e84210eea3892b2e8dba325f4cffee
+  revision: 29ec36fc932c10967d8952e4bab18e1edc54cc31
   branch: main
   specs:
     faker (3.0.0)
@@ -221,7 +221,7 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.675.0)
+    aws-partitions (1.676.0)
     aws-sdk-core (3.168.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -274,7 +274,7 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
-    irb (1.6.0)
+    irb (1.6.1)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -282,7 +282,7 @@ GEM
     jmespath (1.6.2)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    loofah (2.19.0)
+    loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.8.0)
@@ -324,8 +324,8 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.3)
-      loofah (~> 2.3)
+    rails-html-sanitizer (1.4.4)
+      loofah (~> 2.19, >= 2.19.1)
     rake (13.0.6)
     rbtree3 (0.7.0)
     redis-client (0.11.2)
