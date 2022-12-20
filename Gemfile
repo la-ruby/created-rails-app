@@ -74,7 +74,7 @@ gem "redis", "~> 5.0", :git => "https://github.com/redis/redis-rb", :branch => "
 
 gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
-gem "pundit", "~> 2.2", :git => "https://github.com/varvet/pundit", :branch => "main"
+gem "pundit", "~> 2.3", :git => "https://github.com/varvet/pundit", :branch => "main"
 
 gem "sidekiq", "~> 7.0"
 gem "aws-sdk-s3", require: false

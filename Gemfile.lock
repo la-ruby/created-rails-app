@@ -192,10 +192,10 @@ GIT
 
 GIT
   remote: https://github.com/varvet/pundit
-  revision: a5d756adb518c64697c6652b73cacc12e17d0a70
+  revision: dd53b6929946405438aab43564f14d630f2eb804
   branch: main
   specs:
-    pundit (2.2.0)
+    pundit (2.3.0)
       activesupport (>= 3.0.0)
 
 GIT
@@ -221,7 +221,7 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.679.0)
+    aws-partitions (1.680.0)
     aws-sdk-core (3.168.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -255,7 +255,7 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.1.2)
       railties (>= 6.0.0)
-    date (3.3.2)
+    date (3.3.3)
     debug (1.7.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
@@ -408,7 +408,7 @@ DEPENDENCIES
   nice_partials (~> 0.1.9)!
   pg (~> 1.1)
   puma (~> 5.0)
-  pundit (~> 2.2)!
+  pundit (~> 2.3)!
   rails!
   redis (~> 5.0)!
   selenium-webdriver
