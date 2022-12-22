@@ -5353,7 +5353,11 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-close-disabled-opacity);
 }
 
-[data-bs-theme=dark] .btn-close, .btn-close-white {
+.btn-close-white {
+  filter: var(--bs-btn-close-white-filter);
+}
+
+[data-bs-theme=dark] .btn-close {
   filter: var(--bs-btn-close-white-filter);
 }
 
@@ -6171,15 +6175,25 @@ textarea.form-control-lg {
   text-align: center;
 }
 
-[data-bs-theme=dark] .carousel .carousel-control-prev-icon, .carousel-dark .carousel-control-prev-icon,
-[data-bs-theme=dark] .carousel .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
   filter: invert(1) grayscale(100);
 }
-[data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target], .carousel-dark .carousel-indicators [data-bs-target] {
+.carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #000;
 }
-[data-bs-theme=dark] .carousel .carousel-caption, .carousel-dark .carousel-caption {
+.carousel-dark .carousel-caption {
+  color: #000;
+}
+
+[data-bs-theme=dark] .carousel .carousel-control-prev-icon,
+[data-bs-theme=dark] .carousel .carousel-control-next-icon {
+  filter: invert(1) grayscale(100);
+}
+[data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+[data-bs-theme=dark] .carousel .carousel-caption {
   color: #000;
 }
 
