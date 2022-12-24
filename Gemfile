@@ -85,7 +85,7 @@ gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branc
 
 gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
 
-gem "faker", "~> 3.0", :git => "https://github.com/faker-ruby/faker", :branch => "main"
+gem "faker", "~> 3.1", :git => "https://github.com/faker-ruby/faker", :branch => "main"
 gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"

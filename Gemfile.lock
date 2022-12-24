@@ -26,10 +26,10 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: f6957edc28a336ca8ebd96e7bdba2a717e7dad2c
+  revision: f3117a284104c18e8c81be76b827006b93170151
   branch: main
   specs:
-    faker (3.0.0)
+    faker (3.1.0)
       i18n (>= 1.8.11, < 2)
 
 GIT
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: cf69d2a1f4ff96d9f7734e7f40618d56d52751be
+  revision: 627a0cdc5fc8b7787b500f8152fa6b2ab700e5b5
   branch: main
   specs:
     turbo-rails (1.3.2)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 18b5f24e274bd4318749d8287214f6f2bca9bcad
+  revision: 83009f94e7539c7db89f83446b1478bdaec9d1a0
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -221,7 +221,7 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.683.0)
+    aws-partitions (1.684.0)
     aws-sdk-core (3.168.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -296,7 +296,7 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.16.3)
-    net-imap (0.3.3)
+    net-imap (0.3.4)
       date
       net-protocol
     net-pop (0.1.2)
@@ -317,7 +317,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     raabro (1.4.0)
-    racc (1.6.1)
+    racc (1.6.2)
     rack (2.2.4)
     rack-test (2.0.2)
       rack (>= 1.3)
@@ -350,7 +350,7 @@ GEM
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
       redis-client (>= 0.11.0)
-    simplecov (0.21.2)
+    simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
@@ -400,7 +400,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8)!
   factory_bot_rails (~> 6.2)!
-  faker (~> 3.0)!
+  faker (~> 3.1)!
   jbuilder
   jsbundling-rails
   kaminari (~> 1.2)!
