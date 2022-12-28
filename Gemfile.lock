@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: f3117a284104c18e8c81be76b827006b93170151
+  revision: a037265ce0627612537b79f9b25e3da2141412b0
   branch: main
   specs:
     faker (3.1.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/ondrejbartas/sidekiq-cron
-  revision: 4e78963864271a797b465bcd0aeada40822ab0de
+  revision: 71c02bfbe91ee1c22acb768b5fc0de4c280357dc
   branch: master
   specs:
     sidekiq-cron (1.9.1)
