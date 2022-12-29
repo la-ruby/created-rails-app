@@ -127,6 +127,7 @@
 }
 
 [data-bs-theme=dark] {
+  color-scheme: dark;
   --bs-body-color: #adb5bd;
   --bs-body-color-rgb: 173, 181, 189;
   --bs-body-bg: #212529;
