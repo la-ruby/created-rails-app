@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/faker-ruby/faker
-  revision: a037265ce0627612537b79f9b25e3da2141412b0
+  revision: 3e261964110dadeb6777778f147a8851743c3194
   branch: main
   specs:
     faker (3.1.0)
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: a10ea27404885091ca004ae7d58a58ad5f2b75a8
+  revision: 6b0b0d1b419572aa12dda9ce955c7ccebd55307c
   branch: main
   specs:
     turbo-rails (1.3.2)
@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 83009f94e7539c7db89f83446b1478bdaec9d1a0
+  revision: 6a0589a5c3cf5e2ec2e28d6225b4910187799d02
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -221,7 +221,7 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.686.0)
+    aws-partitions (1.687.0)
     aws-sdk-core (3.168.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
