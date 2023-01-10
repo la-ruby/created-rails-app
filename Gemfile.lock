@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: a422a31b235ac17b8935d90cd04991838cd515aa
+  revision: 4505c2f508418e40c2cf82701cc9144cb7e4e83d
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -221,7 +221,7 @@ GEM
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.689.0)
+    aws-partitions (1.690.0)
     aws-sdk-core (3.168.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -328,7 +328,7 @@ GEM
       loofah (~> 2.19, >= 2.19.1)
     rake (13.0.6)
     rbtree3 (0.7.0)
-    redis-client (0.11.2)
+    redis-client (0.12.0)
       connection_pool
     regexp_parser (2.6.1)
     reline (0.3.2)
