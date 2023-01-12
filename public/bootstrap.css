@@ -71,8 +71,6 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -81,6 +79,9 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg: #fff;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -91,8 +92,6 @@
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
-  --bs-body-bg: #fff;
-  --bs-body-bg-rgb: 255, 255, 255;
   --bs-link-color: #0d6efd;
   --bs-link-color-rgb: 13, 110, 253;
   --bs-link-decoration: underline;
@@ -117,12 +116,6 @@
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-form-control-bg: var(--bs-body-bg);
   --bs-form-control-disabled-bg: var(--bs-secondary-bg);
-  --bs-breakpoint-xs: 0;
-  --bs-breakpoint-sm: 576px;
-  --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: 992px;
-  --bs-breakpoint-xl: 1200px;
-  --bs-breakpoint-xxl: 1400px;
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
   --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
@@ -771,6 +764,15 @@ progress {
     max-width: 1320px;
   }
 }
+:root {
+  --bs-breakpoint-xs: 0;
+  --bs-breakpoint-sm: 576px;
+  --bs-breakpoint-md: 768px;
+  --bs-breakpoint-lg: 992px;
+  --bs-breakpoint-xl: 1200px;
+  --bs-breakpoint-xxl: 1400px;
+}
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -6933,91 +6935,102 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  --bs-link-color-rgb: 13, 110, 253;
-  -webkit-text-decoration-color: RGBA(13, 110, 253, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(13, 110, 253, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-primary-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-primary:hover, .link-primary:focus {
-  --bs-link-color-rgb: 10, 88, 202;
+  color: RGBA(10, 88, 202, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(10, 88, 202, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(10, 88, 202, var(--bs-link-underline-opacity, 1));
 }
 
 .link-secondary {
-  --bs-link-color-rgb: 108, 117, 125;
-  -webkit-text-decoration-color: RGBA(108, 117, 125, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(108, 117, 125, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-secondary-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-secondary:hover, .link-secondary:focus {
-  --bs-link-color-rgb: 86, 94, 100;
+  color: RGBA(86, 94, 100, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(86, 94, 100, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(86, 94, 100, var(--bs-link-underline-opacity, 1));
 }
 
 .link-success {
-  --bs-link-color-rgb: 25, 135, 84;
-  -webkit-text-decoration-color: RGBA(25, 135, 84, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(25, 135, 84, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-success-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-success-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-success-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-success:hover, .link-success:focus {
-  --bs-link-color-rgb: 20, 108, 67;
+  color: RGBA(20, 108, 67, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(20, 108, 67, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(20, 108, 67, var(--bs-link-underline-opacity, 1));
 }
 
 .link-info {
-  --bs-link-color-rgb: 13, 202, 240;
-  -webkit-text-decoration-color: RGBA(13, 202, 240, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(13, 202, 240, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-info-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-info:hover, .link-info:focus {
-  --bs-link-color-rgb: 61, 213, 243;
+  color: RGBA(61, 213, 243, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(61, 213, 243, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(61, 213, 243, var(--bs-link-underline-opacity, 1));
 }
 
 .link-warning {
-  --bs-link-color-rgb: 255, 193, 7;
-  -webkit-text-decoration-color: RGBA(255, 193, 7, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(255, 193, 7, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-warning-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-warning-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-warning-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-warning:hover, .link-warning:focus {
-  --bs-link-color-rgb: 255, 205, 57;
+  color: RGBA(255, 205, 57, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(255, 205, 57, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(255, 205, 57, var(--bs-link-underline-opacity, 1));
 }
 
 .link-danger {
-  --bs-link-color-rgb: 220, 53, 69;
-  -webkit-text-decoration-color: RGBA(220, 53, 69, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(220, 53, 69, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-danger-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-danger-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-danger-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-danger:hover, .link-danger:focus {
-  --bs-link-color-rgb: 176, 42, 55;
+  color: RGBA(176, 42, 55, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(176, 42, 55, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(176, 42, 55, var(--bs-link-underline-opacity, 1));
 }
 
 .link-light {
-  --bs-link-color-rgb: 248, 249, 250;
-  -webkit-text-decoration-color: RGBA(248, 249, 250, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(248, 249, 250, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-light-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-light-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-light-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-light:hover, .link-light:focus {
-  --bs-link-color-rgb: 249, 250, 251;
+  color: RGBA(249, 250, 251, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(249, 250, 251, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(249, 250, 251, var(--bs-link-underline-opacity, 1));
 }
 
 .link-dark {
-  --bs-link-color-rgb: 33, 37, 41;
-  -webkit-text-decoration-color: RGBA(33, 37, 41, var(--bs-link-underline-opacity, 1));
-  text-decoration-color: RGBA(33, 37, 41, var(--bs-link-underline-opacity, 1));
+  color: RGBA(var(--bs-dark-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-dark-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-dark-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-dark:hover, .link-dark:focus {
-  --bs-link-color-rgb: 26, 30, 33;
+  color: RGBA(26, 30, 33, var(--bs-link-opacity, 1));
   -webkit-text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1));
   text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1));
+}
+
+.link-body-emphasis {
+  color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 1));
+  -webkit-text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1));
+}
+.link-body-emphasis:hover, .link-body-emphasis:focus {
+  color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 0.75));
+  -webkit-text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 0.75));
+  text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 0.75));
 }
 
 .focus-ring:focus {

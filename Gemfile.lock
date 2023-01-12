@@ -83,7 +83,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 4505c2f508418e40c2cf82701cc9144cb7e4e83d
+  revision: 3d74877b030357dc7d4cdb58c1abf92691d1c517
   branch: 7-0-stable
   specs:
     actioncable (7.0.4)
@@ -345,7 +345,7 @@ GEM
       websocket (~> 1.0)
     sendgrid-ruby (6.6.2)
       ruby_http_client (~> 3.4)
-    sidekiq (7.0.2)
+    sidekiq (7.0.3)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
