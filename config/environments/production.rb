@@ -60,7 +60,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "waterfall_production"
+  # config.active_job.queue_name_prefix = "recipe_production"
 
   config.action_mailer.perform_caching = false
 
@@ -90,6 +90,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.cache_store = :redis_cache_store, { url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0") }
   config.active_job.queue_adapter     = :sidekiq
 end

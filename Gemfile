@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.0.3"
+ruby "3.1.2"
 
 gem 'rails', :github => 'rails/rails', :branch => '7-0-stable'
 
@@ -70,32 +70,30 @@ group :test do
   gem "webdrivers"
 end
 
-gem "redis", "~> 5.0", :git => "https://github.com/redis/redis-rb", :branch => "master"
+gem "devise", "~> 4.9.alpha", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
-gem "devise", "~> 4.8", :git => "https://github.com/heartcombo/devise", :branch => "main"
-
-gem "pundit", "~> 2.3", :git => "https://github.com/varvet/pundit", :branch => "main"
+gem "pundit", "~> 2.3"
 
 gem "sidekiq", "~> 7.0"
 gem "aws-sdk-s3", require: false
 
-gem "nice_partials", "~> 0.9.1", :git => "https://github.com/bullet-train-co/nice_partials", :branch => "main"
+gem "nice_partials", "~> 0.9.1"
 
-gem "kaminari", "~> 1.2", :git => "https://github.com/kaminari/kaminari", :branch => "master"
+gem "kaminari", "~> 1.2"
 
-gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development], :git => "https://github.com/thoughtbot/factory_bot_rails", :branch => "main"
+gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development]
 
-gem "faker", "~> 3.1", :git => "https://github.com/faker-ruby/faker", :branch => "main"
+gem "faker", "~> 3.1"
 gem 'simplecov', require: false, group: :test
 
-gem "minitest-test_profile", "~> 0.2.2", :group => :test, :git => "https://github.com/y-yagi/minitest-test_profile", :branch => "master"
+gem "minitest-test_profile", "~> 0.2.2", :group => :test
 
-gem "webmock", "~> 3.18", :group => :test, :git => "https://github.com/bblimke/webmock", :branch => "master"
-
-gem "vcr", "~> 6.1", :group => :test, :git => "https://github.com/vcr/vcr", :branch => "master"
-
-gem "sidekiq-cron", "~> 1.9", :git => "https://github.com/ondrejbartas/sidekiq-cron", :branch => "master"
+gem "webmock", "~> 3.18", :group => :test
 
 gem "sendgrid-ruby", ">= 6.6"
 
-gem "airbrake", "~> 13.0", :git => "https://github.com/airbrake/airbrake", :branch => "master"
+gem "rollbar", "~> 3.4"
+
+gem "flipper", "~> 0.26.0"
+
+gem "flipper-active_record", "~> 0.26.0"

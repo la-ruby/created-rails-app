@@ -3,15 +3,14 @@
   "private": "true",
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1",
-    "@hotwired/turbo-rails": "^7.2.4",
+    "@hotwired/turbo-rails": "^7.2.5",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
-    "esbuild": "^0.17.1",
+    "esbuild": "^0.17.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.57.1",
-    "vue": "^3.2.45"
+    "sass": "^1.58.0"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
