@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dew</title>
+    <title>Frost</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= render '/stylesheets' %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= render '/stylesheets' %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
    <%= render "/javascripts" %>
   </head>
