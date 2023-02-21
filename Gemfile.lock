@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: 7f419bf99adb9463617be7ccb0852d5f8f7b0317
+  revision: 41e2db212065f2a75a5d73e76d6eb8ecd53a6acf
   branch: main
   specs:
     devise (4.9.0)
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 79b301ee114f2b1e255629e2a5d001c0abb71af0
+  revision: 9281d6298f1d8000f873acd293b3b4270ecaf591
   branch: main
   specs:
     turbo-rails (1.3.3)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: d6c5d38d8685b37bbaee2ae363e7ac272a2c3112
+  revision: 09ea3ecaf6ff898f261849b2fd73f2b3242575f5
   branch: 7-0-stable
   specs:
     actioncable (7.0.4.2)
