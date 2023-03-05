@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 7402db85029092ec49dca4a020a7de51b6fa5e8b
+  revision: 728b963eb67e1d10a2f16c571f98799076985e2b
   branch: main
   specs:
     turbo-rails (1.4.0)
@@ -209,7 +209,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.1)
-    minitest (5.17.0)
+    minitest (5.18.0)
     minitest-test_profile (0.2.2)
       minitest
     net-imap (0.3.4)
