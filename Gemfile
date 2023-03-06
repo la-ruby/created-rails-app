@@ -77,7 +77,7 @@ gem "pundit", "~> 2.3"
 gem "sidekiq", "~> 7.0"
 gem "aws-sdk-s3", require: false
 
-gem "nice_partials", "~> 0.9.2"
+gem "nice_partials", "~> 0.9.3"
 
 gem "kaminari", "~> 1.2"
 
