@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: f9354ab3990951478854bbf83eee4cb1e4c32ee9
+  revision: 99ee8bd7d7ad957a8208a6174c177cc518cd0919
   branch: 7-0-stable
   specs:
     actioncable (7.0.4.2)
@@ -118,7 +118,7 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.722.0)
+    aws-partitions (1.723.0)
     aws-sdk-core (3.170.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -208,7 +208,6 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.18.0)
     minitest-test_profile (0.2.2)
       minitest
@@ -224,9 +223,6 @@ GEM
     nice_partials (0.9.3)
       actionview (>= 4.2.6)
     nio4r (2.5.8)
-    nokogiri (1.14.2)
-      mini_portile2 (~> 2.8.0)
-      racc (~> 1.4)
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -312,7 +308,6 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -351,4 +346,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.4.7
+   2.4.8
