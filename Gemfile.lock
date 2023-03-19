@@ -165,11 +165,11 @@ GEM
       railties (>= 5.0.0)
     faker (3.1.1)
       i18n (>= 1.8.11, < 2)
-    flipper (0.26.2)
+    flipper (0.27.0)
       concurrent-ruby (< 2)
-    flipper-active_record (0.26.2)
+    flipper-active_record (0.27.0)
       activerecord (>= 4.2, < 8)
-      flipper (~> 0.26.2)
+      flipper (~> 0.27.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -318,8 +318,8 @@ DEPENDENCIES
   devise (~> 4.9)!
   factory_bot_rails (~> 6.2)
   faker (~> 3.1)
-  flipper (~> 0.26.2)
-  flipper-active_record (~> 0.26.2)
+  flipper (~> 0.27.0)
+  flipper-active_record (~> 0.27.0)
   jbuilder
   jsbundling-rails
   kaminari (~> 1.2)
