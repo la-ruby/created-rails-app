@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0fec9536ca43e209064e60f48b0def6bfe539fe2
+  revision: d296f5731b5889769f20d3a1d7ebf0ff512d2e65
   branch: 7-0-stable
   specs:
     actioncable (7.0.4.3)
@@ -118,7 +118,7 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.735.0)
+    aws-partitions (1.736.0)
     aws-sdk-core (3.171.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -153,7 +153,7 @@ GEM
     cssbundling-rails (1.1.2)
       railties (>= 6.0.0)
     date (3.3.3)
-    debug (1.7.1)
+    debug (1.7.2)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     docile (1.4.0)
@@ -258,7 +258,7 @@ GEM
     rollbar (3.4.0)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.8.3)
+    selenium-webdriver (4.8.5)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)

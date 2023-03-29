@@ -445,11 +445,10 @@
         nativeDispatch = !jQueryEvent.isImmediatePropagationStopped();
         defaultPrevented = jQueryEvent.isDefaultPrevented();
       }
-      let evt = new Event(event, {
+      const evt = hydrateObj(new Event(event, {
         bubbles,
         cancelable: true
-      });
-      evt = hydrateObj(evt, args);
+      }), args);
       if (defaultPrevented) {
         evt.preventDefault();
       }
