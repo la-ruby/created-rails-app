@@ -223,7 +223,7 @@ GEM
       net-protocol
     nice_partials (0.9.3)
       actionview (>= 4.2.6)
-    nio4r (2.5.8)
+    nio4r (2.5.9)
     nokogiri (1.14.2)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
