@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 682898f07f0779e91117d331470b4847d699a65e
+  revision: bdc45338d7bae938c2a910fa8029f4abc45a430b
   branch: 7-0-stable
   specs:
     actioncable (7.0.5)
@@ -118,7 +118,7 @@ GEM
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.770.0)
+    aws-partitions (1.771.0)
     aws-sdk-core (3.173.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -243,8 +243,9 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.5.0)
-      loofah (~> 2.19, >= 2.19.1)
+    rails-html-sanitizer (1.6.0)
+      loofah (~> 2.21)
+      nokogiri (~> 1.14)
     rake (13.0.6)
     redis-client (0.14.1)
       connection_pool
