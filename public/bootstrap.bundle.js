@@ -2136,7 +2136,6 @@
     }
 
     if (!contains(state.elements.popper, arrowElement)) {
-
       return;
     }
 
@@ -2278,7 +2277,6 @@
         adaptive = _options$adaptive === void 0 ? true : _options$adaptive,
         _options$roundOffsets = options.roundOffsets,
         roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
-
     var commonStyles = {
       placement: getBasePlacement(state.placement),
       variation: getVariation(state.placement),
@@ -3346,8 +3344,7 @@
 
           state.orderedModifiers = orderedModifiers.filter(function (m) {
             return m.enabled;
-          }); // Validate the provided modifiers so that the consumer will get warned
-
+          });
           runModifierEffects();
           return instance.update();
         },
@@ -3367,7 +3364,6 @@
           // anymore
 
           if (!areValidElements(reference, popper)) {
-
             return;
           } // Store the reference and popper rects to be read by modifiers
 
@@ -3392,7 +3388,6 @@
           });
 
           for (var index = 0; index < state.orderedModifiers.length; index++) {
-
             if (state.reset === true) {
               state.reset = false;
               index = -1;
@@ -3430,7 +3425,6 @@
       };
 
       if (!areValidElements(reference, popper)) {
-
         return instance;
       }
 
@@ -3445,11 +3439,11 @@
       // one.
 
       function runModifierEffects() {
-        state.orderedModifiers.forEach(function (_ref3) {
-          var name = _ref3.name,
-              _ref3$options = _ref3.options,
-              options = _ref3$options === void 0 ? {} : _ref3$options,
-              effect = _ref3.effect;
+        state.orderedModifiers.forEach(function (_ref) {
+          var name = _ref.name,
+              _ref$options = _ref.options,
+              options = _ref$options === void 0 ? {} : _ref$options,
+              effect = _ref.effect;
 
           if (typeof effect === 'function') {
             var cleanupFn = effect({
