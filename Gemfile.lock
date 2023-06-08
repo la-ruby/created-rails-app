@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: ac30b7b140344d4f39faf495992c4b0db8125a67
+  revision: de994b010d61d1407b9eadbf0bf0f96748b75311
   branch: 7-0-stable
   specs:
     actioncable (7.0.5)
@@ -259,7 +259,7 @@ GEM
     rollbar (3.4.0)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.9.1)
+    selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
