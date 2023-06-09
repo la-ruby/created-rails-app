@@ -10,7 +10,7 @@
     "esbuild": "^0.17.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.63.0"
+    "sass": "^1.63.2"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
