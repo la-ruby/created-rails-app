@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 37a7cd04ed540977f6f447e3a0b9dcbc5ad9610c
+  revision: c230ba9593ce0f99d6b6a6ce3f3be6fc22b9aa74
   branch: main
   specs:
     turbo-rails (1.4.0)
@@ -232,7 +232,7 @@ GEM
     orm_adapter (0.5.0)
     pg (1.5.3)
     public_suffix (5.0.1)
-    puma (5.6.5)
+    puma (5.6.6)
       nio4r (~> 2.0)
     pundit (2.3.0)
       activesupport (>= 3.0.0)
