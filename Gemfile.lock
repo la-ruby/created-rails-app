@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 30a287a97ac020fb3556c5f8cc35af549c8921be
+  revision: 223148a2152786dce4f9a76e3ff942eb5ff30b9a
   branch: 7-0-stable
   specs:
     actioncable (7.0.5)
@@ -133,7 +133,7 @@ GEM
       aws-sigv4 (~> 1.4)
     aws-sigv4 (1.5.2)
       aws-eventstream (~> 1, >= 1.0.2)
-    bcrypt (3.1.18)
+    bcrypt (3.1.19)
     bindex (0.8.1)
     builder (3.2.4)
     capybara (3.39.2)
