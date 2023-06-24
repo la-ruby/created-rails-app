@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 223148a2152786dce4f9a76e3ff942eb5ff30b9a
+  revision: dcfed5778885101a8815f5d0f2833be4f2ad3905
   branch: 7-0-stable
   specs:
     actioncable (7.0.5)
@@ -286,7 +286,7 @@ GEM
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.2)
-    timeout (0.3.2)
+    timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
