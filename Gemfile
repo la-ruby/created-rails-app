@@ -77,7 +77,7 @@ gem "pundit", "~> 2.3"
 gem "sidekiq", "~> 7.1"
 gem "aws-sdk-s3", require: false
 
-gem "administrate", "~> 0.18.0"
+gem "administrate", "~> 0.19.0"
 
 gem "kaminari", "~> 1.2"
 
@@ -94,6 +94,6 @@ gem "sendgrid-ruby", ">= 6.6"
 
 gem "rollbar", "~> 3.4"
 
-gem "flipper", "~> 0.28.1"
+gem "flipper", "~> 0.28.2"
 
-gem "flipper-active_record", "~> 0.28.1"
+gem "flipper-active_record", "~> 0.28.2"
