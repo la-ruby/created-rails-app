@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 83385cc7c3fd43e26adc9b3b658cad67c710e431
+  revision: 8fa00d1cadcb304f13a10b94e32ccfb430388c05
   branch: 7-0-stable
   specs:
     actioncable (7.0.6)
@@ -126,7 +126,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.790.0)
+    aws-partitions (1.791.0)
     aws-sdk-core (3.178.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -174,11 +174,11 @@ GEM
     faker (3.2.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
-    flipper (0.28.2)
+    flipper (0.28.3)
       concurrent-ruby (< 2)
-    flipper-active_record (0.28.2)
+    flipper-active_record (0.28.3)
       activerecord (>= 4.2, < 8)
-      flipper (~> 0.28.2)
+      flipper (~> 0.28.3)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -347,8 +347,8 @@ DEPENDENCIES
   devise (~> 4.9)!
   factory_bot_rails (~> 6.2)
   faker (~> 3.2)
-  flipper (~> 0.28.2)
-  flipper-active_record (~> 0.28.2)
+  flipper (~> 0.28.3)
+  flipper-active_record (~> 0.28.3)
   jbuilder
   jsbundling-rails
   kaminari (~> 1.2)
