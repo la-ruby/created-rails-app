@@ -2687,10 +2687,12 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext ~ label {
   border-width: var(--bs-border-width) 0;
 }
-.form-floating > :disabled ~ label {
+.form-floating > :disabled ~ label,
+.form-floating > .form-control:disabled ~ label {
   color: #6c757d;
 }
-.form-floating > :disabled ~ label::after {
+.form-floating > :disabled ~ label::after,
+.form-floating > .form-control:disabled ~ label::after {
   background-color: var(--bs-secondary-bg);
 }
 
