@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: f83ca5e696e7a1393b9c5ed76456393d2827e76e
+  revision: 00b4f861cd20748e8579b0a3a8e6dd6a0dcabef6
   branch: main
   specs:
     turbo-rails (1.4.0)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 2fde2bd9acbb3983a9f954878ae6860c0dfabc42
+  revision: b18b9df65eb7d4e5dfa9a6982a8709c0c94b0b97
   branch: 7-0-stable
   specs:
     actioncable (7.0.6)
@@ -127,7 +127,7 @@ GEM
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
     aws-partitions (1.792.0)
-    aws-sdk-core (3.179.0)
+    aws-sdk-core (3.180.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
@@ -327,12 +327,12 @@ GEM
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
     websocket (1.2.9)
-    websocket-driver (0.7.5)
+    websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.9)
 
 PLATFORMS
   ruby
