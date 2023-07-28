@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 00b4f861cd20748e8579b0a3a8e6dd6a0dcabef6
+  revision: d1dd2962a047c8d84f62590c7e8eba4458ea3ec8
   branch: main
   specs:
     turbo-rails (1.4.0)
@@ -262,12 +262,12 @@ GEM
     redis-client (0.14.1)
       connection_pool
     regexp_parser (2.8.1)
-    reline (0.3.6)
+    reline (0.3.7)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.2.5)
+    rexml (3.2.6)
     rollbar (3.4.0)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
