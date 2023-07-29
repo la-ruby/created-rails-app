@@ -309,9 +309,9 @@ dir-glob@^3.0.1:
     path-type "^4.0.0"
 
 electron-to-chromium@^1.4.431:
-  version "1.4.475"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.475.tgz#2fee0e2a70cc1538b94f7f90aabcc436e4dcc827"
-  integrity sha512-mTye5u5P98kSJO2n7zYALhpJDmoSQejIGya0iR01GpoRady8eK3bw7YHHnjA1Rfi4ZSLdpuzlAC7Zw+1Zu7Z6A==
+  version "1.4.476"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.476.tgz#693df619ce1785ada6d5aec71fd3ce7ace71adc3"
+  integrity sha512-gzWl1m8pNy+5Kj17XcziNcbOhripjTqR2wAQmtdlFUngPYuFy7zUpJScVQAvCvQSFHNk3mS5fetNKW6BSpytFg==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
