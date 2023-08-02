@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: b18b9df65eb7d4e5dfa9a6982a8709c0c94b0b97
+  revision: b92536265f2b8135a1cd8d8b582388ad9024cc8c
   branch: 7-0-stable
   specs:
     actioncable (7.0.6)
@@ -126,7 +126,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.795.0)
+    aws-partitions (1.796.0)
     aws-sdk-core (3.180.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -259,7 +259,7 @@ GEM
       loofah (~> 2.21)
       nokogiri (~> 1.14)
     rake (13.0.6)
-    redis-client (0.14.1)
+    redis-client (0.15.0)
       connection_pool
     regexp_parser (2.8.1)
     reline (0.3.7)
