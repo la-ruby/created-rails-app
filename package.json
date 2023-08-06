@@ -8,7 +8,7 @@
     "autoprefixer": "^10.4.14",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
-    "esbuild": "^0.18.17",
+    "esbuild": "^0.18.18",
     "nodemon": "^3.0.1",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
