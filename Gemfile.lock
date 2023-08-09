@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: fabd0b5827a3af1f189d726fbc7669f9fbdeef5e
+  revision: 2dccb3f5ebebc42c917be537aebac47b9b6c5406
   branch: 7-0-stable
   specs:
     actioncable (7.0.6)
@@ -126,7 +126,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.799.0)
+    aws-partitions (1.800.0)
     aws-sdk-core (3.180.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -220,7 +220,7 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
-    mini_mime (1.1.2)
+    mini_mime (1.1.5)
     mini_portile2 (2.8.4)
     minitest (5.19.0)
     minitest-test_profile (0.2.2)
