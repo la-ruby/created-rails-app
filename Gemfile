@@ -67,7 +67,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+
 end
 
 gem "devise", "~> 4.9", :git => "https://github.com/heartcombo/devise", :branch => "main"
@@ -94,6 +94,6 @@ gem "sendgrid-ruby", ">= 6.6"
 
 gem "rollbar", "~> 3.4"
 
-gem "flipper", "~> 0.28.3"
+gem "flipper", "~> 1.0"
 
-gem "flipper-active_record", "~> 0.28.3"
+gem "flipper-active_record", "~> 1.0"
