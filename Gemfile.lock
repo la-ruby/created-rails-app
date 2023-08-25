@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: d1dd2962a047c8d84f62590c7e8eba4458ea3ec8
+  revision: 037a307e3a4ab0d861e49140eb626d738c5b2788
   branch: main
   specs:
     turbo-rails (1.4.0)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: f9175dbf20938f744c5081d199250db15e520e9f
+  revision: c35b45b3f41c5f3bf519c151f4ed18dc510047bd
   branch: 7-0-stable
   specs:
     actioncable (7.0.7.2)
@@ -126,7 +126,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.810.0)
+    aws-partitions (1.811.0)
     aws-sdk-core (3.181.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -135,7 +135,7 @@ GEM
     aws-sdk-kms (1.71.0)
       aws-sdk-core (~> 3, >= 3.177.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.133.0)
+    aws-sdk-s3 (1.134.0)
       aws-sdk-core (~> 3, >= 3.181.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.6)
