@@ -88,7 +88,7 @@ gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test
 
-gem "webmock", "~> 3.18", :group => :test
+gem "webmock", "~> 3.19", :group => :test
 
 gem "sendgrid-ruby", ">= 6.6"
 
