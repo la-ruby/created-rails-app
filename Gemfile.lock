@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: d0403d2468c005e677fd4e5e36932182344d5563
+  revision: 729dfda71ea993194cf77ed32aa6fcfc56d313db
   branch: 7-0-stable
   specs:
     actioncable (7.0.7.2)
@@ -126,7 +126,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.813.0)
+    aws-partitions (1.814.0)
     aws-sdk-core (3.181.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -187,7 +187,8 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.7.4)
+    irb (1.8.0)
+      rdoc (~> 6.5)
       reline (>= 0.3.6)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -244,6 +245,8 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.5.3)
+    psych (5.1.0)
+      stringio
     public_suffix (5.0.3)
     puma (5.6.7)
       nio4r (~> 2.0)
@@ -261,6 +264,8 @@ GEM
       loofah (~> 2.21)
       nokogiri (~> 1.14)
     rake (13.0.6)
+    rdoc (6.5.0)
+      psych (>= 4.0.0)
     redis-client (0.16.0)
       connection_pool
     regexp_parser (2.8.1)
@@ -308,6 +313,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
+    stringio (3.0.8)
     thor (1.2.2)
     tilt (2.2.0)
     timeout (0.4.0)
