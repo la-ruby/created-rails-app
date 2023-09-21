@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0d8d57d82a9363b6bf3fc3a331ea53fa3ecdba56
+  revision: b2efd86bdd862d898971b162b80085eed86037ca
   branch: 7-0-stable
   specs:
     actioncable (7.0.8)
@@ -126,8 +126,8 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.825.0)
-    aws-sdk-core (3.182.0)
+    aws-partitions (1.826.0)
+    aws-sdk-core (3.183.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
@@ -135,7 +135,7 @@ GEM
     aws-sdk-kms (1.71.0)
       aws-sdk-core (~> 3, >= 3.177.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.134.0)
+    aws-sdk-s3 (1.135.0)
       aws-sdk-core (~> 3, >= 3.181.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.6)
@@ -235,7 +235,7 @@ GEM
       net-protocol
     net-protocol (0.2.1)
       timeout
-    net-smtp (0.3.3)
+    net-smtp (0.4.0)
       net-protocol
     nio4r (2.5.9)
     nokogiri (1.15.4)
