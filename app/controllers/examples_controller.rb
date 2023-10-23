@@ -49,7 +49,7 @@ class ExamplesController < ApplicationController
 
   # DELETE /examples/1 or /examples/1.json
   def destroy
-    @example.destroy
+    @example.destroy!
 
     respond_to do |format|
       format.html { redirect_to examples_url, notice: "Example was successfully destroyed." }
