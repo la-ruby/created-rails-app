@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0f21aeb3bfc3a1b23687fb90023600ce0f66fe13
+  revision: b64cb3a932826701d6f3bb6a73c69478ebf1a8b7
   branch: 7-1-stable
   specs:
     actioncable (7.1.1)
@@ -282,7 +282,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rake (13.0.6)
+    rake (13.1.0)
     rdoc (6.5.0)
       psych (>= 4.0.0)
     redis-client (0.18.0)
