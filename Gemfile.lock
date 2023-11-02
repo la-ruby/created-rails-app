@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 28a4d5fc83c92ec91124205aea1ee99dda6962e6
+  revision: 8be97569325f99c4456b257a180a05c891665d7e
   branch: 7-1-stable
   specs:
     actioncable (7.1.1)
@@ -266,7 +266,7 @@ GEM
       nio4r (~> 2.0)
     pundit (2.3.1)
       activesupport (>= 3.0.0)
-    racc (1.7.1)
+    racc (1.7.2)
     rack (3.0.8)
     rack-session (2.0.0)
       rack (>= 3.0.0)
@@ -307,7 +307,7 @@ GEM
       sprockets-rails
       tilt
     selectize-rails (0.12.6)
-    selenium-webdriver (4.14.0)
+    selenium-webdriver (4.15.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
