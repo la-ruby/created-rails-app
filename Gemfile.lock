@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 7f6714ed182d3d8968f580a60cbaabe7a3b45463
+  revision: f6987c46572666c439a1ad68b3ab5b41645f2bcf
   branch: 7-1-stable
   specs:
     actioncable (7.1.1)
@@ -136,7 +136,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.2.0)
-    aws-partitions (1.847.0)
+    aws-partitions (1.848.0)
     aws-sdk-core (3.186.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -333,7 +333,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.3.0)
       railties (>= 6.0.0)
-    stringio (3.0.8)
+    stringio (3.0.9)
     thor (1.3.0)
     tilt (2.3.0)
     timeout (0.4.1)
