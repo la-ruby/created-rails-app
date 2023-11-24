@@ -76,7 +76,7 @@ gem "administrate", "~> 0.19.0"
 
 gem "kaminari", "~> 1.2"
 
-gem "factory_bot_rails", "~> 6.2", :groups => [:test, :development]
+gem "factory_bot_rails", "~> 6.4", :groups => [:test, :development]
 
 gem "faker", "~> 3.2"
 gem 'simplecov', require: false, group: :test
