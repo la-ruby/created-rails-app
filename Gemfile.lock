@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: fe643938a9762f5adbab16fc331589c10252da15
+  revision: 26277a5373a4ec9a3b9e1d8f2370bf3f3e02748b
   branch: 7-1-stable
   specs:
     actioncable (7.1.2)
@@ -201,7 +201,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.9.1)
+    irb (1.10.0)
       rdoc
       reline (>= 0.3.8)
     jbuilder (2.11.5)
