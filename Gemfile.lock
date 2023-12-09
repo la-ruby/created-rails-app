@@ -155,7 +155,6 @@ GEM
     bcrypt (3.1.20)
     bigdecimal (3.1.4)
     bindex (0.8.1)
-    brow (0.4.1)
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -189,12 +188,11 @@ GEM
     faker (3.2.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
-    flipper (1.0.0)
-      brow (~> 0.4.1)
+    flipper (1.1.0)
       concurrent-ruby (< 2)
-    flipper-active_record (1.0.0)
+    flipper-active_record (1.1.0)
       activerecord (>= 4.2, < 8)
-      flipper (~> 1.0.0)
+      flipper (~> 1.1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashdiff (1.0.1)
@@ -372,8 +370,8 @@ DEPENDENCIES
   devise (~> 4.9)!
   factory_bot_rails (~> 6.4)
   faker (~> 3.2)
-  flipper (~> 1.0)
-  flipper-active_record (~> 1.0)
+  flipper (~> 1.1)
+  flipper-active_record (~> 1.1)
   jbuilder
   jsbundling-rails
   kaminari (~> 1.2)
