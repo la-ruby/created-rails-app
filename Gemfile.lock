@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 9468e128880d399e2ee6229583ff82825af29744
+  revision: 30c1deb3515ed442644d8b4fdc3330672bf013bd
   branch: 7-1-stable
   specs:
     actioncable (7.1.2)
@@ -125,7 +125,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     administrate (0.19.0)
       actionpack (>= 5.0)
@@ -188,11 +188,11 @@ GEM
     faker (3.2.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
-    flipper (1.1.0)
+    flipper (1.1.1)
       concurrent-ruby (< 2)
-    flipper-active_record (1.1.0)
+    flipper-active_record (1.1.1)
       activerecord (>= 4.2, < 8)
-      flipper (~> 1.1.0)
+      flipper (~> 1.1.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashdiff (1.0.1)
