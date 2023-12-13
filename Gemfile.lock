@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: d14d46b6921c5ac615b45922f498e924597bf10e
+  revision: 1eda300a21c997c2dd2f4c20a3ed09336dd83ad5
   branch: 7-1-stable
   specs:
     actioncable (7.1.2)
@@ -136,7 +136,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.864.0)
+    aws-partitions (1.865.0)
     aws-sdk-core (3.190.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -188,11 +188,11 @@ GEM
     faker (3.2.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
-    flipper (1.1.1)
+    flipper (1.1.2)
       concurrent-ruby (< 2)
-    flipper-active_record (1.1.1)
+    flipper-active_record (1.1.2)
       activerecord (>= 4.2, < 8)
-      flipper (~> 1.1.1)
+      flipper (~> 1.1.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashdiff (1.0.1)
@@ -240,7 +240,7 @@ GEM
     minitest-test_profile (0.2.2)
       minitest
     mutex_m (0.2.0)
-    net-imap (0.4.7)
+    net-imap (0.4.8)
       date
       net-protocol
     net-pop (0.1.2)
