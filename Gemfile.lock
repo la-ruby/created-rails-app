@@ -198,7 +198,7 @@ GEM
     hashdiff (1.1.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    io-console (0.7.0)
+    io-console (0.7.1)
     irb (1.10.1)
       rdoc
       reline (>= 0.3.8)
@@ -287,7 +287,7 @@ GEM
       loofah (~> 2.21)
       nokogiri (~> 1.14)
     rake (13.1.0)
-    rdoc (6.6.1)
+    rdoc (6.6.2)
       psych (>= 4.0.0)
     redis-client (0.19.0)
       connection_pool
