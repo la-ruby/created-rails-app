@@ -21,13 +21,13 @@ default: &default
 
 development:
   <<: *default
-  database: paper_development
+  database: fog_development
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: paper
+  #username: fog
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -55,7 +55,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: paper_test
+  database: fog_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,6 +79,6 @@ test:
 #
 production:
   <<: *default
-  database: paper_production
-  username: paper
-  password: <%= ENV["PAPER_DATABASE_PASSWORD"] %>
+  database: fog_production
+  username: fog
+  password: <%= ENV["FOG_DATABASE_PASSWORD"] %>
