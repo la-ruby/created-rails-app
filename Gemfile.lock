@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: a58a2cb499555c3b974d3002b142a444dc5ae383
+  revision: f108227ace3d67bf7840e7c9e975f3447d4ebd15
   branch: 7-1-stable
   specs:
     actioncable (7.1.2)
@@ -180,9 +180,9 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
-    factory_bot (6.4.4)
+    factory_bot (6.4.5)
       activesupport (>= 5.0.0)
-    factory_bot_rails (6.4.2)
+    factory_bot_rails (6.4.3)
       factory_bot (~> 6.4)
       railties (>= 5.0.0)
     faker (3.2.2)
