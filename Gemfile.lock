@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: f9f4cd0172cbd68e8095b07bcadf41a8e88b3793
+  revision: c16e9320f202b81e2c9d9711f24b64953cead242
   branch: 7-1-stable
   specs:
     actioncable (7.1.2)
@@ -142,7 +142,7 @@ GEM
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.75.0)
+    aws-sdk-kms (1.76.0)
       aws-sdk-core (~> 3, >= 3.188.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.142.0)
@@ -296,7 +296,7 @@ GEM
     redis-client (0.19.1)
       connection_pool
     regexp_parser (2.8.3)
-    reline (0.4.1)
+    reline (0.4.2)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
