@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: f1f7c9e97898aa3e1a632291d73d379f26289496
+  revision: 2606c66616c04919059dff91b1973b422135696e
   branch: 7-1-stable
   specs:
     actioncable (7.1.2)
@@ -210,7 +210,7 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    jsbundling-rails (1.2.1)
+    jsbundling-rails (1.2.2)
       railties (>= 6.0.0)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
@@ -295,7 +295,7 @@ GEM
       psych (>= 4.0.0)
     redis-client (0.19.1)
       connection_pool
-    regexp_parser (2.8.3)
+    regexp_parser (2.9.0)
     reline (0.4.2)
       io-console (~> 0.5)
     responders (3.1.1)
