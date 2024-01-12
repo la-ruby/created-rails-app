@@ -89,6 +89,6 @@ gem "sendgrid-ruby", ">= 6.7"
 
 gem "rollbar", "~> 3.5"
 
-gem "flipper", "~> 1.1"
+gem "flipper", "~> 1.2"
 
-gem "flipper-active_record", "~> 1.1"
+gem "flipper-active_record", "~> 1.2"
