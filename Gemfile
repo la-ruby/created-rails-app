@@ -72,7 +72,7 @@ gem "pundit", "~> 2.3"
 gem "sidekiq", "~> 7.2"
 gem "aws-sdk-s3", require: false
 
-gem "administrate", "~> 0.20.0"
+gem "administrate", "~> 0.20.1"
 
 gem "kaminari", "~> 1.2"
 

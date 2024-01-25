@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: bf5ab248c75ba71cb98a7a236ff51c49f318633d
+  revision: 63763f25ebb9f7840b75eca067ec3c7f360bd301
   branch: 7-1-stable
   specs:
     actioncable (7.1.3)
@@ -127,7 +127,7 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
-    administrate (0.20.0)
+    administrate (0.20.1)
       actionpack (>= 6.0, < 8.0)
       actionview (>= 6.0, < 8.0)
       activerecord (>= 6.0, < 8.0)
@@ -378,7 +378,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  administrate (~> 0.20.0)
+  administrate (~> 0.20.1)
   aws-sdk-s3
   capybara
   cssbundling-rails
