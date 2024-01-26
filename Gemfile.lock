@@ -12,17 +12,17 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 0e0491e53484d2b6f77b118c9fe3a3835b0c5ad5
+  revision: 385ab1ac8b374949404f58fbe53363b689d609f2
   branch: main
   specs:
-    turbo-rails (2.0.0.pre.beta.3)
+    turbo-rails (2.0.0.pre.beta.4)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 63763f25ebb9f7840b75eca067ec3c7f360bd301
+  revision: 5ed3893a4bbe75767d288218fa35d9b0547db97e
   branch: 7-1-stable
   specs:
     actioncable (7.1.3)
