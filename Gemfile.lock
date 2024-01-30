@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 385ab1ac8b374949404f58fbe53363b689d609f2
+  revision: 5d2b127c82172463af2469bfce3d99f545002468
   branch: main
   specs:
     turbo-rails (2.0.0.pre.beta.4)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 5e973085285f4cbd75237b6d9c9e3855d73d3108
+  revision: 5d9f51342320cb8e625d4f6f1a9fb961599e935e
   branch: 7-1-stable
   specs:
     actioncable (7.1.3)
@@ -136,7 +136,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.883.0)
+    aws-partitions (1.884.0)
     aws-sdk-core (3.191.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -167,7 +167,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
-    crack (0.4.5)
+    crack (0.4.6)
+      bigdecimal
       rexml
     crass (1.0.6)
     cssbundling-rails (1.4.0)
