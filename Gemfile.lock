@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 7b24a21bce64e348a0b2328996b3f34bc251ab06
+  revision: 6a60eb4f72d2e834f91279b0a6f95be411ae6174
   branch: main
   specs:
     turbo-rails (2.0.3)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: cd9c0c5ea0ac6fac37e7d2651f6bca450caf0cea
+  revision: 48cb84c0e83400f92c8c9b736ce69b2d3ea48ec2
   branch: 7-1-stable
   specs:
     actioncable (7.1.3)
@@ -136,7 +136,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.893.0)
+    aws-partitions (1.894.0)
     aws-sdk-core (3.191.2)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -317,7 +317,7 @@ GEM
       sprockets-rails
       tilt
     selectize-rails (0.12.6)
-    selenium-webdriver (4.17.0)
+    selenium-webdriver (4.18.0)
       base64 (~> 0.2)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -357,7 +357,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webmock (3.20.0)
+    webmock (3.21.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -408,7 +408,7 @@ DEPENDENCIES
   turbo-rails!
   tzinfo-data
   web-console
-  webmock (~> 3.20)
+  webmock (~> 3.21)
 
 RUBY VERSION
    ruby 3.3.0p0
