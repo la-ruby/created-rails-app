@@ -21,13 +21,13 @@ default: &default
 
 development:
   <<: *default
-  database: heart_development
+  database: night_development
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: heart
+  #username: night
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -55,7 +55,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: heart_test
+  database: night_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,6 +79,6 @@ test:
 #
 production:
   <<: *default
-  database: heart_production
-  username: heart
-  password: <%= ENV["HEART_DATABASE_PASSWORD"] %>
+  database: night_production
+  username: night
+  password: <%= ENV["NIGHT_DATABASE_PASSWORD"] %>
