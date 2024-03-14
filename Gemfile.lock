@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: e8236efa5971baed53d6bdbb2a7934e6f3209c6d
+  revision: f25dcf3c2db07b3897dd1e820332b8c452548425
   branch: 7-1-stable
   specs:
     actioncable (7.1.3.2)
@@ -145,7 +145,7 @@ GEM
     aws-sdk-kms (1.77.0)
       aws-sdk-core (~> 3, >= 3.191.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.143.1)
+    aws-sdk-s3 (1.144.0)
       aws-sdk-core (~> 3, >= 3.191.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.8)
