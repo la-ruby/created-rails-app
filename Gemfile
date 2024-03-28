@@ -68,3 +68,5 @@ end
 gem "devise", "~> 4.9", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
 gem "pundit", "~> 2.3"
+
+gem "sidekiq", "~> 7.2"
