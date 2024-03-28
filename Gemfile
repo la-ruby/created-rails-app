@@ -2,8 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
-# Use local checkout of Rails
-gem "rails", path: "/tmp/rails"
+gem 'rails', :github => 'rails/rails', :branch => '7-1-stable'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
