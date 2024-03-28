@@ -352,6 +352,7 @@ DEPENDENCIES
   devise (~> 4.9)!
   jbuilder
   jsbundling-rails
+  kaminari (~> 1.2)
   pg (~> 1.1)
   puma (>= 5.0)
   pundit (~> 2.3)
