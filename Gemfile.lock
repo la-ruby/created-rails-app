@@ -297,6 +297,7 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.6)
+    rollbar (3.5.2)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
@@ -387,6 +388,7 @@ DEPENDENCIES
   puma (>= 5.0)
   pundit (~> 2.3)
   rails!
+  rollbar (~> 3.5)
   selenium-webdriver
   sendgrid-ruby (>= 6.7)
   sidekiq (~> 7.2)
