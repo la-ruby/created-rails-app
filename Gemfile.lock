@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: bb18f4d3805be0bf5f45e21be39625c7cfd9c1d6
+  revision: 21deb5c14514e095cb0c496cd48f03888c51b880
   branch: main
   specs:
     devise (4.9.3)
@@ -136,7 +136,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.910.0)
+    aws-partitions (1.911.0)
     aws-sdk-core (3.191.6)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -296,7 +296,7 @@ GEM
     redis-client (0.21.1)
       connection_pool
     regexp_parser (2.9.0)
-    reline (0.5.0)
+    reline (0.5.1)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
