@@ -21,13 +21,13 @@ default: &default
 
 development:
   <<: *default
-  database: union_development
+  database: hall_development
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: union
+  #username: hall
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -55,7 +55,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: union_test
+  database: hall_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,6 +79,6 @@ test:
 #
 production:
   <<: *default
-  database: union_production
-  username: union
-  password: <%= ENV["UNION_DATABASE_PASSWORD"] %>
+  database: hall_production
+  username: hall
+  password: <%= ENV["HALL_DATABASE_PASSWORD"] %>
