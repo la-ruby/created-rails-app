@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: ab5ddb04ed63884b0980c8ae3671048fe522a20f
+  revision: 2ac84355ca8498c2b679cc85c1cfc1064e5a6537
   branch: 7-1-stable
   specs:
     actioncable (7.1.3.3)
@@ -136,13 +136,13 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.932.0)
+    aws-partitions (1.933.0)
     aws-sdk-core (3.196.1)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.81.0)
+    aws-sdk-kms (1.82.0)
       aws-sdk-core (~> 3, >= 3.193.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.151.0)
@@ -236,7 +236,7 @@ GEM
     matrix (0.4.2)
     mini_mime (1.1.5)
     mini_portile2 (2.8.6)
-    minitest (5.23.0)
+    minitest (5.23.1)
     minitest-test_profile (0.2.2)
       minitest
     mutex_m (0.2.0)
@@ -293,7 +293,7 @@ GEM
     rake (13.2.1)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
-    redis-client (0.22.1)
+    redis-client (0.22.2)
       connection_pool
     regexp_parser (2.9.2)
     reline (0.5.7)
