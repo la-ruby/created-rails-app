@@ -72,13 +72,15 @@ gem "pundit", "~> 2.3"
 gem "sidekiq", "~> 7.2"
 gem "aws-sdk-s3", require: false
 
+gem "view_component", "~> 3.12"
+
 gem "administrate", "~> 0.20.1"
 
 gem "kaminari", "~> 1.2"
 
 gem "factory_bot_rails", "~> 6.4", :groups => [:test, :development]
 
-gem "faker", "~> 3.3"
+gem "faker", "~> 3.4"
 gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test
@@ -88,7 +90,3 @@ gem "webmock", "~> 3.23", :group => :test
 gem "sendgrid-ruby", ">= 6.7"
 
 gem "rollbar", "~> 3.5"
-
-gem "flipper", "~> 1.3"
-
-gem "flipper-active_record", "~> 1.3"
