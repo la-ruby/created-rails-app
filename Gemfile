@@ -72,8 +72,6 @@ gem "pundit", "~> 2.3"
 gem "sidekiq", "~> 7.2"
 gem "aws-sdk-s3", require: false
 
-gem "view_component", "~> 3.12"
-
 gem "administrate", "~> 0.20.1"
 
 gem "kaminari", "~> 1.2"
@@ -90,3 +88,5 @@ gem "webmock", "~> 3.23", :group => :test
 gem "sendgrid-ruby", ">= 6.7"
 
 gem "rollbar", "~> 3.5"
+
+gem "view_component", "~> 3.12"
