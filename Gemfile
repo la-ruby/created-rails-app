@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.3.1"
 
-gem 'rails', :github => 'rails/rails', :branch => '7-1-stable'
+gem 'rails', :github => 'rails/rails', :branch => '7-2-stable'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"

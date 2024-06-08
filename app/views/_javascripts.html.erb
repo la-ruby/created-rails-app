@@ -1,4 +1,4 @@
 <script src="/jquery-3.6.0.min.js"></script>
 <script src="/bootstrap.bundle.js"></script>
 <script src="/flatpickr.min.js"></script>
-<%= render "/rollbar" %>
+<%= render "/rollbar" if Rails.env.production? %>
