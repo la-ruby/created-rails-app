@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 5f7dcb49e2dd7d22300eacc1104722c80adf74b2
+  revision: d1fc5ef67e4f8ac4eb63850a7ac0817e1774a698
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta2)
@@ -298,8 +298,8 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
+    rexml (3.2.9)
+      strscan
     rollbar (3.5.2)
     ruby_http_client (3.5.5)
     rubyzip (2.3.2)
