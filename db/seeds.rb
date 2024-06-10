@@ -8,5 +8,4 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 Example.where(seed: true).destroy_all
-10.times { FactoryBot.create(:example, seed: true) }
 Booking.seed
