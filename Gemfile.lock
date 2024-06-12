@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/la-ruby/stimulus_reflex.git
-  revision: 05e4e930a3d82cb37ba528f5229a6bd864dcf947
+  revision: 0a210fe2fa3994f9ed7fd7d30fd9dc244c1ede0d
   branch: tracing
   specs:
     stimulus_reflex (3.5.2)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 822b241bcda1d6ffa22e83e661bc38999ee00317
+  revision: 73589482549724d39d99e9988cbcd7183e2e079d
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta2)
@@ -148,7 +148,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.943.0)
+    aws-partitions (1.944.0)
     aws-sdk-core (3.197.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -157,7 +157,7 @@ GEM
     aws-sdk-kms (1.83.0)
       aws-sdk-core (~> 3, >= 3.197.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.152.1)
+    aws-sdk-s3 (1.152.2)
       aws-sdk-core (~> 3, >= 3.197.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.8)
@@ -321,6 +321,9 @@ GEM
       redis-client (>= 0.22.0)
     redis-client (0.22.2)
       connection_pool
+    redis-session-store (0.11.5)
+      actionpack (>= 6, < 8)
+      redis (>= 3, < 6)
     regexp_parser (2.9.2)
     reline (0.5.9)
       io-console (~> 0.5)
@@ -427,6 +430,7 @@ DEPENDENCIES
   puma (>= 5.0)
   pundit (~> 2.3)
   rails!
+  redis-session-store (~> 0.11.5)
   rollbar (~> 3.5)
   selenium-webdriver
   sendgrid-ruby (>= 6.7)
