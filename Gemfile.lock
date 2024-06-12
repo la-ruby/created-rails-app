@@ -21,6 +21,23 @@ GIT
       railties (>= 6.0.0)
 
 GIT
+  remote: https://github.com/la-ruby/stimulus_reflex.git
+  revision: 99e00e9a27bed5eb495fad83b19b49d9b6bc539d
+  branch: tracing
+  specs:
+    stimulus_reflex (3.5.2)
+      actioncable (>= 5.2, < 8)
+      actionpack (>= 5.2, < 8)
+      actionview (>= 5.2, < 8)
+      activesupport (>= 5.2, < 8)
+      cable_ready (~> 5.0)
+      nokogiri (~> 1.0)
+      nokogiri-html5-inference (~> 0.3)
+      rack (>= 2, < 4)
+      railties (>= 5.2, < 8)
+      redis (>= 4.0, < 6.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 822b241bcda1d6ffa22e83e661bc38999ee00317
   branch: 7-2-stable
@@ -116,23 +133,6 @@ GIT
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
-
-GIT
-  remote: https://github.com/stimulusreflex/stimulus_reflex.git
-  revision: ea0ae9bb15bf0dd725c862c305597af8556ed443
-  branch: main
-  specs:
-    stimulus_reflex (3.5.2)
-      actioncable (>= 5.2, < 8)
-      actionpack (>= 5.2, < 8)
-      actionview (>= 5.2, < 8)
-      activesupport (>= 5.2, < 8)
-      cable_ready (~> 5.0)
-      nokogiri (~> 1.0)
-      nokogiri-html5-inference (~> 0.3)
-      rack (>= 2, < 4)
-      railties (>= 5.2, < 8)
-      redis (>= 4.0, < 6.0)
 
 GEM
   remote: https://rubygems.org/
