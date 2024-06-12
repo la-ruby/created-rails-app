@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/la-ruby/stimulus_reflex.git
-  revision: 7ea6268d34e48e5bc5a9ab5f7b7de76ca315d9cc
+  revision: 05e4e930a3d82cb37ba528f5229a6bd864dcf947
   branch: tracing
   specs:
     stimulus_reflex (3.5.2)
@@ -322,7 +322,7 @@ GEM
     redis-client (0.22.2)
       connection_pool
     regexp_parser (2.9.2)
-    reline (0.5.8)
+    reline (0.5.9)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
