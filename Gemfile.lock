@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/la-ruby/stimulus_reflex.git
-  revision: 99e00e9a27bed5eb495fad83b19b49d9b6bc539d
+  revision: 7ea6268d34e48e5bc5a9ab5f7b7de76ca315d9cc
   branch: tracing
   specs:
     stimulus_reflex (3.5.2)
