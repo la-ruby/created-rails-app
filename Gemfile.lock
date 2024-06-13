@@ -23,7 +23,7 @@ GIT
 GIT
   remote: https://github.com/la-ruby/stimulus_reflex.git
   revision: 0a210fe2fa3994f9ed7fd7d30fd9dc244c1ede0d
-  branch: tracing
+  branch: noprompt
   specs:
     stimulus_reflex (3.5.2)
       actioncable (>= 5.2, < 8)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: c8b2ba14d14a0f056d2676bf7669f383972c53f0
+  revision: 2e728d445ff2cfb083168d5f0daadb94c196afa2
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta2)
@@ -371,7 +371,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.3.3)
       railties (>= 6.0.0)
-    stringio (3.1.0)
+    stringio (3.1.1)
     strscan (3.1.0)
     thor (1.3.1)
     thread-local (1.1.0)
