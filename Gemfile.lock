@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 2e728d445ff2cfb083168d5f0daadb94c196afa2
+  revision: a37fecb3051fee4e3c78693ace71b7b7aaa4bd9e
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta2)
@@ -154,10 +154,10 @@ GEM
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.83.0)
+    aws-sdk-kms (1.84.0)
       aws-sdk-core (~> 3, >= 3.197.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.152.2)
+    aws-sdk-s3 (1.152.3)
       aws-sdk-core (~> 3, >= 3.197.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.8)
@@ -198,7 +198,7 @@ GEM
       reline (>= 0.3.8)
     docile (1.4.0)
     drb (2.2.1)
-    erubi (1.12.0)
+    erubi (1.13.0)
     factory_bot (6.4.6)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.4.3)
@@ -271,20 +271,20 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.16.5)
+    nokogiri (1.16.6)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.16.5-aarch64-linux)
+    nokogiri (1.16.6-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.16.5-arm-linux)
+    nokogiri (1.16.6-arm-linux)
       racc (~> 1.4)
-    nokogiri (1.16.5-arm64-darwin)
+    nokogiri (1.16.6-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.5-x86-linux)
+    nokogiri (1.16.6-x86-linux)
       racc (~> 1.4)
-    nokogiri (1.16.5-x86_64-darwin)
+    nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.5-x86_64-linux)
+    nokogiri (1.16.6-x86_64-linux)
       racc (~> 1.4)
     nokogiri-html5-inference (0.3.0)
       nokogiri (~> 1.14)
@@ -449,4 +449,4 @@ RUBY VERSION
    ruby 3.3.1p55
 
 BUNDLED WITH
-   2.5.11
+   2.5.12
