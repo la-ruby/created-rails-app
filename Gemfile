@@ -91,3 +91,5 @@ gem "rollbar", "~> 3.5"
 
 gem "view_component", "~> 3.12"
 gem "stimulus_reflex", github: "la-ruby/stimulus_reflex", branch: "noprompt"
+
+gem "redis-session-store", "~> 0.11.5"
