@@ -1,8 +1,8 @@
 require_relative 'support/00_simplecov'
 
 ENV["RAILS_ENV"] ||= "test"
-require_relative "../config/environment"
 require_relative "support/time_travel"
+require_relative "../config/environment"
 require "rails/test_help"
 
 module ActiveSupport
