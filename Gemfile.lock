@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: e376852bfb273f69f4ebb54cf516b99fcbaa7acb
+  revision: c57122c65d887df7ed0de35a5d3a7f97f73179da
   branch: main
   specs:
     turbo-rails (2.0.5)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 549859e7b3794ffe8ff9714b457ba352508a0e51
+  revision: 0b89a3393599f97d204dbd6dfc7cc69723ae7995
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta2)
@@ -137,8 +137,8 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     administrate (0.20.1)
       actionpack (>= 6.0, < 8.0)
       actionview (>= 6.0, < 8.0)
@@ -293,7 +293,7 @@ GEM
     pg (1.5.6)
     psych (5.1.2)
       stringio
-    public_suffix (5.1.1)
+    public_suffix (6.0.0)
     puma (6.4.2)
       nio4r (~> 2.0)
     pundit (2.3.2)
@@ -450,4 +450,4 @@ RUBY VERSION
    ruby 3.3.1p55
 
 BUNDLED WITH
-   2.5.13
+   2.5.14
