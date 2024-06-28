@@ -256,9 +256,9 @@ cable_ready@5.0.5, cable_ready@^5.0.5:
     morphdom "2.6.1"
 
 caniuse-lite@^1.0.30001599, caniuse-lite@^1.0.30001629:
-  version "1.0.30001637"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001637.tgz#d9fab531493d9ef46a8ff305e9812190ac463f21"
-  integrity sha512-1x0qRI1mD1o9e+7mBI7XtzFAP4XszbHaVWsMiGbSPLYekKTJF7K+FNk6AsXH4sUpc+qrsI3pVgf1Jdl/uGkuSQ==
+  version "1.0.30001638"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001638.tgz#598e1f0c2ac36f37ebc3f5b8887a32ca558e5d56"
+  integrity sha512-5SuJUJ7cZnhPpeLHaH0c/HPAnAHZvS6ElWyHK9GSIbVOQABLzowiI2pjmpvZ1WEbkyz46iFd4UXlOHR5SqgfMQ==
 
 "chokidar@>=3.0.0 <4.0.0", chokidar@^3.3.0, chokidar@^3.5.2:
   version "3.6.0"
@@ -314,9 +314,9 @@ dependency-graph@^0.11.0:
   integrity sha512-JeMq7fEshyepOWDfcfHK06N3MhyPhz++vtqWhMT5O9A3K42rdsEDpfdVqjaqaAhsw6a+ZqeDvQVtD0hFHQWrzg==
 
 electron-to-chromium@^1.4.796:
-  version "1.4.812"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.812.tgz#21b78709c5a13af5d5c688d135a22dcea7617acf"
-  integrity sha512-7L8fC2Ey/b6SePDFKR2zHAy4mbdp1/38Yk5TsARO66W3hC5KEaeKMMHoxwtuH+jcu2AYLSn9QX04i95t6Fl1Hg==
+  version "1.4.813"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.813.tgz#542a05155df9bf0c4b43cb9fd1ae2f29448f1187"
+  integrity sha512-VyJ4tS2uD5iXFBz30wD2c0KtKZoiSQEfRuhrgfsDBbRMDiQCH+ki+nqe8jVR2miEeLTbZ5dNbSt88fHO01Vc9A==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
