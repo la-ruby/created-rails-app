@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 671e853bc193d1e1b6f4d4b449c81c8b09cb5236
+  revision: 4929c037e3e4193639fa8e9d9ac74fac5afd8c9b
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta2)
@@ -258,7 +258,7 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.7)
-    minitest (5.24.0)
+    minitest (5.24.1)
     minitest-test_profile (0.2.2)
       minitest
     net-imap (0.4.14)

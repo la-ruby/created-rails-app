@@ -12,7 +12,7 @@
     "esbuild": "^0.21.5",
     "esbuild-rails": "^1.0.3",
     "nodemon": "^3.1.4",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "postcss-cli": "^11.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
