@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: c57122c65d887df7ed0de35a5d3a7f97f73179da
+  revision: 41e8561732aec908d38a3224c770d8858c183988
   branch: main
   specs:
     turbo-rails (2.0.5)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 9b63450fe40749d2481b6b6b3e0a7c711750e2a0
+  revision: d6e87bfb029108e976a9ac15f1c985aa9dad5550
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
