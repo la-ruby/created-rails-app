@@ -89,7 +89,7 @@ gem "sendgrid-ruby", ">= 6.7"
 
 gem "rollbar", "~> 3.5"
 
-gem "view_component", "~> 3.12"
+gem "view_component", "~> 3.13"
 gem "stimulus_reflex", github: "la-ruby/stimulus_reflex", branch: "noprompt"
 
 gem "redis-session-store", "~> 0.11.5"
