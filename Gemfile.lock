@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 8035bece705f60e6bddca70ee7d88e935a242bf8
+  revision: 77ad5599cd5b64bdb95eafa96a4fddd8aedb2db1
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -330,7 +330,7 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.3.1)
+    rexml (3.3.2)
       strscan
     rollbar (3.5.2)
     ruby_http_client (3.5.5)
