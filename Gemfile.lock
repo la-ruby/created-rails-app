@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 77ad5599cd5b64bdb95eafa96a4fddd8aedb2db1
+  revision: 5aff4e69887554dda8eef963449675fa34b9d4f8
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -204,7 +204,7 @@ GEM
     factory_bot_rails (6.4.3)
       factory_bot (~> 6.4)
       railties (>= 5.0.0)
-    faker (3.4.1)
+    faker (3.4.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.0)
     ffi (1.17.0-aarch64-linux-gnu)
