@@ -12,10 +12,10 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 4f5448175b4818519dfad45ee183b889807e4533
+  revision: 9b17a3be3705786d72c3ae77fde5a9b3006555d7
   branch: main
   specs:
-    turbo-rails (2.0.5)
+    turbo-rails (2.0.6)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 5aff4e69887554dda8eef963449675fa34b9d4f8
+  revision: 1b8903346000e1848e62e09429d325499af03b3f
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -344,7 +344,7 @@ GEM
       sprockets-rails
       tilt
     selectize-rails (0.12.6)
-    selenium-webdriver (4.22.0)
+    selenium-webdriver (4.23.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
