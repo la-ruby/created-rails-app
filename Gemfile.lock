@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: a3eee8a3648714b57629c023c0e61eb1bba27818
+  revision: e6475f3f17d16e70216caa7d05bde38a0ccfa33b
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -149,7 +149,7 @@ GEM
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
     aws-partitions (1.957.0)
-    aws-sdk-core (3.201.2)
+    aws-sdk-core (3.201.3)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
@@ -161,7 +161,7 @@ GEM
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
-    aws-sigv4 (1.8.0)
+    aws-sigv4 (1.9.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bcrypt (3.1.20)
@@ -293,7 +293,7 @@ GEM
     pg (1.5.6)
     psych (5.1.2)
       stringio
-    public_suffix (6.0.0)
+    public_suffix (6.0.1)
     puma (6.4.2)
       nio4r (~> 2.0)
     pundit (2.3.2)
