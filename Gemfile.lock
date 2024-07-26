@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: e6475f3f17d16e70216caa7d05bde38a0ccfa33b
+  revision: f856fcc5bf487f5211008b7f9f13553cfa18369b
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -196,7 +196,7 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
-    docile (1.4.0)
+    docile (1.4.1)
     drb (2.2.1)
     erubi (1.13.0)
     factory_bot (6.4.6)
