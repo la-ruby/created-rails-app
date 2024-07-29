@@ -290,7 +290,7 @@ GEM
       nokogiri (~> 1.14)
     observer (0.1.2)
     orm_adapter (0.5.0)
-    pg (1.5.6)
+    pg (1.5.7)
     psych (5.1.2)
       stringio
     public_suffix (6.0.1)
