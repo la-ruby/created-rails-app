@@ -1,23 +1,8 @@
 {
   "name": "app",
   "private": true,
-  "dependencies": {
-    "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.5",
-    "@popperjs/core": "^2.11.8",
-    "autoprefixer": "^10.4.19",
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3",
-    "cable_ready": "5.0.5",
-    "esbuild": "^0.23.0",
-    "esbuild-rails": "^1.0.3",
-    "nodemon": "^3.1.4",
-    "postcss": "^8.4.40",
-    "postcss-cli": "^11.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sass": "^1.77.8",
-    "stimulus_reflex": "3.5.2"
+  "devDependencies": {
+    "esbuild": "^0.23.0"
   },
   "scripts": {
     "build": "node esbuild.config.mjs",
@@ -26,6 +11,23 @@
     "build:css": "yarn build:css:compile && yarn build:css:prefix",
     "watch:css": "nodemon --watch ./app/assets/stylesheets/ --ext scss --exec \"yarn build:css\"",
     "build:default": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.5",
+    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.19",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "cable_ready": "5.0.5",
+    "esbuild-rails": "^1.0.3",
+    "nodemon": "^3.1.4",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.77.8",
+    "stimulus_reflex": "3.5.2"
   },
   "browserslist": [
     "defaults"
