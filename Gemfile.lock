@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: c0276b6248b90ad5b64785f3c2a31002ed407e6a
+  revision: 0b1bb9574f97b6e27f4a29739e5dccca6afb0203
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -67,7 +67,7 @@ GIT
       activesupport (= 7.2.0.beta3)
       nokogiri (>= 1.8.5)
       racc
-      rack (>= 2.2.4)
+      rack (>= 2.2.4, < 3.2)
       rack-session (>= 1.0.1)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.2)
@@ -110,6 +110,7 @@ GIT
       i18n (>= 1.6, < 2)
       logger (>= 1.4.2)
       minitest (>= 5.1)
+      securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
     rails (7.2.0.beta3)
       actioncable (= 7.2.0.beta3)
@@ -148,7 +149,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.960.0)
+    aws-partitions (1.961.0)
     aws-sdk-core (3.201.3)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -157,7 +158,7 @@ GEM
     aws-sdk-kms (1.88.0)
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.156.0)
+    aws-sdk-s3 (1.157.0)
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -330,7 +331,7 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.3.2)
+    rexml (3.3.4)
       strscan
     rollbar (3.5.2)
     ruby_http_client (3.5.5)
@@ -343,6 +344,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    securerandom (0.3.1)
     selectize-rails (0.12.6)
     selenium-webdriver (4.23.0)
       base64 (~> 0.2)
@@ -451,4 +453,4 @@ RUBY VERSION
    ruby 3.3.1p55
 
 BUNDLED WITH
-   2.5.16
+   2.5.17
