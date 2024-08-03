@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0b1bb9574f97b6e27f4a29739e5dccca6afb0203
+  revision: 56f647b1f55e04efbcf8f6950c607d593ec518d9
   branch: 7-2-stable
   specs:
     actioncable (7.2.0.beta3)
@@ -216,7 +216,7 @@ GEM
     ffi (1.17.0-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hashdiff (1.1.0)
+    hashdiff (1.1.1)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
