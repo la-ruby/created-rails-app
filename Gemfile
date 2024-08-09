@@ -82,3 +82,5 @@ gem "faker", "~> 3.4"
 gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test
+
+gem "webmock", "~> 3.23", :group => :test
