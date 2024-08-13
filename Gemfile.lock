@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: b0e7ebf2c7e2925c4d5fee4bf7d527c53ff4c1e3
+  revision: 01ff576bff617af7685e3988a5f8cb2ec553992a
   branch: main
   specs:
     turbo-rails (2.0.6)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 72271939d2b680e9d40feaad50543dabb4521a87
+  revision: f6d62b5f214471f6af0fc0535fe70e4e13b19ed4
   branch: 7-2-stable
   specs:
     actioncable (7.2.0)
@@ -331,7 +331,7 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.3.4)
+    rexml (3.3.5)
       strscan
     rollbar (3.5.2)
     ruby_http_client (3.5.5)
