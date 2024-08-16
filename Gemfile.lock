@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0901db5345ac170c9edcd891b3ec8c474e66ad0a
+  revision: afb919b8feb3c8f750c6eb7ab7d8f5bfd257aca3
   branch: 7-2-stable
   specs:
     actioncable (7.2.0)
@@ -149,16 +149,16 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.963.0)
-    aws-sdk-core (3.201.4)
+    aws-partitions (1.964.0)
+    aws-sdk-core (3.201.5)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
-      aws-sigv4 (~> 1.8)
+      aws-sigv4 (~> 1.9)
       jmespath (~> 1, >= 1.6.1)
     aws-sdk-kms (1.88.0)
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.157.0)
+    aws-sdk-s3 (1.158.0)
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -354,7 +354,7 @@ GEM
       websocket (~> 1.0)
     sendgrid-ruby (6.7.0)
       ruby_http_client (~> 3.4)
-    sidekiq (7.3.0)
+    sidekiq (7.3.1)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       logger
