@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: afb919b8feb3c8f750c6eb7ab7d8f5bfd257aca3
+  revision: 961ab4e6ef82e46bbda6ba17d93a5ef27e841a75
   branch: 7-2-stable
   specs:
     actioncable (7.2.0)
@@ -149,7 +149,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.964.0)
+    aws-partitions (1.965.0)
     aws-sdk-core (3.201.5)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -259,7 +259,7 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.7)
-    minitest (5.25.0)
+    minitest (5.25.1)
     minitest-test_profile (0.2.2)
       minitest
     net-imap (0.4.14)
@@ -373,7 +373,7 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
-    stimulus-rails (1.3.3)
+    stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.1)
     strscan (3.1.0)
