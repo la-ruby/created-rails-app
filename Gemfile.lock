@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: 0a2505ee23340d176f89670fa5a83f60c3261b49
+  revision: 72884642f5700439cc96ac560ee19a44af5a2d45
   branch: main
   specs:
     devise (5.0.0.beta)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 961ab4e6ef82e46bbda6ba17d93a5ef27e841a75
+  revision: 3802675d6de37527c97e58b9e875c8adb7c27b32
   branch: 7-2-stable
   specs:
     actioncable (7.2.0)

@@ -2,10 +2,10 @@
 development:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: pond_development
+  channel_prefix: forest_development
 test:
   adapter: test
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: pond_production
+  channel_prefix: forest_production
