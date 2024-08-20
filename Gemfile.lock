@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 3802675d6de37527c97e58b9e875c8adb7c27b32
+  revision: 1f3e35d3d5e265d0c8341b55a62a3341cdece521
   branch: 7-2-stable
   specs:
     actioncable (7.2.0)
@@ -149,7 +149,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.965.0)
+    aws-partitions (1.966.0)
     aws-sdk-core (3.201.5)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
