@@ -67,7 +67,7 @@ end
 
 gem "devise", "~> 5.0.beta", :git => "https://github.com/heartcombo/devise", :branch => "main"
 
-gem "pundit", "~> 2.3"
+gem "pundit", "~> 2.4"
 
 gem "sidekiq", "~> 7.3"
 gem "aws-sdk-s3", require: false
@@ -78,18 +78,18 @@ gem "kaminari", "~> 1.2"
 
 gem "factory_bot_rails", "~> 6.4", :groups => [:test, :development]
 
-gem "faker", "~> 3.4"
+gem "faker", "~> 3.5"
 gem 'simplecov', require: false, group: :test
 
 gem "minitest-test_profile", "~> 0.2.2", :group => :test
 
-gem "webmock", "~> 3.23", :group => :test
+gem "webmock", "~> 3.24", :group => :test
 
 gem "sendgrid-ruby", ">= 6.7"
 
-gem "rollbar", "~> 3.5"
+gem "rollbar", "~> 3.6"
 
-gem "view_component", "~> 3.13"
+gem "view_component", "~> 3.20"
 gem "stimulus_reflex", github: "la-ruby/stimulus_reflex", branch: "noprompt"
 
 gem "redis-session-store", "~> 0.11.5"
