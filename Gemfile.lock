@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 54e073a94044b52a28349007e3f2630dd5cd4b62
+  revision: e7eee73be46bc7d22697b431f97d48274331826e
   branch: 7-2-stable
   specs:
     actioncable (7.2.2)
@@ -322,8 +322,8 @@ GEM
       redis-client (>= 0.22.0)
     redis-client (0.22.2)
       connection_pool
-    redis-session-store (0.11.5)
-      actionpack (>= 6, < 8)
+    redis-session-store (0.11.6)
+      actionpack (>= 5.2.4.1, < 9)
       redis (>= 3, < 6)
     regexp_parser (2.9.2)
     reline (0.5.11)
