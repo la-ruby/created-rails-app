@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: 591b03a6c010f47976f7033370a8165c5324a82c
+  revision: dce20b78f567a49ada1bd23caa43f3d507c8be28
   branch: main
   specs:
     devise (5.0.0.beta)
@@ -150,7 +150,7 @@ GEM
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
     aws-partitions (1.1013.0)
-    aws-sdk-core (3.213.0)
+    aws-sdk-core (3.214.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -158,7 +158,7 @@ GEM
     aws-sdk-kms (1.96.0)
       aws-sdk-core (~> 3, >= 3.210.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.173.0)
+    aws-sdk-s3 (1.174.0)
       aws-sdk-core (~> 3, >= 3.210.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -345,7 +345,7 @@ GEM
       tilt
     securerandom (0.3.2)
     selectize-rails (0.12.6)
-    selenium-webdriver (4.26.0)
+    selenium-webdriver (4.27.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
