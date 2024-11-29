@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 04b928dd7c465dc9b4da0bf2dde52eaa212238be
+  revision: 719d8e05a4872c7ec08526a8800c1531e2beb66a
   branch: 7-2-stable
   specs:
     actioncable (7.2.2)
@@ -326,7 +326,7 @@ GEM
       actionpack (>= 5.2.4.1, < 9)
       redis (>= 3, < 6)
     regexp_parser (2.9.2)
-    reline (0.5.11)
+    reline (0.5.12)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
