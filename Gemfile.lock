@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/heartcombo/devise
-  revision: dce20b78f567a49ada1bd23caa43f3d507c8be28
+  revision: fec67f98f26fcd9a79072e4581b1bd40d0c7fa1d
   branch: main
   specs:
     devise (5.0.0.beta)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 719d8e05a4872c7ec08526a8800c1531e2beb66a
+  revision: 001cc5dedf0c02731715b7aef4cf0a96f8f5aa8f
   branch: 7-2-stable
   specs:
     actioncable (7.2.2)
@@ -325,7 +325,7 @@ GEM
     redis-session-store (0.11.6)
       actionpack (>= 5.2.4.1, < 9)
       redis (>= 3, < 6)
-    regexp_parser (2.9.2)
+    regexp_parser (2.9.3)
     reline (0.5.12)
       io-console (~> 0.5)
     responders (3.1.1)
