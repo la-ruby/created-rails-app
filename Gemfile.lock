@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: cd5680cf652b7bdfc84e64bb48b5faf84a1a2ebc
+  revision: 3e8ba1b88a515e375c9c3b5c72b7d5ed75b20813
   branch: 7-2-stable
   specs:
     actioncable (7.2.2)
@@ -149,7 +149,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.1019.0)
+    aws-partitions (1.1020.0)
     aws-sdk-core (3.214.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -273,20 +273,20 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.17.0)
+    nokogiri (1.17.1)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.17.0-aarch64-linux)
+    nokogiri (1.17.1-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.17.0-arm-linux)
+    nokogiri (1.17.1-arm-linux)
       racc (~> 1.4)
-    nokogiri (1.17.0-arm64-darwin)
+    nokogiri (1.17.1-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.17.0-x86-linux)
+    nokogiri (1.17.1-x86-linux)
       racc (~> 1.4)
-    nokogiri (1.17.0-x86_64-darwin)
+    nokogiri (1.17.1-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.17.0-x86_64-linux)
+    nokogiri (1.17.1-x86_64-linux)
       racc (~> 1.4)
     nokogiri-html5-inference (0.3.0)
       nokogiri (~> 1.14)
@@ -321,7 +321,7 @@ GEM
       psych (>= 4.0.0)
     redis (5.3.0)
       redis-client (>= 0.22.0)
-    redis-client (0.22.2)
+    redis-client (0.23.0)
       connection_pool
     redis-session-store (0.11.6)
       actionpack (>= 5.2.4.1, < 9)
