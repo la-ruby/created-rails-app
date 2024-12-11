@@ -79,3 +79,6 @@ gem "kaminari", "~> 1.2"
 gem "factory_bot_rails", "~> 6.4", :groups => [:test, :development]
 
 gem "faker", "~> 3.5"
+gem 'simplecov', require: false, group: :test
+
+gem "minitest-test_profile", "~> 0.2.2", :group => :test
