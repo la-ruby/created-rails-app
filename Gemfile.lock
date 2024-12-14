@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 550bb795fd57d7ba3c64a37cb6cdad260496dcc8
+  revision: 688a3c889740d6c7932a0ab8650f439a1f9c22ef
   branch: 7-2-stable
   specs:
     actioncable (7.2.2.1)
@@ -149,7 +149,7 @@ GEM
       sassc-rails (~> 2.1)
       selectize-rails (~> 0.6)
     aws-eventstream (1.3.0)
-    aws-partitions (1.1022.0)
+    aws-partitions (1.1023.0)
     aws-sdk-core (3.214.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -246,7 +246,7 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
-    logger (1.6.2)
+    logger (1.6.3)
     loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -317,7 +317,7 @@ GEM
       loofah (~> 2.21)
       nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
     rake (13.2.1)
-    rdoc (6.8.1)
+    rdoc (6.9.0)
       psych (>= 4.0.0)
     redis (5.3.0)
       redis-client (>= 0.22.0)

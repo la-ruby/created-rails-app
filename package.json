@@ -21,7 +21,7 @@
     "bootstrap-icons": "^1.11.3",
     "cable_ready": "5.0.5",
     "esbuild-rails": "^1.0.3",
-    "nodemon": "^3.1.7",
+    "nodemon": "^3.1.9",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "react": "^19.0.0",
