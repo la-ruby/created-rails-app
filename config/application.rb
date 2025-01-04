@@ -25,3 +25,4 @@ module Paper
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+require Rails.root.join("config/constants")
