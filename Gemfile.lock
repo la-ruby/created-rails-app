@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: b2bd9fc7d487332137b2cec3caf01182319e2c0f
+  revision: a266246429b9946aa55d360e1f542ae26eedad97
   branch: 7-2-stable
   specs:
     actioncable (7.2.2.1)
@@ -342,7 +342,7 @@ GEM
     rexml (3.4.0)
     rollbar (3.6.0)
     ruby_http_client (3.5.5)
-    rubyzip (2.4)
+    rubyzip (2.4.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
