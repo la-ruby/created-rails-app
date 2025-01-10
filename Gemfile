@@ -88,3 +88,5 @@ gem "webmock", "~> 3.24", :group => :test
 gem "sendgrid-ruby", ">= 6.7"
 
 gem "rollbar", "~> 3.6"
+
+gem "view_component", "~> 3.21"
