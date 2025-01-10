@@ -307,6 +307,7 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.4.0)
+    ruby_http_client (3.5.5)
     rubyzip (2.4.1)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -324,6 +325,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sendgrid-ruby (6.7.0)
+      ruby_http_client (~> 3.4)
     sidekiq (7.3.7)
       connection_pool (>= 2.3.0)
       logger
@@ -400,6 +403,7 @@ DEPENDENCIES
   pundit (~> 2.4)
   rails!
   selenium-webdriver
+  sendgrid-ruby (>= 6.7)
   sidekiq (~> 7.3)
   simplecov
   sprockets-rails
