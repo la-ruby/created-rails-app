@@ -20,6 +20,23 @@ GIT
       railties (>= 6.0.0)
 
 GIT
+  remote: https://github.com/la-ruby/stimulus_reflex.git
+  revision: 0a210fe2fa3994f9ed7fd7d30fd9dc244c1ede0d
+  branch: noprompt
+  specs:
+    stimulus_reflex (3.5.2)
+      actioncable (>= 5.2, < 8)
+      actionpack (>= 5.2, < 8)
+      actionview (>= 5.2, < 8)
+      activesupport (>= 5.2, < 8)
+      cable_ready (~> 5.0)
+      nokogiri (~> 1.0)
+      nokogiri-html5-inference (~> 0.3)
+      rack (>= 2, < 4)
+      railties (>= 5.2, < 8)
+      redis (>= 4.0, < 6.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: c135e16c926ddf1fcfe59392466647527122f03d
   branch: 7-2-stable
@@ -153,6 +170,13 @@ GEM
     bigdecimal (3.1.9)
     bindex (0.8.1)
     builder (3.3.0)
+    cable_ready (5.0.6)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activesupport (>= 5.2)
+      observer (~> 0.1)
+      railties (>= 5.2)
+      thread-local (>= 1.1.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -270,6 +294,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.1-x86_64-linux-musl)
       racc (~> 1.4)
+    nokogiri-html5-inference (0.3.0)
+      nokogiri (~> 1.14)
+    observer (0.1.2)
     orm_adapter (0.5.0)
     pg (1.5.9)
     psych (5.2.2)
@@ -299,8 +326,13 @@ GEM
     rake (13.2.1)
     rdoc (6.10.0)
       psych (>= 4.0.0)
+    redis (5.3.0)
+      redis-client (>= 0.22.0)
     redis-client (0.23.0)
       connection_pool
+    redis-session-store (0.11.6)
+      actionpack (>= 5.2.4.1, < 9)
+      redis (>= 3, < 6)
     regexp_parser (2.10.0)
     reline (0.6.0)
       io-console (~> 0.5)
@@ -351,6 +383,7 @@ GEM
       railties (>= 6.0.0)
     stringio (3.1.2)
     thor (1.3.2)
+    thread-local (1.1.0)
     tilt (2.5.0)
     timeout (0.4.3)
     tzinfo (2.0.6)
@@ -408,6 +441,7 @@ DEPENDENCIES
   puma (>= 5.0)
   pundit (~> 2.4)
   rails!
+  redis-session-store (~> 0.11.5)
   rollbar (~> 3.6)
   selenium-webdriver
   sendgrid-ruby (>= 6.7)
@@ -415,6 +449,7 @@ DEPENDENCIES
   simplecov
   sprockets-rails
   stimulus-rails
+  stimulus_reflex!
   turbo-rails!
   tzinfo-data
   view_component (~> 3.21)
