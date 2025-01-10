@@ -66,3 +66,5 @@ group :test do
 end
 
 gem "devise", "~> 5.0.beta", :git => "https://github.com/heartcombo/devise", :branch => "main"
+
+gem "pundit", "~> 2.4"
