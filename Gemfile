@@ -71,3 +71,5 @@ gem "pundit", "~> 2.4"
 
 gem "sidekiq", "~> 7.3"
 gem "aws-sdk-s3", require: false
+
+gem "administrate", "~> 0.20.1"
