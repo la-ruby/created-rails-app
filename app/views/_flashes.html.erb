@@ -1,0 +1,14 @@
+<div id="partial-flash"
+     class="position-fixed w-100 text-center"
+     style="z-index: 2050; top: 0px">
+
+  <% if flashable? %>
+    <div class="alert alert-warning alert-dismissible fade show " role="alert" data-controller="fade-out">
+      <div class="contents">
+        <%= session[:flash] %>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% end %>
+</div>
+
