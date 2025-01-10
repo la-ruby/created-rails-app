@@ -16,4 +16,7 @@ Rails.application.routes.draw do
     username == ENV['PREFIX_DEVELOPER_EMAIL'] && password == ENV['PREFIX_DEVELOPER_PASSWORD']
   end
   mount Sidekiq::Web => '/sidekiq'
+
+  root to: redirect('/bookings')
+  resources :bookings, only: [:index, :update, :create]
 end
